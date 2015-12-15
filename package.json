@@ -7,6 +7,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "dotenv": "1.2.0",
     "ghost": "0.7.2"
   }
 }

@@ -1,4 +1,8 @@
 const path = require('path');
+const dotenv = require('dotenv');
+
+dotenv.config({ silent: true });
+dotenv.load();
 
 module.exports = {
   // ### Production
@@ -8,10 +12,14 @@ module.exports = {
     url: 'http://blog.mariopabon.com',
     mail: {},
     database: {
-      client: 'sqlite3',
+      client: 'postgres',
       connection: {
-        filename: path.join(__dirname, '/content/data/ghost.db')
-      },
+          host: process.env.DB_HOST,
+          user: process.env.DB_USERNAME,
+          password: process.env.DB_PASSWORD,
+          database: process.env.DB_NAME,
+          port: process.env.DB_PORT
+    },
       debug: false
     },
 
