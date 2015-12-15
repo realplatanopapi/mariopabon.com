@@ -1,5 +1,8 @@
 {
   "private": true,
+  "engines": {
+    "node": "4.2.0"
+  },
   "scripts": {
     "start": "node index.js"
   },
