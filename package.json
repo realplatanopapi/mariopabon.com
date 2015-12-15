@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "dependencies": {
+    "ghost": "0.7.2"
+  }
+}
