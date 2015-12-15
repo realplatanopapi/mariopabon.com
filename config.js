@@ -9,7 +9,7 @@ module.exports = {
   // When running Ghost in the wild, use the production environment.
   // Configure your URL and mail settings here
   production: {
-    url: 'http://blog.mariopabon.com',
+    url: 'restlessbit-blog.herokuapp.com',
     mail: {},
     database: {
       client: 'postgres',
