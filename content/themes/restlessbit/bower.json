@@ -1,0 +1,10 @@
+{
+  "name": "private",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "modular-scale": "~2.1.1",
+    "bootstrap": "4.0.0-alpha",
+    "include-media": "~1.4.2"
+  }
+}
