@@ -1,4 +1,9 @@
 a {
-  color: $color-brand-primary;
+  background: $color-brand-primary;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1;
+  padding: 0.5em;
   text-decoration: none;
 }
