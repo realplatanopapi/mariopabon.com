@@ -1,3 +1,9 @@
+/content/*
+
+!/content/themes/
+!/content/themes/*
+!/content/themes/**/*
+
 .env
 
 node_modules
@@ -7,9 +13,3 @@ bower_components
 
 .DS_Store
 Thumbs.db
-
-/content/*
-
-!/content/themes/
-!/content/themes/*
-!/content/themes/**/*
