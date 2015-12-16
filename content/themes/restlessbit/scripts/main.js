@@ -1,3 +1,1 @@
-const msg = 'hewwo werld';
-
-console.log(msg);
+import '../bower_components/prism/prism';
