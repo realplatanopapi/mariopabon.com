@@ -8,7 +8,25 @@
     margin-top: rhythm(2);
   }
 
-  pre {
-    margin: rhythm(2) 0;
+  ul,
+  ol {
+    margin-bottom: rhythm(1.5);
+    padding-left: rhythm(1.5);
+
+    li {
+      margin-bottom: rhythm(0.5);
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
+
+  pre {
+    margin-bottom: rhythm(2);
+  }
+}
+
+.longform__footer {
+  margin-top: rhythm(4);
 }

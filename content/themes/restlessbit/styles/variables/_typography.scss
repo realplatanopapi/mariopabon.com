@@ -9,10 +9,10 @@ $font-family: (
 
 $line-height: (
   base: 1.5,
-  headings: 1
+  headings: 1.1
 );
 @function line-height($key) {
   @return map-get($line-height, $key);
 }
 
-$measure: 40rem;
+$measure: 45rem;
