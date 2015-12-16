@@ -1,7 +1,7 @@
 $font-family: (
   sans-serif: ('Montserrat', 'Helvetica', 'Arial', sans-serif),
-  serif: ('Georgia', 'Times New Roman', serif),
-  mono: ('Cutive Mono', 'Courier New', 'Consolas', monospace)
+  serif: ('Cardo', 'Georgia', 'Times New Roman', serif),
+  mono: ('Courier New', 'Consolas', monospace)
 );
 @function font-family($key) {
   @return map-get($font-family, $key);
