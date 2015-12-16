@@ -1,0 +1,14 @@
+.wrapper {
+  padding-top: rhythm(2);
+  padding-bottom: rhythm(2);
+
+  @include media('>=sm') {
+    padding-top: rhythm(3);
+    padding-bottom: rhythm(3);
+  }
+
+  @include media('>=lg') {
+    padding-top: rhythm(4);
+    padding-bottom: rhythm(4);
+  }
+}

@@ -1,0 +1,18 @@
+$font-family: (
+  sans-serif: ('Helvetica', 'Arial', sans-serif),
+  serif: ('Georgia', 'Times New Roman', serif),
+  mono: ('Consolas', 'Courier New', monospace)
+);
+@function font-family($key) {
+  @return map-get($font-family, $key);
+}
+
+$line-height: (
+  base: 1.5,
+  headings: 1
+);
+@function line-height($key) {
+  @return map-get($line-height, $key);
+}
+
+$measure: 40rem;

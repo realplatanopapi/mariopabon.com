@@ -1,0 +1,16 @@
+// Override settings for Modular Scale here.
+
+// Our base font size.
+$ms-base: 1em;
+
+// Ratio for our type scale.
+$ms-ratio: 1.5;
+
+// Scale font size between about 16px at 320px wide,
+// and about 18px at 1800px wide.
+$ms-range:
+  1 20em,
+  1.125 100em;
+
+// Calculate font size based on viewport width.
+$ms-fluid: true;

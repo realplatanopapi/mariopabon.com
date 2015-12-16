@@ -1,0 +1,8 @@
+body {
+  @include ms-respond(font-size, 1);
+  background: $color-bg;
+  color: $color-text;
+  -webkit-font-smoothing: antialiased;
+  line-height: line-height(base);
+  text-rendering: optimizeLegibility;
+}

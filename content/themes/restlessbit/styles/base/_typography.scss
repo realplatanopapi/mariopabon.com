@@ -1,0 +1,52 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+p,
+.p {
+  display: block;
+  margin-top: 0;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: line-height(headings);
+}
+
+h1,
+.h1 {
+  font-size: ms(3);
+  margin-bottom: rhythm();
+}
+
+h2,
+.h2 {
+  font-size: ms(2);
+  margin-bottom: rhythm();
+}
+
+h3,
+.h3 {
+  font-size: ms(1);
+  margin-bottom: rhythm();
+}
+
+h4,
+.h4 {
+  font-size: ms(0);
+  margin-bottom: rhythm(.5);
+}
+
+p {
+  margin-bottom: rhythm(.5);
+}
