@@ -1,10 +1,12 @@
 .hero {
   background: $color-brand-primary;
   color: #fff;
+  padding: rhythm(6) 0;
 }
 
 .hero__title {
-  margin-bottom: rhythm(1.5);
+  font-size: ms(3);
+  margin-bottom: rhythm(0.5);
 
   &:last-child {
     margin-bottom: 0;
@@ -13,5 +15,5 @@
 
 .hero__subtitle {
   margin-bottom: 0;
-  opacity: 0.8;
+  opacity: 0.9;
 }
