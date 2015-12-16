@@ -22,17 +22,14 @@
 
     {{navigation}}
 
-    <div class="site-wrapper">
-
-        {{! Everything else gets inserted here }}
-        {{{body}}}
-
-        <footer class="site-footer clearfix">
-            <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
-        </footer>
-
-    </div>
+    <main>
+      <section class="hero">
+        <div class="container wrapper">
+          <h1>restlessbit</h1>
+          <p>musings of a front end developer.</p>
+        </div>
+      </section>
+    </main>
 
     {{ghost_foot}}
 
