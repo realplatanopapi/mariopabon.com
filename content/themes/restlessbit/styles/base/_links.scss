@@ -2,7 +2,9 @@ a {
   border-bottom: 3px solid $color-text;
   color: inherit;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     color: $color-brand-primary;
     border-bottom-color: $color-brand-primary;
     text-decoration: none;

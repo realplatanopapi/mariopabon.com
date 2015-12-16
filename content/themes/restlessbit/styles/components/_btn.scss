@@ -13,7 +13,9 @@
   background: $color-brand-primary;
   color: #fff;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     background: #0a0a0a;
     color: #fff;
   }
