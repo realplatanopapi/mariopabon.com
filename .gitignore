@@ -1,5 +1,9 @@
 /content/*
 
+!/content/apps/
+!/content/apps/*
+!/content/apps/**/*
+
 !/content/themes/
 !/content/themes/*
 !/content/themes/**/*
