@@ -8,9 +8,7 @@
     margin-top: rhythm(2);
   }
 
-  p {
-    @include media('>sm') {
-      text-align: justify;
-    }
+  pre {
+    margin: rhythm(2) 0;
   }
 }

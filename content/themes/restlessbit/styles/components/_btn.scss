@@ -1,0 +1,19 @@
+.btn {
+  @include all-caps;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: font-family(sans-serif);
+  padding: 1em 2em;
+}
+
+.btn--primary {
+  background: $color-brand-primary;
+  color: #fff;
+
+  &:hover {
+    background: $color-bg-dark;
+    color: #fff;
+  }
+}

@@ -8,6 +8,14 @@
   a {
     background: transparent;
     color: inherit;
-    font-size: 1em;
+    font-family: font-family(sans-serif);
+    font-size: 0.9em;
+    opacity: 0.8;
+    text-transform: lowercase;
+
+    &:hover {
+      color: $color-brand-primary;
+      opacity: 1;
+    }
   }
 }
