@@ -1,4 +1,10 @@
 .hero {
   background: $color-brand-primary;
   color: #fff;
+  text-align: center;
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

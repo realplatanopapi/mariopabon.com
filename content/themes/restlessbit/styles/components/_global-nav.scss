@@ -3,4 +3,11 @@
   background: $color-bg-alt;
   display: flex;
   justify-content: space-between;
+  padding: 0.5em;
+
+  a {
+    background: transparent;
+    color: inherit;
+    font-size: 1em;
+  }
 }
