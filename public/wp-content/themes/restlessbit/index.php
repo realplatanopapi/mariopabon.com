@@ -11,7 +11,10 @@ if($context['pagination']['current'] == 1) {
     'caller_get_posts' => 1
   ]);
 
-  $context['latest_posts'] = Timber::get_posts();
+  $context['latest_posts'] = Timber::get_posts([
+    'post__not_in' => get_option('sticky_posts')
+  ]);
+
   Timber::render( array( 'first-page.twig' ), $context );
 }
 else {
