@@ -47,8 +47,3 @@ class StarterSite extends TimberSite {
 }
 
 new StarterSite();
-
-/**
- * Custom fields
- */
-require get_template_directory() . '/inc/custom-fields/post.php';

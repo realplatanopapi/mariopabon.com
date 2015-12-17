@@ -7,13 +7,8 @@ $context['pagination'] = Timber::get_pagination();
 
 if($context['pagination']['current'] == 1) {
   $context['featured_posts'] = Timber::get_posts([
-    'meta_query' => [
-      [
-        'key' => 'post_featured',
-        'value' => '"true"',
-        'compare' => 'LIKE'
-      ]
-    ]
+    'post__in' => get_option('sticky_posts'),
+    'caller_get_posts' => 1
   ]);
 
   $context['latest_posts'] = Timber::get_posts();
