@@ -7,12 +7,7 @@
       <p>Page {{ pagination.current }} of {{ pagination.total }}</p>
     </header>
     <div class="container">
-      {% for post in posts %}
-        <a class="slab" href="{{ post.permalink }}">
-          <span class="h3 slab__title">{{ post.title }}</span>
-          <span class="slab__subtitle">{{ post.date|date }}</span>
-        </a>
-      {% endfor %}
+      {% include 'components/loop.twig' with { posts: posts } %}
     </div>
     <footer>
       <div class="pager">

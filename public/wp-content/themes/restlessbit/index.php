@@ -12,7 +12,7 @@ if($context['pagination']['current'] == 1) {
   ]);
 
   $context['latest_posts'] = Timber::get_posts();
-  Timber::render( array( 'home.twig' ), $context );
+  Timber::render( array( 'first-page.twig' ), $context );
 }
 else {
   Timber::render( array( 'index.twig' ), $context);
