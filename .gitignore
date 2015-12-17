@@ -10,6 +10,8 @@ public/wp-content/themes/*
 !/public/wp-content/themes/restlessbit/
 
 .vagrant
+composer.json
+composer.lock
 
 node_modules
 bower_components

@@ -40,9 +40,7 @@ class StarterSite extends TimberSite {
 	}
 
 	function add_to_twig( $twig ) {
-		/* this is where you can add your own fuctions to twig */
 		$twig->addExtension( new Twig_Extension_StringLoader() );
-		$twig->addFilter( 'myfoo', new Twig_Filter_Function( 'myfoo' ) );
 		return $twig;
 	}
 
@@ -50,7 +48,7 @@ class StarterSite extends TimberSite {
 
 new StarterSite();
 
-function myfoo( $text ) {
-	$text .= ' bar!';
-	return $text;
-}
+/**
+ * Custom fields
+ */
+require get_template_directory() . '/inc/custom-fields/post.php';
