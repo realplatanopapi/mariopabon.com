@@ -1,3 +1,5 @@
 .section {
-  margin-bottom: rhythm(4);
+  border-bottom: 1px solid darken($color-bg, 25%);
+  padding-bottom: rhythm(4);
+  padding-top: rhythm(4);
 }

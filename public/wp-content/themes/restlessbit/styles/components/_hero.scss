@@ -1,21 +1,7 @@
-.hero {
-  background: $color-brand-primary;
-  color: #fff;
-  padding: rhythm(4) 0;
-  text-align: center;
-}
-
 .hero__title {
-  color: #fff;
-  font-size: ms(3);
   margin-bottom: rhythm(0.5);
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .hero__subtitle {
-  margin: 0 auto;
-  opacity: 0.9;
+  margin-bottom: 0;
 }
