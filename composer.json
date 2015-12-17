@@ -5,9 +5,6 @@
     "type": "composer",
     "url": "http://wpackagist.org"
   }],
-  "require": {
-    "wpackagist-plugin/jetpack": "dev-trunk"
-  },
   "extra": {
     "installer-paths": {
       "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
