@@ -31,6 +31,14 @@
   <section class="section">
     <div class="container">
       <h2>Latest Posts</h2>
+      <div>
+        {% for post in latest_posts %}
+          <a class="slab" href="{{ post.permalink }}">
+            <span class="h3 slab__title">{{ post.title }}</span>
+            <span class="slab__subtitle">{{ post.date|date }}</span>
+          </a>
+        {% endfor %}
+      </div>
       <a href="/">View Archives</a>
     </div>
   </section>

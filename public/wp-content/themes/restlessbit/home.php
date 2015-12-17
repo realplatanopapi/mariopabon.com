@@ -14,4 +14,8 @@ $context['featured_posts'] = Timber::get_posts([
   ]
 ]);
 
+$context['latest_posts'] = Timber::get_posts([
+  'posts_per_page' => 5
+]);
+
 Timber::render( array( 'home.twig' ), $context );
