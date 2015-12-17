@@ -6,5 +6,9 @@
       <h1>{{ title }}</h1>
       {% include 'components/loop.twig' with { posts: posts } %}
     </div>
+    <footer>
+      {% include 'components/pagination.twig' with { pagination: pagination } %}
+    </footer>
   </section>
+
 {% endblock %}

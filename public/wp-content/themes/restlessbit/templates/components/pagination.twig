@@ -1,0 +1,25 @@
+<div class="pager">
+  <div class="pager__content">
+    {% if pagination.prev %}
+      <a class="pager__nav btn btn--primary"
+        href="{{ pagination.prev.link }}">
+        <span class="btn__icon">⤌</span> Previous Page
+      </a>
+    {% endif %}
+
+    {% if pagination.next  %}
+      <a class="pager__nav btn btn--primary"
+        href="{{ pagination.next.link }}">
+        Next Page <span class="btn__icon">⤍</span>
+      </a>
+    {% endif %}
+  </div>
+  <div class="pager__nav pager__nav--full text-center">
+    <p>
+      <span>Page {{ pagination.current }} of {{ pagination.total }}</span>
+    </p>
+  </div>
+  <div class="text-center">
+    <a href="/">Back to home</a>
+  </div>
+</div>

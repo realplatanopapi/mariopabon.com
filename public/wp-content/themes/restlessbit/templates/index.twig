@@ -4,32 +4,12 @@
   <section class="section">
     <header class="container">
       <h1>Archive</h1>
-      <p>Page {{ pagination.current }} of {{ pagination.total }}</p>
     </header>
     <div class="container">
       {% include 'components/loop.twig' with { posts: posts } %}
     </div>
     <footer>
-      <div class="pager">
-        <div class="pager__content">
-          {% if pagination.prev %}
-            <a class="pager__nav btn btn--primary"
-              href="{{ pagination.prev.link }}">
-              <span class="btn__icon">⤌</span> Newer Posts
-            </a>
-          {% endif %}
-
-          {% if pagination.next  %}
-            <a class="pager__nav btn btn--primary"
-              href="{{ pagination.next.link }}">
-              Older Posts <span class="btn__icon">⤍</span>
-            </a>
-          {% endif %}
-        </div>
-        <div class="pager__nav pager__nav--full text-center">
-          <a href="/">Back to home</a>
-        </div>
-      </div>
+      {% include 'components/pagination.twig' with { pagination: pagination } %}
     </footer>
   </section>
 {% endblock %}
