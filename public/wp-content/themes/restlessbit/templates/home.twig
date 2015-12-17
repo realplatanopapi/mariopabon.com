@@ -39,7 +39,9 @@
           </a>
         {% endfor %}
       </div>
-      <a href="/">View Archives</a>
+      {% if pagination.next %}
+        <a href="{{pagination.next.link}}">View Archive</a>
+      {% endif %}
     </div>
   </section>
 {% endblock %}

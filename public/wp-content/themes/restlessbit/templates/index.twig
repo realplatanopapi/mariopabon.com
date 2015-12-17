@@ -1,11 +1,40 @@
 {% extends "base.twig" %}
 
 {% block content %}
+  <section class="section">
+    <header class="container">
+      <h1>Archive</h1>
+      <p>Page {{ pagination.current }} of {{ pagination.total }}</p>
+    </header>
+    <div class="container">
+      {% for post in posts %}
+        <a class="slab" href="{{ post.permalink }}">
+          <span class="h3 slab__title">{{ post.title }}</span>
+          <span class="slab__subtitle">{{ post.date|date }}</span>
+        </a>
+      {% endfor %}
+    </div>
+    <footer>
+      <div class="pager">
+        <div class="pager__content">
+          {% if pagination.prev %}
+            <a class="pager__nav btn btn--primary"
+              href="{{ pagination.prev.link }}">
+              <span class="btn__icon">⤌</span> Newer Posts
+            </a>
+          {% endif %}
 
-<h1>Hello Timber!</h1>
-	<h2>{{foo}}</h2>
-	<p>{{qux}}</p>
-	{% for post in posts %}
-		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-	{% endfor %}
+          {% if pagination.next  %}
+            <a class="pager__nav btn btn--primary"
+              href="{{ pagination.next.link }}">
+              Older Posts <span class="btn__icon">⤍</span>
+            </a>
+          {% endif %}
+        </div>
+        <div class="pager__nav pager__nav--full text-center">
+          <a href="/">Back to home</a>
+        </div>
+      </div>
+    </footer>
+  </section>
 {% endblock %}
