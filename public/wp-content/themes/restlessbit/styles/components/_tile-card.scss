@@ -2,7 +2,10 @@
   background: $color-bg-dark;
   border: 0;
   color: #fff;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 18em;
   overflow: hidden;
   padding: rhythm(4);
   position: relative;
