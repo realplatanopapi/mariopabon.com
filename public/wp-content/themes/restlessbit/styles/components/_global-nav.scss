@@ -1,6 +1,9 @@
 .global-nav {
+  align-items: center;
   background: $color-bg-alt;
-  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  padding: rhythm(0.5) rhythm(2);
 
   a {
     background: transparent;
