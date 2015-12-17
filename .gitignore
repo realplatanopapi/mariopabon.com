@@ -11,6 +11,8 @@ public/wp-content/plugins/*
 
 !/public/wp-content/themes/restlessbit/
 
+.vagrant
+
 node_modules
 bower_components
 
