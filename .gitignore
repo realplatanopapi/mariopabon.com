@@ -7,7 +7,6 @@ public/wp-content/*
 public/wp-content/themes/*
 
 !/public/wp-content/plugins/
-public/wp-content/plugins/*
 
 !/public/wp-content/themes/restlessbit/
 
