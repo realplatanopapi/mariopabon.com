@@ -1,5 +1,12 @@
 .global-footer {
   background: $color-bg-dark;
-  color: #fff;
+  color: #dadade;
+  font-size: 0.8em;
   padding: rhythm(2);
+  text-align: center;
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
