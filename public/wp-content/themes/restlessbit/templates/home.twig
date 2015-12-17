@@ -11,11 +11,20 @@
   <section class="section">
     <div class="container">
       <h2>Featured Posts</h2>
-      {% for post in featured_posts %}
-        {{ post.title }}
-        <br />
-        <br />
-      {% endfor %}
+      <div class="row">
+        {% for post in featured_posts %}
+          <div class="col-md-6">
+            <a class="tile-card" href="{{ post.permalink }}">
+              <span class="h2 tile-card__title">
+                {{ post.title }}
+              </span>
+              <span class="tile-card__subtitle">
+                {{ post.date|date }}
+              </span>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </section>
 
