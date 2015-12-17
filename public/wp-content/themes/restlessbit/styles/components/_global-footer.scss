@@ -1,6 +1,6 @@
 .global-footer {
   background: $color-bg-dark;
-  color: #dadade;
+  color: lighten($color-bg-dark, 50%);
   font-size: 0.8em;
   padding: rhythm(2);
   text-align: center;
