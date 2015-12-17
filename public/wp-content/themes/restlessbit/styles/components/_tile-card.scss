@@ -1,0 +1,37 @@
+.tile-card {
+  background: $color-bg-dark;
+  border: 0;
+  color: #fff;
+  display: block;
+  overflow: hidden;
+  padding: rhythm(4);
+  position: relative;
+  text-align: center;
+  z-index: 0;
+
+  .tile-card__title {
+    color: inherit;
+  }
+
+  &:after {
+    @include transition(transform);
+    background: $color-brand-primary;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translate3d(0, 100%, 0);
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &:after {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

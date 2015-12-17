@@ -35,21 +35,21 @@ const config = {
   browserSync: {
     notify: false,
     open: false,
-    proxy: require('../../../config').development.url
+    proxy: 'restlessbit.dev'
   },
   paths: {
     // Files to delete before building
     clean: ['assets/**/*'],
 
     // Files you want to trigger a BrowserSync refresh
-    watch: ['**/*.hbs'],
+    watch: ['**/*.php', '**/*.twig'],
 
     styles: {
 
       // Build stylesheets at root of styles directory
       src: 'styles/*.scss',
 
-      dest: 'assets/css',
+      dest: '.',
 
       // Which files you want to trigger a build of stylesheets
       watch: ['styles/**/*.scss']

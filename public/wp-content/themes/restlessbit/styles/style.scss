@@ -1,4 +1,9 @@
-/* Main stylesheet */
+/*!
+Theme Name: restlessbit
+Author: Mario Pabon
+Author URI: http://mariopabon.com
+Description: The theme.
+*/
 
 // Override vendor settings
 @import 'settings/bootstrap';
@@ -43,6 +48,8 @@
 @import 'components/longform';
 @import 'components/pager';
 @import 'components/section';
+@import 'components/slab';
+@import 'components/tile-card';
 @import 'components/wrapper';
 
 // Helpers

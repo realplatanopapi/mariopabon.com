@@ -1,3 +1,3 @@
 # The Blog
 
-Coming soon. Built with Ghost.
+Coming soon. Built with WordPress.

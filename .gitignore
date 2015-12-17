@@ -1,14 +1,15 @@
-/content/*
+/public/*
 
-!/content/apps/
-!/content/apps/*
-!/content/apps/**/*
+!/public/wp-content/
+public/wp-content/*
 
-!/content/themes/
-!/content/themes/*
-!/content/themes/**/*
+!/public/wp-content/themes/
+public/wp-content/themes/*
 
-.env
+!/public/wp-content/plugins/
+public/wp-content/plugins/*
+
+!/public/wp-content/themes/restlessbit/
 
 node_modules
 bower_components

@@ -19,6 +19,12 @@
   text-align: center;
 }
 
+.pager__status {
+  margin: rhythm(1) 0;
+  text-align: center;
+}
+
 .pager__nav--full {
   flex: 1 1 100%;
+  margin-top: rhythm(1);
 }
