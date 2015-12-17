@@ -6,8 +6,10 @@
   flex-direction: column;
   justify-content: center;
   height: 18em;
+  margin-bottom: rhythm(0.5);
+  margin-top: rhythm(0.5);
   overflow: hidden;
-  padding: rhythm(4);
+  padding: rhythm(3);
   position: relative;
   z-index: 0;
 
