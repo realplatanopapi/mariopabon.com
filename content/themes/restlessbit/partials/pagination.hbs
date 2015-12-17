@@ -1,17 +1,13 @@
 <nav class="pager">
   <div class="pager__content">
-    {{#if prev}}
+    {{!-- {{#if prev}} --}}
       <a class="pager__nav btn btn--primary" href="{{page_url prev}}">
-        Next Post
+        <span class="btn__icon">⤌</span> Newer Post
       </a>
-    {{/if}}
-    {{#if next}}
+    {{!-- {{/if}}
+    {{#if next}} --}}
       <a class="pager__nav btn btn--primary" href="{{page_url next}}">
-        Previous Post
+        Older Post <span class="btn__icon">⤍</span>
       </a>
-    {{/if}}
-    <a href="#" class="pager__nav pager__nav--full btn btn--primary">
-      All posts
-    </a>
   </div>
 </nav>

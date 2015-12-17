@@ -1,4 +1,5 @@
 a {
+  @include transition(border, color);
   border-bottom: 3px solid $color-text;
   color: inherit;
 

@@ -13,10 +13,9 @@
 .pager__nav {
   align-items: center;
   display: flex;
-  flex: 1 1 calc(50% - 1em);
+  flex: 1 1 calc(50% - 0.5em);
   justify-content: center;
-  margin: 0.5em;
-  height: 6em;
+  margin: 0.25em;
   text-align: center;
 }
 
