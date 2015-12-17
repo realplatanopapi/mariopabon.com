@@ -1,0 +1,10 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+  <section class="wrapper">
+    <div class="container">
+      <h1>{{ title }}</h1>
+      {% include 'components/loop.twig' with { posts: posts } %}
+    </div>
+  </section>
+{% endblock %}
