@@ -1,13 +1,20 @@
 .slab {
-  align-items: center;
   border-bottom: 1px solid darken($color-bg, 50%);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   overflow: hidden;
   padding-bottom: rhythm(2);
   padding-top: rhythm(2);
   position: relative;
+
+  @include media('<md') {
+    display: block;
+    width: 100%;
+  }
+
+  @include media('>=md') {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &:hover {
     color: inherit;
