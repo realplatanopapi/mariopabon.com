@@ -1,41 +1,43 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<article class="wrapper longform">
-    <header class="content-header">
-      <p class="content-header__subtitle">
-        {{ post.post_date|date}}
-      </p>
-      <h1 class="content-header__title">
-        {{ post.title }}
-      </h1>
-    </header>
+	<article class="wrapper container">
+    <div class="longform">
+      <header class="content-header">
+        <p class="content-header__subtitle">
+          {{ post.post_date|date}}
+        </p>
+        <h1 class="content-header__title">
+          {{ post.title }}
+        </h1>
+      </header>
 
-    <section>
-			{{post.content}}
-		</section>
+      <section>
+  			{{post.content}}
+  		</section>
 
-    <footer class="longform__footer">
-      <div class="pager">
-        <div class="pager__content">
-          {% if post.prev %}
-            <a class="pager__nav btn btn--primary"
-              href="{{ post.prev.permalink }}">
-              <span class="btn__icon">⤌</span> Newer Post
-            </a>
-          {% endif %}
+      <footer class="longform__footer">
+        <div class="pager">
+          <div class="pager__content">
+            {% if post.prev %}
+              <a class="pager__nav btn btn--primary"
+                href="{{ post.prev.permalink }}">
+                <span class="btn__icon">⤌</span> Newer Post
+              </a>
+            {% endif %}
 
-          {% if post.next %}
-            <a class="pager__nav btn btn--primary"
-              href="{{ post.next.permalink }}">
-              Older Post <span class="btn__icon">⤍</span>
-            </a>
-          {% endif %}
+            {% if post.next %}
+              <a class="pager__nav btn btn--primary"
+                href="{{ post.next.permalink }}">
+                Older Post <span class="btn__icon">⤍</span>
+              </a>
+            {% endif %}
+          </div>
+          <div class="pager__nav pager__nav--full text-center">
+            <a href="/">Back to home</a>
+          </div>
         </div>
-        <div class="pager__nav pager__nav--full text-center">
-          <a href="/">Back to home</a>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 	</article>
 {% endblock %}
