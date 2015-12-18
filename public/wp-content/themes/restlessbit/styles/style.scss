@@ -5,54 +5,10 @@ Author URI: http://mariopabon.com
 Description: The theme.
 */
 
-// Override vendor settings
-@import 'settings/bootstrap';
-@import 'settings/include-media';
-@import 'settings/modular-scale';
-
 // Vendor
-@import '../bower_components/include-media/dist/include-media';
-@import '../bower_components/modular-scale/stylesheets/_modular-scale';
-@import '../bower_components/bootstrap/scss/bootstrap-reboot';
-@import '../bower_components/bootstrap/scss/bootstrap-grid';
 @import '../bower_components/prism/themes/prism-okaidia';
-
-// Variables
-@import 'variables/colors';
-@import 'variables/layers';
-@import 'variables/typography';
-
-// Functions
-@import 'functions/rhythm';
-
-// Mixins
-@import 'mixins/all-caps';
-@import 'mixins/transition';
+@import '../bower_components/restlessbit/restlessbit';
 
 // Base styles
-@import 'base/body';
-@import 'base/blockquote';
-@import 'base/cite';
 @import 'base/code';
-@import 'base/forms';
-@import 'base/images';
-@import 'base/links';
-@import 'base/lists';
 @import 'base/pre';
-@import 'base/typography';
-
-// Components
-@import 'components/btn';
-@import 'components/content-header';
-@import 'components/global-nav';
-@import 'components/global-footer';
-@import 'components/hero';
-@import 'components/longform';
-@import 'components/pager';
-@import 'components/section';
-@import 'components/slab';
-@import 'components/tile-card';
-@import 'components/wrapper';
-
-// Helpers
-@import 'helpers/text-center';
