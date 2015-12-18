@@ -6,7 +6,7 @@
 	</head>
 {% endblock %}
 
-	<body class="{{body_class}}" data-template="base.twig">
+	<body>
 
     <nav class="global-nav">
       <a class="global-nav__brand" href="/">restlessbit</a>
@@ -20,9 +20,7 @@
 		{% endblock %}
 
 		{% block footer %}
-			<footer id="footer">
-				{% include 'footer.twig' %}
-			</footer>
+			{% include 'footer.twig' %}
 			{{ function('wp_footer') }}
 		{% endblock %}
 	</body>
