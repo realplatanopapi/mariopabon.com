@@ -1,14 +1,14 @@
 {% extends 'base.twig' %}
 
 {% block content %}
-  <section class="wrapper">
-    <div class="container">
-      <h1>{{ title }}</h1>
+  <main class="wrapper container">
+    <h1>{{ title }}</h1>
+    <section>
       {% include 'components/loop.twig' with { posts: posts } %}
-    </div>
+    </section>
     <footer>
       {% include 'components/pagination.twig' with { pagination: pagination } %}
     </footer>
-  </section>
+  </main>
 
 {% endblock %}
