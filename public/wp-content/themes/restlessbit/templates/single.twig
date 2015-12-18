@@ -21,12 +21,12 @@
         <div class="pager__nav row">
           <div class="col-sm-6">
             {% if post.next %}
-              <a class="pager__nav-btn btn btn--primary"
+              <a class="pager__nav-btn btn btn--primary btn--small"
                 href="{{ post.next.link }}">
                 <span class="btn__icon">←</span> {{ post.next.title }}
               </a>
             {% else %}
-              <a class="pager__nav-btn btn btn--primary btn--disabled">
+              <a class="pager__nav-btn btn btn--primary btn--disabled btn--small">
                 <span class="btn__icon">←</span> Newer Post
               </a>
             {% endif %}
@@ -34,12 +34,12 @@
 
           <div class="col-sm-6">
             {% if post.prev  %}
-              <a class="pager__nav-btn btn btn--primary"
+              <a class="pager__nav-btn btn btn--primary btn--small"
                 href="{{ post.prev.link }}">
                 {{ post.prev.title }} <span class="btn__icon">→</span>
               </a>
             {% else %}
-              <a class="pager__nav-btn btn btn--primary btn--disabled">
+              <a class="pager__nav-btn btn btn--primary btn--disabled btn--small">
                 Older Post <span class="btn__icon">→</span>
               </a>
             {% endif %}
