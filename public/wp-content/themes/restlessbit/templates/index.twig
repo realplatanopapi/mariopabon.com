@@ -1,11 +1,11 @@
 {% extends "base.twig" %}
 
 {% block content %}
-  <section class="section">
-    <header class="container">
+  <section class="section container">
+    <header>
       <h1>Archive</h1>
     </header>
-    <div class="container">
+    <div>
       {% include 'components/loop.twig' with { posts: posts } %}
     </div>
     <footer>
