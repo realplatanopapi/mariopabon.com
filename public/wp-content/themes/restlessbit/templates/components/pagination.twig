@@ -1,23 +1,33 @@
 <div class="pager">
-  <div class="pager__content">
-    {% if pagination.prev %}
-      <a class="pager__nav btn btn--primary"
-        href="{{ pagination.prev.link }}">
-        <span class="btn__icon">⤌</span> Previous Page
-      </a>
-    {% endif %}
+  <div class="pager__nav row">
+    <div class="col-sm-6">
+      {% if pagination.prev %}
+        <a class="pager__nav-btn btn btn--primary"
+          href="{{ pagination.prev.link }}">
+          <span class="btn__icon">⤌</span> Previous Page
+        </a>
+      {% else %}
+        <a class="pager__nav-btn btn btn--primary btn--disabled">
+          <span class="btn__icon">⤌</span> Previous Page
+        </a>
+      {% endif %}
+    </div>
 
-    {% if pagination.next  %}
-      <a class="pager__nav btn btn--primary"
-        href="{{ pagination.next.link }}">
-        Next Page <span class="btn__icon">⤍</span>
-      </a>
-    {% endif %}
+    <div class="col-sm-6">
+      {% if pagination.next  %}
+        <a class="pager__nav-btn btn btn--primary"
+          href="{{ pagination.next.link }}">
+          Next Page <span class="btn__icon">⤍</span>
+        </a>
+      {% else %}
+        <a class="pager__nav-btn btn btn--primary btn--disabled">
+          Next Page <span class="btn__icon">⤍</span>
+        </a>
+      {% endif %}
+    </div>
   </div>
-  <div class="pager__nav pager__nav--full text-center">
-    <p>
-      <span>Page {{ pagination.current }} of {{ pagination.total }}</span>
-    </p>
+  <div class="pager__status">
+    <p>Page {{ pagination.current }} of {{ pagination.total }}</p>
   </div>
   <div class="text-center">
     <a href="/">Back to home</a>

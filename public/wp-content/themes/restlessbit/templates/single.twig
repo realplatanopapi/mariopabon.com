@@ -15,29 +15,40 @@
       <section>
   			{{post.content}}
   		</section>
-
-      <footer class="longform__footer">
-        <div class="pager">
-          <div class="pager__content">
-            {% if post.prev %}
-              <a class="pager__nav btn btn--primary"
-                href="{{ post.prev.permalink }}">
+    </div>
+    <footer class="longform__footer">
+      <div class="pager">
+        <div class="pager__nav row">
+          <div class="col-sm-6">
+            {% if post.next %}
+              <a class="pager__nav-btn btn btn--primary"
+                href="{{ post.next.link }}">
+                <span class="btn__icon">⤌</span> {{ post.next.title }}
+              </a>
+            {% else %}
+              <a class="pager__nav-btn btn btn--primary btn--disabled">
                 <span class="btn__icon">⤌</span> Newer Post
               </a>
             {% endif %}
+          </div>
 
-            {% if post.next %}
-              <a class="pager__nav btn btn--primary"
-                href="{{ post.next.permalink }}">
+          <div class="col-sm-6">
+            {% if post.prev  %}
+              <a class="pager__nav-btn btn btn--primary"
+                href="{{ post.prev.link }}">
+                {{ post.prev.title }} <span class="btn__icon">⤍</span>
+              </a>
+            {% else %}
+              <a class="pager__nav-btn btn btn--primary btn--disabled">
                 Older Post <span class="btn__icon">⤍</span>
               </a>
             {% endif %}
           </div>
-          <div class="pager__nav pager__nav--full text-center">
-            <a href="/">Back to home</a>
-          </div>
         </div>
-      </footer>
-    </div>
+        <div class="page__status text-center">
+          <a href="/">Back to home</a>
+        </div>
+      </div>
+    </footer>
 	</article>
 {% endblock %}
