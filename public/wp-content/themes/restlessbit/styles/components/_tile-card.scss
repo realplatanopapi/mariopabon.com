@@ -5,13 +5,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 18em;
   margin-bottom: rhythm(0.5);
   margin-top: rhythm(0.5);
   overflow: hidden;
-  padding: rhythm(3);
   position: relative;
   z-index: 0;
+
+  @include media('<md') {
+    height: 16em;
+    padding: rhythm(1.5);
+  }
+
+  @include media('>=md') {
+    height: 18em;
+    padding: rhythm(3);
+  }
 
   &:after {
     @include transition(transform);
