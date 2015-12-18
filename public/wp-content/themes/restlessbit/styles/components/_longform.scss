@@ -3,6 +3,8 @@
   margin-right: auto;
   max-width: $measure;
 
+  h2,
+  .h2,
   h3,
   .h3 {
     margin-top: rhythm(2);
@@ -14,7 +16,7 @@
     padding-left: rhythm(1.5);
 
     li {
-      margin-bottom: rhythm(0.5);
+      margin-bottom: rhythm(0);
 
       &:last-of-type {
         margin-bottom: 0;
