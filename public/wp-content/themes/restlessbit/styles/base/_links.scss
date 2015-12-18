@@ -1,6 +1,6 @@
 a {
   @include transition(border, color);
-  border-bottom: 3px solid $color-text;
+  border-bottom: 3px solid lighten($color-text, 10%);
   color: inherit;
 
   &:hover,
