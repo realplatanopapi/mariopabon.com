@@ -8,6 +8,10 @@
   @include media('<md') {
     display: block;
     width: 100%;
+
+    .slab__title {
+      margin-bottom: rhythm(0.5);
+    }
   }
 
   @include media('>=md') {
