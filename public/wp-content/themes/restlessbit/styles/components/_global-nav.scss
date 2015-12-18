@@ -1,6 +1,6 @@
 .global-nav {
   background: $color-bg-alt;
-  padding: rhythm(0.5) rhythm(2);
+  padding: rhythm(0.5) rhythm(1);
 
   @include media('<md') {
     text-align: center;
