@@ -1,15 +1,22 @@
 {% extends "base.twig" %}
 
 {% block content %}
-  <section class="section container">
-    <header>
+  <header class="section hero">
+    <div class="container">
       <h1>Archive</h1>
-    </header>
-    <div>
-      {% include 'components/loop.twig' with { posts: posts } %}
     </div>
+  </header>
+  <main class="wrapper container">
+    <div class="text-center">
+      <p>
+        Page {{ pagination.current }} of {{ pagination.total }}
+      </p>
+    </div>
+    <section>
+      {% include 'components/loop.twig' with { posts: posts } %}
+    </section>
     <footer>
       {% include 'components/pagination.twig' with { pagination: pagination } %}
     </footer>
-  </section>
+  </main>
 {% endblock %}
