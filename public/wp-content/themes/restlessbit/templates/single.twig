@@ -23,11 +23,11 @@
             {% if post.next %}
               <a class="pager__nav-btn btn btn--primary"
                 href="{{ post.next.link }}">
-                <span class="btn__icon">⤌</span> {{ post.next.title }}
+                <span class="btn__icon">←</span> {{ post.next.title }}
               </a>
             {% else %}
               <a class="pager__nav-btn btn btn--primary btn--disabled">
-                <span class="btn__icon">⤌</span> Newer Post
+                <span class="btn__icon">←</span> Newer Post
               </a>
             {% endif %}
           </div>
@@ -36,11 +36,11 @@
             {% if post.prev  %}
               <a class="pager__nav-btn btn btn--primary"
                 href="{{ post.prev.link }}">
-                {{ post.prev.title }} <span class="btn__icon">⤍</span>
+                {{ post.prev.title }} <span class="btn__icon">→</span>
               </a>
             {% else %}
               <a class="pager__nav-btn btn btn--primary btn--disabled">
-                Older Post <span class="btn__icon">⤍</span>
+                Older Post <span class="btn__icon">→</span>
               </a>
             {% endif %}
           </div>

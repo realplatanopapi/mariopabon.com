@@ -4,11 +4,11 @@
       {% if pagination.prev %}
         <a class="pager__nav-btn btn btn--primary"
           href="{{ pagination.prev.link }}">
-          <span class="btn__icon">⤌</span> Previous Page
+          <span class="btn__icon">←</span> Previous Page
         </a>
       {% else %}
         <a class="pager__nav-btn btn btn--primary btn--disabled">
-          <span class="btn__icon">⤌</span> Previous Page
+          <span class="btn__icon">←</span> Previous Page
         </a>
       {% endif %}
     </div>
@@ -17,11 +17,11 @@
       {% if pagination.next  %}
         <a class="pager__nav-btn btn btn--primary"
           href="{{ pagination.next.link }}">
-          Next Page <span class="btn__icon">⤍</span>
+          Next Page <span class="btn__icon">→</span>
         </a>
       {% else %}
         <a class="pager__nav-btn btn btn--primary btn--disabled">
-          Next Page <span class="btn__icon">⤍</span>
+          Next Page <span class="btn__icon">→</span>
         </a>
       {% endif %}
     </div>
