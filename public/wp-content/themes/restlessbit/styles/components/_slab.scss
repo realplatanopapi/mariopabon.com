@@ -16,12 +16,12 @@
     justify-content: space-between;
   }
 
-  &:hover {
+  .slab__title {
     color: inherit;
+  }
 
-    .slab__title {
-      color: $color-brand-primary;
-    }
+  &:hover {
+    color: $color-brand-primary;
   }
 
   &:last-of-type {
