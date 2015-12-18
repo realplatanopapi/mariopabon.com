@@ -6,6 +6,8 @@ h3,
 .h3,
 h4,
 .h4,
+h5,
+.h5,
 p,
 .p {
   display: block;
@@ -19,7 +21,9 @@ h2,
 h3,
 .h3,
 h4,
-.h4 {
+.h4,
+h5,
+.h5 {
   color: $color-headings;
   font-family: font-family(sans-serif);
   font-weight: 400;
@@ -49,6 +53,13 @@ h3,
 h4,
 .h4 {
   font-size: 0.9em;
+  margin-bottom: rhythm(1);
+}
+
+h5,
+.h5 {
+  @include all-caps;
+  font-size: 0.7em;
   margin-bottom: rhythm(1);
 }
 
