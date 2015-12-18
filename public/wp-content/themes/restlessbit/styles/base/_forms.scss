@@ -7,9 +7,16 @@ textarea {
   color: #222;
   display: inline-block;
   max-width: 100%;
-  font-size: 0.8em;
   padding: 0.5em;
   width: 20em;
+
+  @include media('<md') {
+    font-size: 1em
+  }
+
+  @include media('>=md') {
+    font-size: 0.8em;
+  }
 
   &:hover {
     border-color: #888;
