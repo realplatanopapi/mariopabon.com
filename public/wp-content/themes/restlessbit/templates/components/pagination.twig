@@ -2,12 +2,12 @@
   <div class="pager__nav row">
     <div class="col-sm-6">
       {% if pagination.prev %}
-        <a class="pager__nav-btn btn btn--primary btn--small"
+        <a class="pager__nav-btn btn btn--primary"
           href="{{ pagination.prev.link }}">
           <span class="btn__icon">←</span> Previous Page
         </a>
       {% else %}
-        <a class="pager__nav-btn btn btn--primary btn--disabled btn--small">
+        <a class="pager__nav-btn btn btn--primary btn--disabled">
           <span class="btn__icon">←</span> Previous Page
         </a>
       {% endif %}
@@ -15,12 +15,12 @@
 
     <div class="col-sm-6">
       {% if pagination.next  %}
-        <a class="pager__nav-btn btn btn--primary btn--small"
+        <a class="pager__nav-btn btn btn--primary"
           href="{{ pagination.next.link }}">
           Next Page <span class="btn__icon">→</span>
         </a>
       {% else %}
-        <a class="pager__nav-btn btn btn--primary btn--disabled btn--small">
+        <a class="pager__nav-btn btn btn--primary btn--disabled">
           Next Page <span class="btn__icon">→</span>
         </a>
       {% endif %}
