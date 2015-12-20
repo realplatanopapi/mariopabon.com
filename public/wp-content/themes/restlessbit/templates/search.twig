@@ -6,13 +6,15 @@
       <h1>{{ title }}</h1>
     </div>
   </header>
-  <main class="wrapper container">
-    <section>
-      {% include 'components/loop.twig' with { posts: posts } %}
-    </section>
-    <footer>
-      {% include 'components/pagination.twig' with { pagination: pagination } %}
-    </footer>
+  <main class="section">
+    <div class="container">
+      <section>
+        {% include 'components/loop.twig' with { posts: posts } %}
+      </section>
+      <footer>
+        {% include 'components/pagination.twig' with { pagination: pagination } %}
+      </footer>
+    </div>
   </main>
 
 {% endblock %}

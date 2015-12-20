@@ -1,54 +1,56 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<article class="wrapper container">
-    <div class="longform">
-      <header class="content-header">
-        <p class="content-header__subtitle">
-          {{ post.post_date|date}}
-        </p>
-        <h1 class="content-header__title">
-          {{ post.title }}
-        </h1>
-      </header>
+	<article class="section">
+    <div class="container">
+      <div class="longform">
+        <header class="content-header">
+          <p class="content-header__subtitle">
+            {{ post.post_date|date}}
+          </p>
+          <h1 class="content-header__title">
+            {{ post.title }}
+          </h1>
+        </header>
 
-      <section>
-  			{{post.content}}
-  		</section>
-    </div>
-    <footer class="longform__footer">
-      <div class="pager">
-        <div class="pager__nav row">
-          <div class="col-sm-6">
-            {% if post.next %}
-              <a class="pager__nav-btn btn btn--primary"
-                href="{{ post.next.link }}">
-                <span class="btn__icon">←</span> {{ post.next.title }}
-              </a>
-            {% else %}
-              <a class="pager__nav-btn btn btn--primary btn--disabled">
-                <span class="btn__icon">←</span> Newer Post
-              </a>
-            {% endif %}
-          </div>
-
-          <div class="col-sm-6">
-            {% if post.prev  %}
-              <a class="pager__nav-btn btn btn--primary"
-                href="{{ post.prev.link }}">
-                {{ post.prev.title }} <span class="btn__icon">→</span>
-              </a>
-            {% else %}
-              <a class="pager__nav-btn btn btn--primary btn--disabled">
-                Older Post <span class="btn__icon">→</span>
-              </a>
-            {% endif %}
-          </div>
-        </div>
-        <div class="page__status text-center">
-          <a href="/">Back to home</a>
-        </div>
+        <section>
+    			{{post.content}}
+    		</section>
       </div>
-    </footer>
+      <footer class="longform__footer">
+        <div class="pager">
+          <div class="pager__nav row">
+            <div class="col-sm-6">
+              {% if post.next %}
+                <a class="pager__nav-btn btn btn--primary"
+                  href="{{ post.next.link }}">
+                  <span class="btn__icon">←</span> {{ post.next.title }}
+                </a>
+              {% else %}
+                <a class="pager__nav-btn btn btn--primary btn--disabled">
+                  <span class="btn__icon">←</span> Newer Post
+                </a>
+              {% endif %}
+            </div>
+
+            <div class="col-sm-6">
+              {% if post.prev  %}
+                <a class="pager__nav-btn btn btn--primary"
+                  href="{{ post.prev.link }}">
+                  {{ post.prev.title }} <span class="btn__icon">→</span>
+                </a>
+              {% else %}
+                <a class="pager__nav-btn btn btn--primary btn--disabled">
+                  Older Post <span class="btn__icon">→</span>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+          <div class="page__status text-center">
+            <a href="/">Back to home</a>
+          </div>
+        </div>
+      </footer>
+    </div>
 	</article>
 {% endblock %}
