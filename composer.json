@@ -5,15 +5,16 @@
     "type": "composer",
     "url": "http://wpackagist.org"
   }],
-  "require": {
-    "wpackagist-plugin/jetpack": "dev-trunk",
-    "wpackagist-plugin/rest-api": "dev-trunk",
-    "wpackagist-plugin/timber-library": "0.22.4"
-  },
   "extra": {
     "installer-paths": {
       "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
       "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
     }
+  },
+  "require": {
+    "wpackagist-plugin/jetpack": "dev-trunk",
+    "wpackagist-plugin/rest-api": "dev-trunk",
+    "wpackagist-plugin/timber-library": "0.22.4",
+    "wpackagist-plugin/wp-fastest-cache": "0.8.5.5"
   }
 }
