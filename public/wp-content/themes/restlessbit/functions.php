@@ -48,6 +48,11 @@ class StarterSite extends TimberSite {
 
 new StarterSite();
 
+add_action( 'wp_enqueue_scripts', function(){
+    if (is_admin()) return; // don't dequeue on the backend
+    wp_deregister_script( 'jquery' );
+});
+
 function clean_up_head() {
   // remove junk from head
   remove_action('wp_head', 'rsd_link');
