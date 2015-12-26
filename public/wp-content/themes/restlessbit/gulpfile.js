@@ -27,9 +27,6 @@ const browserify = require('browserify');
 const babelify = require('babelify');
 const eslint = require('gulp-eslint');
 
-/* Images */
-const imagemin = require('gulp-imagemin');
-
 /* Build configuration */
 const config = {
   browserSync: {
@@ -90,16 +87,6 @@ function handleBuildErrors(err) {
 
 function clean() {
   return del(config.paths.clean);
-}
-
-function compressImages() {
-  return gulp.src(config.paths.images.src)
-    .pipe(imagemin({
-      progressive: true,
-      interlaced: true
-    }))
-    .pipe(gulp.dest(config.paths.images.dest))
-    .pipe(browserSync.stream());
 }
 
 function lintScripts() {
@@ -173,10 +160,6 @@ gulp.task('clean', function() {
   return clean();
 });
 
-gulp.task('images', function() {
-  return compressImages();
-});
-
 gulp.task('styles:dev', function() {
   return buildStyles(ENV.development);
 });
@@ -199,11 +182,11 @@ gulp.task('scripts:prod', ['lint-scripts'], function() {
 
 /* Build tasks */
 gulp.task('build:dev', function(done) {
-  return runSequence('clean', ['images', 'styles:dev', 'scripts:dev'], done);
+  return runSequence('clean', ['styles:dev', 'scripts:dev'], done);
 });
 
 gulp.task('build:prod', function(done) {
-  return runSequence('clean', ['images', 'styles:prod', 'scripts:prod'], done);
+  return runSequence('clean', ['styles:prod', 'scripts:prod'], done);
 });
 
 /* Default dev task */
@@ -211,7 +194,6 @@ gulp.task('default', ['build:dev'], function() {
   browserSync.init(config.browserSync);
 
   gulp.watch(config.paths.watch, browserSync.reload);
-  gulp.watch(config.paths.images.watch, ['images']);
   gulp.watch(config.paths.styles.watch, ['styles:dev']);
   gulp.watch(config.paths.scripts.watch, ['scripts:dev']);
 });
