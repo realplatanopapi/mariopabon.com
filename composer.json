@@ -14,7 +14,6 @@
   "require": {
     "wpackagist-plugin/jetpack": "dev-trunk",
     "wpackagist-plugin/rest-api": "dev-trunk",
-    "wpackagist-plugin/timber-library": "0.22.4",
-    "wpackagist-plugin/wp-fastest-cache": "0.8.5.5"
+    "wpackagist-plugin/timber-library": "0.22.4"
   }
 }
