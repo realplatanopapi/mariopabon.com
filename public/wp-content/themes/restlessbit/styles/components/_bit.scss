@@ -1,0 +1,32 @@
+.bit {
+  @include transition(background);
+  border: 2px solid $color-brand-primary;
+  border-radius: 2px;
+  display: inline-block;
+  overflow: hidden;
+  height: 2em;
+  position: relative;
+  width: 2em;
+
+  &:before {
+    @include transition(border-radius, transform);
+    background: $color-brand-primary;
+    border-radius: 100%;
+    content: ' ';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    width: 100%;
+  }
+
+  &:hover,
+  &.active {
+    &:before {
+      border-radius: 0;
+      transform: scale(1);
+    }
+  }
+}

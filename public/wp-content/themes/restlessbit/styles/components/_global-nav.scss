@@ -16,8 +16,11 @@
 
   a {
     @include no-underline;
+  }
+
+  .global-nav__link {
+    @include no-underline;
     @include transition(color, opacity);
-    background: transparent;
     color: inherit;
     font-family: font-family(sans-serif);
     opacity: 0.5;
