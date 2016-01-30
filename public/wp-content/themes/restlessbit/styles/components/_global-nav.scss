@@ -36,5 +36,14 @@
       color: $color-brand-primary;
       opacity: 1;
     }
+
+    &.active {
+      cursor: default;
+      pointer-events: none;
+
+      &:hover {
+        color: $color-text;
+      }
+    }
   }
 }
