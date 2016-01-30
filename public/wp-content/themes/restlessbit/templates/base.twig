@@ -8,8 +8,10 @@
 	<body>
 
     <nav class="global-nav">
-      <a class="global-nav__brand" href="/">mario pabon</a>
-			<a href="/blog">blog</a>
+      <a class="global-nav__brand{% if current_uri == '/' %} active{% endif %}"
+				href="/">mario pabon</a>
+			<a class="{% if current_uri == '/blog/' %} active{% endif %}"
+				href="/blog/">blog</a>
     </nav>
 
 		{% block content %}
