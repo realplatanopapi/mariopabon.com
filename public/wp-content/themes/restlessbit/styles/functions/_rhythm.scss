@@ -1,0 +1,4 @@
+// Helps to maintain vertical rhythm.
+@function rhythm($spacing: 1) {
+  @return (line-height(base) * $spacing) + rem;
+}

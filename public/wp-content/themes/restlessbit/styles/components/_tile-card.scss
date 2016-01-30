@@ -1,0 +1,52 @@
+.tile-card {
+  background: $color-bg-dark;
+  border: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 16em;
+  justify-content: center;
+  margin-bottom: $grid-gutter-width / 2;
+  margin-top: $grid-gutter-width / 2;
+  overflow: hidden;
+  padding: rhythm(1.5);
+  position: relative;
+  z-index: 0;
+
+  @include media('>=md') {
+    padding: rhythm(2);
+  }
+
+  @include media('>=lg') {
+    height: 18em;
+    padding: rhythm(3);
+  }
+
+  &:after {
+    @include transition(transform);
+    background: $color-brand-primary;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0%;
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+
+    &:after {
+      transform: translateY(0);
+    }
+  }
+}
+
+.tile-card__title {
+  color: inherit;
+}

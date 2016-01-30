@@ -1,0 +1,40 @@
+.global-nav {
+  background: $color-bg-alt;
+  padding: rhythm(0.5) rhythm(1);
+
+  @include media('<md') {
+    text-align: center;
+
+    .global-nav__brand {
+      display: block;
+      font-size: 1.25em;
+      margin-bottom: rhythm(0.5);
+    }
+
+    .global-nav__search {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @include media('>=md') {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    font-family: font-family(sans-serif);
+    font-size: 0.9em;
+    opacity: 0.8;
+    text-transform: lowercase;
+
+    &:hover {
+      color: $color-brand-primary;
+      opacity: 1;
+    }
+  }
+}

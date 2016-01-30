@@ -3,7 +3,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "prism": "1.3.0",
-    "restlessbit": "git@github.com:restlessbit/restlessbit-styles.git"
+    "prism": "1.3.0"
   }
 }

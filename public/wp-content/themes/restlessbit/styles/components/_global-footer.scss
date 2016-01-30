@@ -1,0 +1,20 @@
+.global-footer {
+  @include all-caps;
+  background: $color-bg-dark;
+  color: lighten($color-bg-dark, 50%);
+  font-family: font-family(sans-serif);
+  font-size: 0.6em;
+  padding: rhythm(2);
+  text-align: center;
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a:hover {
+    border-color: #fff;
+    color: #fff;
+    opacity: 1;
+  }
+}

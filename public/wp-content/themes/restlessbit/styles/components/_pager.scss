@@ -1,0 +1,24 @@
+.pager {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pager__nav {
+  margin-bottom: rhythm(0.75);
+}
+
+.pager__nav-btn {
+  display: block;
+  margin: rhythm(0.75) 0;
+  text-align: center;
+}
+
+.pager__status {
+  text-align: center;
+  width: 100%;
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

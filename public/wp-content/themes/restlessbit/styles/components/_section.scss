@@ -1,0 +1,45 @@
+.section {
+  border-bottom: 1px solid darken($color-bg, 10%);
+  padding-bottom: rhythm(2);
+  padding-top: rhythm(2);
+
+  @include media('>=sm') {
+    padding-bottom: rhythm(3);
+    padding-top: rhythm(3);
+  }
+
+  @include media('>=md') {
+    padding-bottom: rhythm(4);
+    padding-top: rhythm(4);
+  }
+}
+
+.section--thin {
+  padding-bottom: rhythm(1);
+  padding-top: rhythm(1);
+
+  @include media('>=sm') {
+    padding-bottom: rhythm(2);
+    padding-top: rhythm(2);
+  }
+}
+
+.section--phat {
+  padding-bottom: rhythm(4);
+  padding-top: rhythm(4);
+
+  @include media('>=sm') {
+    padding-bottom: rhythm(6);
+    padding-top: rhythm(6);
+  }
+}
+
+.section--huge {
+  padding-bottom: rhythm(6);
+  padding-top: rhythm(6);
+
+  @include media('>=sm') {
+    padding-bottom: rhythm(8);
+    padding-top: rhythm(8);
+  }
+}
