@@ -12,6 +12,7 @@
     }
   },
   "require": {
+    "wpackagist-plugin/advanced-custom-fields": "dev-trunk",
     "wpackagist-plugin/jetpack": "dev-trunk",
     "wpackagist-plugin/rest-api": "dev-trunk",
     "wpackagist-plugin/timber-library": "0.22.4"
