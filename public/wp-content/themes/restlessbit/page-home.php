@@ -14,7 +14,7 @@ $context['links'] = array(
   'twitter' => 'https://twitter.com/restlessbit'
 );
 $context['contact'] = array(
-  'email' => 'mario@mariopabon.com'
+  'email' => 'hey@mariopabon.com'
 );
 
 Timber::render( array( 'page-home.twig'), $context );
