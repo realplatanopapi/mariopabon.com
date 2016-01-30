@@ -1,4 +1,11 @@
 @mixin no-underline {
+  color: inherit;
+
+  &:after {
+    display: none;
+    margin-top: 0;
+  }
+
   &,
   &:hover,
   &:active,

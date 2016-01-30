@@ -1,11 +1,31 @@
 a {
   @include transition(color);
-  color: inherit;
-  text-decoration: underline;
+  color: $color-text;
+  position: relative;
+  text-decoration: none;
+
+  &:after {
+    @include transition(color);
+    background: $color-text;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 0;
+    margin-top: -4px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: -1;
+  }
 
   &:hover,
   &:active,
   &:focus {
     color: $color-brand-primary;
+    text-decoration: none;
+
+    &:after {
+      background: $color-brand-primary;
+    }
   }
 }
