@@ -34,7 +34,7 @@ function project() {
 		'label'                 => __( 'Project', 'text_domain' ),
 		'description'           => __( 'Project Description', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( ),
+		'supports'              => array( 'excerpt', 'title' ),
 		'taxonomies'            => array( ),
 		'hierarchical'          => false,
 		'public'                => true,

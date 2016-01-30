@@ -88,5 +88,6 @@ function remove_admin_bar() {
 add_action('after_setup_theme', 'remove_admin_bar');
 
 
-// Register custom post types
+// Register custom post types and fields
 require get_template_directory() . '/inc/post-types.php';
+require get_template_directory() . '/inc/custom-fields.php';
