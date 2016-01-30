@@ -1,3 +1,3 @@
-# The Blog
+# mariopabon.com
 
 Built with WordPress.
