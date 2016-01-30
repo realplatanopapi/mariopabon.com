@@ -21,7 +21,9 @@
   <div class="pager__status">
     <p>Page {{ pagination.current }} of {{ pagination.total }}</p>
   </div>
-  <div class="text-center">
-    <a href="/blog/">Back to first page</a>
-  </div>
+  {% if pagination.current > 1 %}
+    <div class="text-center">
+      <a href="/blog/">Back to first page</a>
+    </div>
+  {% endif %}
 </div>
