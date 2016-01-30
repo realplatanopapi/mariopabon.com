@@ -5,12 +5,12 @@
     <div class="container">
       <div class="longform">
         <header class="content-header">
+					<h1 class="content-header__title">
+						{{ post.title }}
+					</h1>
           <p class="content-header__subtitle">
             {{ post.post_date|date}}
           </p>
-          <h1 class="content-header__title">
-            {{ post.title }}
-          </h1>
         </header>
 
         <section>

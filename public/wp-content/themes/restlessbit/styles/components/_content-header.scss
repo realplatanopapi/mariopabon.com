@@ -1,13 +1,16 @@
 .content-header {
-  margin-bottom: rhythm(1.5);
+  margin-bottom: rhythm(2);
+  text-align: center;
 }
 
 .content-header__subtitle {
-  font-size: 0.9em;
-  margin-bottom: rhythm(0.5);
-  opacity: 0.8;
+  @include all-caps;
+  font-family: font-family(sans-serif);
+  font-size: 0.7em;
+  margin-bottom: 0;
+  opacity: 0.5;
 }
 
 .content-header__title {
-  margin-bottom: 0;
+  margin-bottom: rhythm(1);
 }
