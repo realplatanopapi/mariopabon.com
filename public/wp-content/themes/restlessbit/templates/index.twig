@@ -2,18 +2,10 @@
 
 {% block content %}
   <header class="hero section">
-    <div class="container">
-      <h1 class="hero__title">Writings on all things code and design.</h1>
-    </div>
+    <h1 class="hero__title">Writings on all things code and design.</h1>
   </header>
-  <div class="section">
-    <div class="container">
-      <section>
-        {% include 'components/loop.twig' with { posts: posts } %}
-      </section>
-      <footer>
-        {% include 'components/pagination.twig' with { pagination: pagination } %}
-      </footer>
-    </div>
-  </div>
+  <section class="section">
+    {% include 'components/loop.twig' with { posts: posts } %}
+    {% include 'components/pagination.twig' with { pagination: pagination } %}
+  </section>
 {% endblock %}
