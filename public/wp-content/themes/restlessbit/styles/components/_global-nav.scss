@@ -18,6 +18,14 @@
     @include no-underline;
   }
 
+  .global-nav__link,
+  .global-nav__brand {
+    &.active {
+      cursor: default;
+      pointer-events: none;
+    }
+  }
+
   .global-nav__link {
     @include no-underline;
     @include transition(color, opacity);
@@ -29,11 +37,6 @@
     &:hover,
     &.active {
       opacity: 0.8;
-    }
-
-    &.active {
-      cursor: default;
-      pointer-events: none;
     }
   }
 }
