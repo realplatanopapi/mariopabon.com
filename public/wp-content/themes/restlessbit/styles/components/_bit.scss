@@ -4,9 +4,9 @@
   border-radius: 2px;
   display: inline-block;
   overflow: hidden;
-  height: 2em;
+  height: 1.75rem;
   position: relative;
-  width: 2em;
+  width: 1.75rem;
 
   &:before {
     @include transition(border-radius, transform);
