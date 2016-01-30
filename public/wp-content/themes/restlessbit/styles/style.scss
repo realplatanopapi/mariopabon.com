@@ -13,9 +13,15 @@ Description: The theme.
 // Vendor
 @import 'bower_components/include-media/dist/include-media';
 @import 'bower_components/modular-scale/stylesheets/modular-scale';
+@import '../bower_components/prism/themes/prism-okaidia';
+
+@import 'bower_components/bootstrap/scss/variables';
+@import 'bower_components/bootstrap/scss/mixins';
+@import 'bower_components/bootstrap/scss/utilities';
+@import 'bower_components/bootstrap/scss/utilities-responsive';
+@import 'bower_components/bootstrap/scss/utilities-spacing';
 @import 'bower_components/bootstrap/scss/bootstrap-reboot';
 @import 'bower_components/bootstrap/scss/bootstrap-grid';
-@import '../bower_components/prism/themes/prism-okaidia';
 
 // Variables
 @import 'variables/colors';

@@ -9,8 +9,15 @@
 
 .pager__nav-btn {
   display: block;
-  margin: rhythm(0.75) 0;
+  margin: rhythm(1) 0;
   text-align: center;
+  width: 100%;
+
+  @include media('>=md') {
+    display: inline-block;
+    text-align: inherit;
+    width: auto;
+  }
 }
 
 .pager__status {
