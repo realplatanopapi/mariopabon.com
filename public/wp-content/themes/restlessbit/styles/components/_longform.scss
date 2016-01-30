@@ -17,14 +17,6 @@
   ol {
     margin-bottom: rhythm(1.5);
     padding-left: rhythm(1.5);
-
-    li {
-      margin-bottom: rhythm(0);
-
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-    }
   }
 
   pre {
