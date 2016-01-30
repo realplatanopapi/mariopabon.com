@@ -16,16 +16,16 @@
 
   a {
     @include no-underline;
+    @include transition(color, opacity);
     background: transparent;
     color: inherit;
     font-family: font-family(sans-serif);
-    opacity: 0.8;
+    opacity: 0.5;
     text-transform: lowercase;
 
     &:hover,
     &.active {
-      color: $color-brand-primary;
-      opacity: 1;
+      opacity: 0.8;
     }
 
     &.active {
