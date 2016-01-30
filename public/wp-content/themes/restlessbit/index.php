@@ -12,7 +12,7 @@ if($context['pagination']['current'] == 1) {
   ]);
 
   $context['latest_posts'] = Timber::get_posts([
-    'post__not_in' => get_option('sticky_posts')
+    'ignore_sticky_posts' => true
   ]);
 
   Timber::render( array( 'first-page.twig' ), $context );
