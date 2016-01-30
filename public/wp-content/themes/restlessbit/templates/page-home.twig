@@ -2,11 +2,11 @@
 
 {% block content %}
 <header class="hero section section--phat">
- <h1>mario pabon</h1>
- <p>
-   Front end web developer living in the Hudson Valley, working to make the web a better place to be for devices and people of all shapes and sizes.
- </p>
- <ul class="list-inline">
+  <h1>mario pabon</h1>
+  <p>
+    Front end web developer living in the Hudson Valley, working to make the web a better place to be for devices and people of all shapes and sizes.
+  </p>
+  <ul class="list-inline">
     <li>
       <a href="{{ links.github }}" target="_blank">GitHub</a>
     </li>
@@ -22,66 +22,76 @@
     <li>
       <a href="mailto:{{ contact.email }}">Email me</a>
     </li>
- </ul>
+  </ul>
 </header>
 <section class="section">
- <h2>Projects</h2>
+  <h2>Projects</h2>
   <div class="row">
-   {% for project in projects %}
-     <div
-      class="{% if project.featured %}col-md-12{% else %}col-md-6{% endif %}">
-       <a class="tile-card" href="{{ project.get_field('link') }}" target="_blank">
-         <span class="h3 tile-card__title">{{ project.name }}</span>
-         <span class="tile-card__subtitle">
-           {{ project.post_excerpt }}
-         </span>
-       </a>
-     </div>
-   {% endfor %}
+    {% for project in projects %}
+    <div class="{% if project.featured %}col-md-12{% else %}col-md-6{% endif %}">
+      <a class="tile-card" href="{{ project.get_field('link') }}" target="_blank">
+        <span class="h3 tile-card__title">{{ project.name }}</span>
+        <span class="tile-card__subtitle">
+          {{ project.post_excerpt }}
+        </span>
+      </a>
+    </div>
+    {% endfor %}
   </div>
   <div class="wrapper wrapper--thin">
-   <a href="{{ links.github }}" target="_blank">View more projects on Github</a>
+    <a href="{{ links.github }}" target="_blank">View more projects on Github</a>
   </div>
 </section>
 <section class="section">
- <h2>Writing</h2>
- {% include 'components/loop.twig' with { posts: latest_posts } %}
- <div class="wrapper wrapper--thin">
-   <a href="/blog/">View more posts</a>
- </div>
-</section>
-<section class="section">
- <h2>About Me</h2>
- <p>
-   I'm a front end web developer currently working at
-   <a href="http://digitalempire.io" target="_blank">Digital Empire</a>, where I am also a part time DJ. When not writing code, I may be found at a coffeehouse near you forcing myself to write more often, or composing carefully <a href="{{ links.twitter }}" target="_blank">crafted tweets</a> for your Twitter feed.
- </p>
-</section>
-<section class="section">
-  <h2>How to contact me</h2>
-  <p>
-   If you would like to work together, have questions about code, or just want to chat, please feel free to shout at me on <a href="{{ links.twitter }}" target="_blank">Twitter</a>, or shoot me an <a href="mailto:{{ contact.email }}">email</a>.
-  </p>
-  <h3>Other ways to connect with me</h3>
-  <ul>
-   <li>
-     <a href="{{ links.github }}" target="_blank">Github</a>
-   </li>
-   <li>
-     <a href="{{ links.npm }}" target="_blank">npm</a>
-   </li>
-   <li>
-     <a href="{{ links.stackoverflow }}" target="_blank">Stack Overflow</a>
-   </li>
-   <li>
-     <a href="{{ links.medium }}" target="_blank">Medium</a>
-   </li>
-   <li>
-     <a href="{{ links.twitter }}" target="_blank">Twitter</a>
-   </li>
-  </ul>
+  <h2>Writing</h2>
+  {% include 'components/loop.twig' with { posts: latest_posts } %}
   <div class="wrapper wrapper--thin">
-   <a class="btn btn--primary" href="mailto:{{ contact.email }}">Send me an email</a>
+    <a href="/blog/">View more posts</a>
   </div>
 </section>
-{% endblock %}
+<section class="section">
+  <h2>About Me</h2>
+  <div class="flex-grid">
+    <div class="flex-grid__cell center-content">
+      <img class="center-block bubble portrait" alt="Me"
+        src="https://secure.gravatar.com/avatar/7914785c66f9c67c13dfe9cf4c99dc34?size=400" />
+    </div>
+    <div class="flex-grid__cell">
+      <p class="center-block">
+        I'm a front end web developer currently working at
+        <a href="http://digitalempire.io" target="_blank">Digital Empire</a>, where I am also a part time DJ. When not writing code, I may be found at a coffeehouse near you forcing myself to write more often, or composing carefully
+        <a href="{{ links.twitter }}" target="_blank">crafted tweets</a>
+        for your Twitter feed.
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <h2>How to contact me</h2>
+    <p>
+      If you would like to work together, have questions about code, or just want to chat, please feel free to shout at me on
+      <a href="{{ links.twitter }}" target="_blank">Twitter</a>, or shoot me an
+      <a href="mailto:{{ contact.email }}">email</a>.
+    </p>
+    <h3>Other ways to connect with me</h3>
+    <ul>
+      <li>
+        <a href="{{ links.github }}" target="_blank">Github</a>
+      </li>
+      <li>
+        <a href="{{ links.npm }}" target="_blank">npm</a>
+      </li>
+      <li>
+        <a href="{{ links.stackoverflow }}" target="_blank">Stack Overflow</a>
+      </li>
+      <li>
+        <a href="{{ links.medium }}" target="_blank">Medium</a>
+      </li>
+      <li>
+        <a href="{{ links.twitter }}" target="_blank">Twitter</a>
+      </li>
+    </ul>
+    <div class="wrapper wrapper--thin">
+      <a class="btn btn--primary" href="mailto:{{ contact.email }}">Send me an email</a>
+    </div>
+  </section>
+  {% endblock %}
