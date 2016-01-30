@@ -32,7 +32,7 @@ const config = {
   browserSync: {
     notify: false,
     open: false,
-    proxy: 'restlessbit.dev'
+    proxy: 'mariopabon.dev'
   },
   paths: {
     // Files to delete before building
