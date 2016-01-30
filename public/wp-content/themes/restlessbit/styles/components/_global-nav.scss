@@ -2,16 +2,14 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-top: rhythm(1);
+  padding: rhythm(1);
 
   @include media('<md') {
     font-size: 0.9em;
-    margin: 0 $grid-gutter-width/2;
   }
 
   @include media('>=md') {
     font-size: 0.8em;
-    margin: 0 rhythm(2);
   }
 
   a {
