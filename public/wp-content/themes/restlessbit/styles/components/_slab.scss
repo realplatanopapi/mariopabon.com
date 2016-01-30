@@ -38,6 +38,10 @@
 .slab__title {
   display: block;
   margin-bottom: rhythm(0.25);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .slab__subtitle {
