@@ -10,6 +10,13 @@ $grid-breakpoints: (
   xl: 75em
 );
 
+$container-max-widths: (
+  sm: 34rem,    // 480
+  md: 45rem,    // 720
+  lg: 50rem,    // 960
+  xl: 60rem  // 1140
+);
+
 // Number of columns in the grid.
 $grid-columns: 12;
 
