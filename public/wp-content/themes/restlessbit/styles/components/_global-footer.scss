@@ -13,15 +13,14 @@
   }
 
   a {
+    @include no-underline;
     @include transition(color, opacity);
     color: lighten($color-bg-dark, 50%);
     opacity: 0.6;
-    text-decoration: none;
 
     &:hover {
       color: #fff;
       opacity: 1;
-      text-decoration: none;
     }
   }
 }

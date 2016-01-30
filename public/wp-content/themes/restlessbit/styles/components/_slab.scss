@@ -1,11 +1,11 @@
 .slab {
+  @include no-underline;
   @include transition(border, color);
   border-bottom: 1px solid darken($color-bg, 20%);
   display: block;
   overflow: hidden;
   padding: rhythm(1.5) rhythm(1);
   position: relative;
-  text-decoration: none;
   width: 100%;
 
   &:after {
@@ -33,7 +33,6 @@
 
   &:hover {
     color: #fff;
-    text-decoration: none;
 
     &:after {
       transform: translateY(0);

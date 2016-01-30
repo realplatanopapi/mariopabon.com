@@ -1,0 +1,8 @@
+@mixin no-underline {
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+}

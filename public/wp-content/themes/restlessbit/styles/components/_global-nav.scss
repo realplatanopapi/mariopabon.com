@@ -23,19 +23,18 @@
   }
 
   a {
+    @include no-underline;
     background: transparent;
     color: inherit;
     font-family: font-family(sans-serif);
     font-size: 0.8em;
     opacity: 0.8;
-    text-decoration: none;
     text-transform: lowercase;
 
     &:hover,
     &.active {
       color: $color-brand-primary;
       opacity: 1;
-      text-decoration: none;
     }
 
     &.active {
