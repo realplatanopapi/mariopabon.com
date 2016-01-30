@@ -6,7 +6,7 @@
       <h1>{{ title }}</h1>
     </div>
   </header>
-  <main class="section">
+  <div class="section">
     <div class="container">
       <section>
         {% include 'components/loop.twig' with { posts: posts } %}
@@ -15,6 +15,6 @@
         {% include 'components/pagination.twig' with { pagination: pagination } %}
       </footer>
     </div>
-  </main>
+  </div>
 
 {% endblock %}
