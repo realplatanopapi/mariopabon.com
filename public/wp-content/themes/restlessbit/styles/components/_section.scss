@@ -7,11 +7,6 @@
     padding-bottom: rhythm(3);
     padding-top: rhythm(3);
   }
-
-  @include media('>=md') {
-    padding-bottom: rhythm(4);
-    padding-top: rhythm(4);
-  }
 }
 
 .section--thin {
