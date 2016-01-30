@@ -3,10 +3,11 @@ a {
   color: $color-text;
   position: relative;
   text-decoration: none;
+  z-index: 0;
 
   &:after {
     @include transition(color);
-    background: $color-text;
+    background: darken($color-text, 50%);
     content: '';
     display: block;
     height: 2px;
