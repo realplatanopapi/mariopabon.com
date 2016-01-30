@@ -1,0 +1,4 @@
+.share-icon {
+  @include no-underline;
+  @include transition(opacity);
+}
