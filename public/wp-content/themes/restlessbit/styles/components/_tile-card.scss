@@ -1,6 +1,5 @@
 .tile-card {
   background: $color-bg-dark;
-  border: 0;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -11,6 +10,7 @@
   overflow: hidden;
   padding: rhythm(1.5);
   position: relative;
+  text-decoration: none;
   z-index: 0;
 
   @include media('>=md') {
@@ -40,6 +40,7 @@
   &:focus,
   &:active {
     color: #fff;
+    text-decoration: none;
 
     &:after {
       transform: translateY(0);
