@@ -1,37 +1,11 @@
 .slab {
   @include transition(border, color);
-  border-bottom: 1px solid darken($color-bg, 50%);
+  border-bottom: 1px solid darken($color-bg, 20%);
+  display: block;
   overflow: hidden;
-  padding-left: rhythm(0.5);
-  padding-right: rhythm(0.5);
+  padding: rhythm(1.5) rhythm(1);
   position: relative;
-
-  @include media('<md') {
-    display: block;
-    padding-bottom: rhythm(1);
-    padding-top: rhythm(1);
-    width: 100%;
-
-    &:last-of-type {
-      margin-bottom: rhythm(1);
-    }
-
-    .slab__title {
-      margin-bottom: rhythm(0.5);
-    }
-  }
-
-  @include media('>=md') {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: rhythm(1.5);
-    padding-top: rhythm(1.5);
-
-    &:last-of-type {
-      margin-bottom: rhythm(1.5);
-    }
-  }
+  width: 100%;
 
   &:after {
     @include transition(transform);
@@ -41,7 +15,7 @@
     height: 100%;
     left: 0;
     position: absolute;
-    top: 0;
+    top: 1%;
     transform: translateY(100%);
     width: 100%;
     z-index: -1;
@@ -63,10 +37,10 @@
 
 .slab__title {
   display: block;
-  margin-bottom: 0;
+  margin-bottom: rhythm(0.25);
 }
 
 .slab__subtitle {
-  font-size: 0.9em;
-  opacity: 0.9;
+  font-size: 0.8em;
+  opacity: 0.6;
 }
