@@ -55,11 +55,13 @@ Description: The theme.
 @import 'components/bit';
 @import 'components/btn';
 @import 'components/content-header';
+@import 'components/flex-grid';
 @import 'components/global-nav';
 @import 'components/global-footer';
 @import 'components/hero';
 @import 'components/longform';
 @import 'components/pager';
+@import 'components/portrait';
 @import 'components/section';
 @import 'components/share-icon';
 @import 'components/slab';
@@ -68,6 +70,8 @@ Description: The theme.
 
 // Helpers
 @import 'helpers/accent';
+@import 'helpers/bubble';
+@import 'helpers/center-content';
 @import 'helpers/list-bare';
 @import 'helpers/list-inline';
 @import 'helpers/text-center';

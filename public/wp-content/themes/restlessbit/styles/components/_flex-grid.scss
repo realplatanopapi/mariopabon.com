@@ -5,9 +5,5 @@
 }
 
 .flex-grid__cell {
-  flex: 1 1 16rem;
-}
-
-.flex-grid__cell--sm {
-  flex-basis: 8rem;
+  flex: 1 1 auto;
 }
