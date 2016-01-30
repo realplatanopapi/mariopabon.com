@@ -6,11 +6,13 @@
   @include media('<md') {
     font-size: 0.9em;
     padding: $grid-gutter-width/2;
+    padding-bottom: 0;
   }
 
   @include media('>=md') {
     font-size: 0.8em;
     padding: rhythm(1);
+    padding-bottom: 0;
   }
 
   a {
