@@ -6,7 +6,7 @@
 {% endblock %}
 
 	<body>
-
+		<a class="sr-only js-skip-link" href="#main">Skip to main content</a>
     <nav class="global-nav">
       <a class="global-nav__brand bit{% if current_uri == '/' %} active{% endif %}"
 				href="/" {% if current_uri == '/' %}aria-disabled="true"{% endif %}>
@@ -18,7 +18,7 @@
 				href="/blog/" {% if current_uri == '/blog/' %}aria-disabled="true"{% endif %}>blog</a>
     </nav>
 
-		<main class="container">
+		<main id="main" class="container">
 			{% block content %}
 				Sorry, no content
 			{% endblock %}
