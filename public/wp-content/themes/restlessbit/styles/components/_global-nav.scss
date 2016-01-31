@@ -29,15 +29,14 @@
 
   .global-nav__link {
     @include no-underline;
-    @include transition(color, opacity);
-    color: inherit;
+    @include transition(opacity);
+    color: lighten($color-text, 10%);
     font-family: font-family(sans-serif);
     opacity: 0.5;
     text-transform: lowercase;
 
     &:hover,
     &.active {
-      color: $color-brand-primary;
       opacity: 1;
     }
   }
