@@ -1,6 +1,5 @@
 {
   "private": true,
-  "version": "1.0.0",
   "scripts": {
     "start": "gulp",
     "prebuild": "composer update && npm install && bower install",
