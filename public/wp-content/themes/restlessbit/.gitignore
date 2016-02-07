@@ -1,2 +1,6 @@
+# Build output
 style.css
 assets/
+
+# Dependencies
+vendor/
