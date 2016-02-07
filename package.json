@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.10.0",
+  "version": "1.0.0",
   "scripts": {
     "release:major": "npm version major -m '%s [deploy: production]' && git push --tags",
     "release:minor": "npm version minor -m '%s [deploy: production]' && git push --tags",
