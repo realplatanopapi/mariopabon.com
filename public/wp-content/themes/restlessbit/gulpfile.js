@@ -19,7 +19,7 @@ const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const combineMQ = require('gulp-merge-media-queries');
-const cssMin = require('gulp-minify-css');
+const cssMin = require('gulp-cssnano');
 
 /* Scripts */
 const uglify = require('gulp-uglify');
