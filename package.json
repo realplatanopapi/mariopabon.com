@@ -2,6 +2,6 @@
   "private": true,
   "version": "0.10.0",
   "scripts": {
-    "release:minor": "npm version minor -m '%s [deploy: production]'"
+    "release:minor": "npm version minor -m '%s [deploy: production]' && git push --tags"
   }
 }
