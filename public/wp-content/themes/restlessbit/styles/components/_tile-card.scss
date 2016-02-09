@@ -49,6 +49,10 @@
 
 .tile-card__title {
   color: inherit;
+  display: block;
+  font-family: font-family(sans-serif);
+  font-size: 1.2em;
+  margin-bottom: rhythm(0.5);
 }
 
 .tile-card__subtitle {
