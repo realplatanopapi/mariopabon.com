@@ -30,10 +30,10 @@
     {% for project in projects %}
     <div class="{% if project.featured %}col-md-12{% else %}col-md-6{% endif %}">
       <a class="tile-card" href="{{ project.get_field('link') }}" target="_blank">
-        <span class="tile-card__title">{{ project.name }}</span>
-        <span class="tile-card__content">
+        <h3 class="tile-card__title">{{ project.name }}</h3>
+        <p class="tile-card__content">
           {{ project.post_excerpt }}
-        </span>
+        </p>
       </a>
     </div>
     {% endfor %}
