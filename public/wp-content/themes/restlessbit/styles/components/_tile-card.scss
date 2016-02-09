@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   height: 16em;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: $grid-gutter-width / 2;
   margin-top: $grid-gutter-width / 2;
   overflow: hidden;
@@ -13,13 +13,9 @@
   position: relative;
   z-index: 0;
 
-  @include media('>=md') {
-    padding: rhythm(2);
-  }
-
   @include media('>=lg') {
     height: 18em;
-    padding: rhythm(3);
+    padding: rhythm(2);
   }
 
   &:after {
