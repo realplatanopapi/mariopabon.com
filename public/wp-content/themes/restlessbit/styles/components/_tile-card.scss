@@ -55,7 +55,7 @@
 }
 
 .tile-card__title {
-  font-size: 1.2em;
+  font-size: ms(1);
   letter-spacing: 0;
   text-transform: none;
 }
@@ -67,7 +67,6 @@
 }
 
 .tile-card__content {
-  font-size: 0.9em;
+  font-size: 0.95em;
   margin: 0;
-  opacity: 0.9;
 }
