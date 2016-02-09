@@ -35,7 +35,7 @@ function project() {
 		'description'           => __( 'Project Description', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'excerpt', 'title' ),
-		'taxonomies'            => array( ),
+		'taxonomies'            => array( 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
