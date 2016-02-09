@@ -21,7 +21,6 @@
     "gulp-cssnano": "2.1.0",
     "gulp-eslint": "1.1.0",
     "gulp-merge-media-queries": "0.2.1",
-    "gulp-minify-css": "1.2.1",
     "gulp-plumber": "1.0.1",
     "gulp-rename": "1.2.2",
     "gulp-sass": "2.1.0",
