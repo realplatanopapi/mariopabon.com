@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "gulp",
-    "prebuild": "composer update && npm install && bower install",
+    "deps": "composer update && npm install && bower install",
     "build": "gulp build:prod"
   },
   "devDependencies": {
