@@ -1,7 +1,6 @@
 .bit {
   @include transition(background);
   border: 2px solid $color-brand-primary;
-  border-radius: 2px;
   display: inline-block;
   overflow: hidden;
   height: 1.75rem;
@@ -11,7 +10,6 @@
   &:before {
     @include transition(border-radius, transform);
     background: $color-brand-primary;
-    border-radius: 100%;
     content: ' ';
     display: block;
     height: 100%;
