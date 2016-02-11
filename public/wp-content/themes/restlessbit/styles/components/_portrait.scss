@@ -1,5 +1,6 @@
 .portrait {
-  display: inline-block;
+  display: block;
   margin: rhythm(1);
   max-width: 14rem;
+  overflow: hidden;
 }
