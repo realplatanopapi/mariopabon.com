@@ -32,6 +32,7 @@
     @include transition(opacity);
     color: lighten($color-text, 10%);
     font-family: font-family(sans-serif);
+    font-weight: 700;
     opacity: 0.5;
     text-transform: lowercase;
 
