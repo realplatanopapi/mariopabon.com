@@ -1,0 +1,25 @@
+.profile {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include media('>=md') {
+    flex-wrap: nowrap;
+  }
+}
+
+.profile__image,
+.profile__desc {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.profile__image {
+  flex: 1 1 14em;
+}
+
+.profile__desc {
+  flex: 1 1 auto;
+}

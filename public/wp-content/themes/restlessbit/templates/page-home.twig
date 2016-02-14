@@ -56,47 +56,48 @@
 </section>
 <section class="section">
   <h2>About Me</h2>
-  <div class="flex-grid">
-    <div class="flex-grid__cell flex-grid__cell--no-grow center-content">
+  <div class="profile">
+    <div class="profile__image">
       <div class="portrait bubble">
         <img alt="Me"
           src="https://secure.gravatar.com/avatar/7914785c66f9c67c13dfe9cf4c99dc34?size=400" />
       </div>
     </div>
-    <div class="flex-grid__cell">
-      <p class="center-block">
+    <div class="profile__desc">
+      <p>
         I'm a front end web developer working at
         <a href="http://digitalempire.io" target="_blank">Digital Empire</a>, where I also DJ part-time. When not writing code I may be found playing outside, chilling at the local coffeehouse, or composing
         <a href="{{ links.twitter }}" target="_blank">carefully crafted tweets</a>
         for your Twitter feed.
       </p>
     </div>
-  </section>
-  <section class="section">
-    <h2>How to contact me</h2>
-    <p>
-      If you would like to work together, ask me a question, or just want to chat, you can shoot me an <a href="mailto:{{ contact.email }}">email</a> or shout at me on <a href="{{ links.twitter }}" target="_blank">Twitter</a>.
-    </p>
-    <h3>Other ways to connect with me</h3>
-    <ul>
-      <li>
-        <a href="{{ links.github }}" target="_blank">Github</a>
-      </li>
-      <li>
-        <a href="{{ links.npm }}" target="_blank">npm</a>
-      </li>
-      <li>
-        <a href="{{ links.stackoverflow }}" target="_blank">Stack Overflow</a>
-      </li>
-      <li>
-        <a href="{{ links.medium }}" target="_blank">Medium</a>
-      </li>
-      <li>
-        <a href="{{ links.twitter }}" target="_blank">Twitter</a>
-      </li>
-    </ul>
-    <div class="wrapper wrapper--thin">
-      <a class="btn btn--primary" href="mailto:{{ contact.email }}">Send me an email</a>
-    </div>
-  </section>
-  {% endblock %}
+  </div>
+</section>
+<section class="section">
+  <h2>How to contact me</h2>
+  <p>
+    If you would like to work together, ask me a question, or just want to chat, you can shoot me an <a href="mailto:{{ contact.email }}">email</a> or shout at me on <a href="{{ links.twitter }}" target="_blank">Twitter</a>.
+  </p>
+  <h3>Other ways to connect with me</h3>
+  <ul>
+    <li>
+      <a href="{{ links.github }}" target="_blank">Github</a>
+    </li>
+    <li>
+      <a href="{{ links.npm }}" target="_blank">npm</a>
+    </li>
+    <li>
+      <a href="{{ links.stackoverflow }}" target="_blank">Stack Overflow</a>
+    </li>
+    <li>
+      <a href="{{ links.medium }}" target="_blank">Medium</a>
+    </li>
+    <li>
+      <a href="{{ links.twitter }}" target="_blank">Twitter</a>
+    </li>
+  </ul>
+  <div class="wrapper wrapper--thin">
+    <a class="btn btn--primary" href="mailto:{{ contact.email }}">Send me an email</a>
+  </div>
+</section>
+{% endblock %}
