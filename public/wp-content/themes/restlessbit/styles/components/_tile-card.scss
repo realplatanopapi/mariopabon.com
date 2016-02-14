@@ -52,8 +52,10 @@
 }
 
 .tile-card__title {
+  border-top: 4px solid #fff;
   font-size: ms(1);
   letter-spacing: 0;
+  padding-top: rhythm(0.5);
   text-transform: none;
 }
 
