@@ -8,7 +8,7 @@ $font-family: (
 }
 
 $line-height: (
-  base: 1.5,
+  base: 1.618,
   headings: 1.25
 );
 @function line-height($key) {
