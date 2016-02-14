@@ -40,6 +40,15 @@
     &:after {
       transform: translateY(0);
     }
+
+    .tile-card__title {
+      border-top-color: #fff;
+    }
+
+    .tile-card__subtitle,
+    .tile-card__content {
+      color: #fff;
+    }
   }
 }
 
@@ -51,8 +60,14 @@
   margin-bottom: rhythm(0.5);
 }
 
+.tile-card__subtitle,
+.tile-card__content {
+  @include transition(color);
+}
+
 .tile-card__title {
-  border-top: 4px solid #fff;
+  @include transition(border);
+  border-top: 4px solid rgba(#fff, 0.9);
   font-size: ms(1);
   letter-spacing: 0;
   padding-top: rhythm(0.5);
