@@ -12,3 +12,12 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+# jekyll-assets
+assets:
+  sources:
+    - node_modules
+    - _js
+
+gems:
+  - jekyll-assets
