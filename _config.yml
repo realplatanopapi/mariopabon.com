@@ -14,8 +14,11 @@ contact_email: me@mariopabon.com
 # Build settings
 markdown: kramdown
 
+highlighter: none
+
 kramdown:
   input: GFM
+  hard_wrap: false
 
 # Enable pagination
 paginate: 10

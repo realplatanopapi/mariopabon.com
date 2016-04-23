@@ -8,21 +8,24 @@ Have you ever wanted to share code between your projects, but didn’t want to d
 
 #### Requiring a Git repo as a repository in package.json
 
-<pre><code class=“language-json”>{
+```json
+{
   "dependencies": {
-    "custompackage": “git://url-to-repo.com/user/repo.git"
+    "custompackage": "git://url-to-repo.com/user/repo.git"
   }
 }
-</code></pre>
+```
 
 Or, if your repo is on GitHub, you can use this shortcut:
 
-<pre><code class=“language-json”>{
+```json
+{
   "dependencies": {
-    "custompackage": “githubname/reponame”
+    "custompackage": "githubname/reponame"
   }
 }
-</code></pre>
+```
+
 
 Check out the <a href="https://docs.npmjs.com/cli/install" target="_blank">npm docs</a> for more info on installing packages from sources other than npm.
 
@@ -34,18 +37,22 @@ Preparing a repo to work with npm is as simple as creating a package.json file a
 
 #### package.json for a private package
 
-<pre><code class=“language-json”>{
+```json
+{
   “private”: true,
   “name”: “custompackage”
-}</code></pre>
+}
+```
 
 If you’re making a JavaScript library, you probably want to make it so that you can require or import your library with CommonJS or ES6 modules. If so, set the “main” property of package.json:
 
 #### Specifying the main file for CommonJS or ES6 modules
 
-<pre><code class=“language-json”>{
+```json
+{
   “main”: “filename.js”
-}</code></pre>
+}
+```
 
 Just make sure that whatever file you specify is actually exporting something. Then, you can require/import your package as you would any other npm dependency.
 
@@ -53,18 +60,26 @@ Just make sure that whatever file you specify is actually exporting something. T
 
 First, install your private package with npm:
 
-<pre><code class="language-bash">$ npm install -S git://url-to-repo.com/user/repo.git</code></pre>
+```bash
+$ npm install -S git://url-to-repo.com/user/repo.git
+```
 
 Now your entire repo will be available in your node_modules directory as an npm package, under the name you configured in the package’s package.json file.
 
 If you created a package to be used with a JavaScript module system like CommonJS or ES6 modules, you can require your package with the package’s name:
 
 #### CommonJS
-<pre><code class=“language-javascript”>const aFunction = require(‘custompackage’);
-aFunction(); // yay</code></pre>
+
+```jsx
+const aFunction = require(‘custompackage’);
+aFunction(); // yay
+```
 
 #### ES6 Modules
-<pre><code class=“language-javascript”>import aFunction from ‘custompackage’;
-aFunction(); // more yay</code></pre>
+
+```jsx
+import aFunction from ‘custompackage’;
+aFunction(); // more yay
+```
 
 Slick, right?
