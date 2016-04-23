@@ -4,6 +4,7 @@
 _site
 
 # Dependencies
+Gemfile.lock
 node_modules
 
 # Misc
