@@ -1,4 +1,5 @@
-source :rubygems
+source 'https://rubygems.org'
+ruby '2.2.1'
 
-gem "jekyll-assets"
-gem "jekyll-paginate"
+gem 'jekyll-assets'
+gem 'jekyll-paginate'
