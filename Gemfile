@@ -1,4 +1,4 @@
-source "http://rubygems.org"
+source :rubygems
 
 group :jekyll_plugins do
   gem "jekyll-assets"
