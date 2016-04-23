@@ -1,6 +1,4 @@
 source :rubygems
 
-group :jekyll_plugins do
-  gem "jekyll-assets"
-  gem "jekyll-paginate"
-end
+gem "jekyll-assets"
+gem "jekyll-paginate"
