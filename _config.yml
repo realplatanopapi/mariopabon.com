@@ -17,6 +17,9 @@ contact_email: me@mariopabon.com
 # Build settings
 markdown: kramdown
 
+kramdown:
+  input: GFM
+
 # Enable pagination
 paginate: 10
 paginate_path: "/page/:num/"
