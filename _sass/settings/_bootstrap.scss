@@ -1,0 +1,23 @@
+// Override Bootstrap settings here.
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 540px,
+  md: 768px,
+  lg: 950px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 480px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+// Number of columns in the grid.
+$grid-columns: 12;
+
+// Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width: 2em;

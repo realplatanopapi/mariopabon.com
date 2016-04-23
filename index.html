@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<header class="hero section">
+  <h1>mario pabon</h1>
+  <p>
+    Web developer working to make this world a nicer place to be, one line of code at a time.
+  </p>
+  <ul class="list-inline">
+    <li>
+      <a href="{{ site.link_github }}" target="_blank">GitHub</a>
+    </li>
+    <span class="list-inline__spacer"></span>
+    <li>
+      <a href="{{ site.link_twitter }}" target="_blank">Twitter</a>
+    </li>
+    <span class="list-inline__spacer"></span>
+    <li>
+      <a href="mailto:{{ site.contact_email }}">Email me</a>
+    </li>
+  </ul>
+</header>
+
+<section class="section">
+  <ul class="list-bare">
+    {% for post in paginator.posts %}
+    <li>
+      <a class="slab" href="{{ post.url | prepend: site.baseurl }}">
+        <span class="h3 slab__title">{{ post.title }}</span>
+        <span class="slab__subtitle">{{ post.date|| date: "%b %-d, %Y" }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <nav class="pager">
+    <div class="pager__nav row">
+      <div class="col-md-6">
+        {% if paginator.previous_page %}
+          <a class="pager__nav-btn"
+            href="{{ paginator.previous_page_path }}">
+            <span class="btn__icon">←</span> Newer Posts
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="col-md-6 text-xs-right">
+        {% if paginator.next_page  %}
+          <a class="pager__nav-btn"
+            href="{{ paginator.next_page_path }}">
+            Older Posts <span class="btn__icon">→</span>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="pager__status">
+      <p>Page {{ paginator.page }} of {{ paginator.total_pages }}</p>
+    </div>
+    {% if paginator.page > 1 %}
+      <div class="text-center">
+        <a href="/">Back to first page</a>
+      </div>
+    {% endif %}
+  </nav>
+</section>

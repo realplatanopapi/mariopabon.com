@@ -1,0 +1,9 @@
+<nav class="global-nav">
+  <a class="global-nav__brand bit{% if page.path == 'index.html' %} active{% endif %}"
+    href="/" {% if page.path == 'index.html' %}aria-disabled="true"{% endif %}>
+    <span class="sr-only">
+      Home
+    </span>
+  </a>
+  <a class="global-nav__link{% if page.path == 'about.html' %} active{% endif %}" href="/about/">about</a>
+</nav>

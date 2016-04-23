@@ -1,21 +1,13 @@
-/vendor/*
-/public/*
+# Build output
+.asset-cache
+.sass-cache
+_site
 
-!/public/wp-content/
-public/wp-content/*
-
-!/public/wp-content/themes/
-public/wp-content/themes/*
-
-!/public/wp-content/themes/restlessbit/
-
-.vagrant
-composer.lock
-
+# Dependencies
+Gemfile.lock
 node_modules
-bower_components
 
-.npm-debug.log
-
+# Misc
+npm-debug.log
 .DS_Store
 Thumbs.db
