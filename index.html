@@ -2,22 +2,18 @@
 layout: default
 ---
 
-<div class="home">
+<header class="hero section">
+  <h1 class="hero__title">Thoughts on code and design.</h1>
+  <p class="h5 hero__subtitle">From Mario Pabon</p>
+</header>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<ul class="list-bare">
+  {% for post in site.posts %}
+  <li>
+    <a class="slab" href="{{ post.url | prepend: site.baseurl }}">
+      <span class="h3 slab__title">{{ post.title }}</span>
+      <span class="slab__subtitle">{{ post.date|| date: "%b %-d, %Y" }}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
