@@ -1,4 +1,11 @@
+# Build output
+.sass-cache
+_site
+
+# Dependencies
 node_modules
+
+# Misc
 npm-debug.log
 .DS_Store
 Thumbs.db
