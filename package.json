@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "version": "1.4.0",
+  "scripts": {
+    "release:major": "npm version major -m '%s'",
+    "release:minor": "npm version minor -m '%s'",
+    "release:patch": "npm version patch -m '%s'",
+    "postversion": "git push && git push --tags"
+  }
+}
