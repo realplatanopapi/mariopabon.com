@@ -1,0 +1,87 @@
+.tile-card {
+  @include no-underline;
+  background: $color-bg-dark;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 16em;
+  justify-content: flex-start;
+  margin-bottom: $grid-gutter-width / 2;
+  margin-top: $grid-gutter-width / 2;
+  overflow: hidden;
+  padding: rhythm(1.5);
+  position: relative;
+  z-index: 0;
+
+  @include media('>=lg') {
+    height: 18em;
+    padding: rhythm(2);
+  }
+
+  &:after {
+    @include transition(transform);
+    background: $color-brand-primary;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0%;
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+
+    &:after {
+      transform: translateY(0);
+    }
+
+    .tile-card__title {
+      border-top-color: #fff;
+    }
+
+    .tile-card__subtitle,
+    .tile-card__content {
+      color: #fff;
+    }
+  }
+}
+
+.tile-card__title,
+.tile-card__subtitle {
+  display: block;
+  font-family: font-family(sans-serif);
+  font-weight: 700;
+  margin-bottom: rhythm(0.5);
+}
+
+.tile-card__subtitle,
+.tile-card__content {
+  @include transition(color);
+}
+
+.tile-card__title {
+  @include transition(border);
+  border-top: 4px solid rgba(#fff, 0.9);
+  font-size: ms(1);
+  letter-spacing: 0;
+  padding-top: rhythm(0.5);
+  text-transform: none;
+}
+
+.tile-card__subtitle {
+  @include all-caps;
+  color: rgba(#fff, 0.4);
+  font-size: 0.6em;
+}
+
+.tile-card__content {
+  color: rgba(#fff, 0.8);
+  font-size: 0.9em;
+  margin: 0;
+}

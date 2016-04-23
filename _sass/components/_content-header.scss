@@ -1,0 +1,17 @@
+.content-header {
+  margin-bottom: rhythm(2);
+  text-align: center;
+}
+
+.content-header__subtitle {
+  @include all-caps;
+  font-family: font-family(sans-serif);
+  font-size: 0.7em;
+  font-weight: 700;
+  margin-bottom: 0;
+  opacity: 0.5;
+}
+
+.content-header__title {
+  margin-bottom: rhythm(0.5);
+}

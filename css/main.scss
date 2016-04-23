@@ -3,50 +3,74 @@
 ---
 @charset "utf-8";
 
+// Override vendor settings
+@import 'settings/bootstrap';
+@import 'settings/include-media';
+@import 'settings/modular-scale';
 
+// Vendor
+@import '../node_modules/include-media/dist/include-media';
+@import '../node_modules/modularscale-sass/stylesheets/modular-scale';
+@import '../node_modules/prismjs/themes/prism-okaidia.css';
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/bootstrap/scss/utilities-responsive';
+@import '../node_modules/bootstrap/scss/utilities-spacing';
+@import '../node_modules/bootstrap/scss/bootstrap-reboot';
+@import '../node_modules/bootstrap/scss/bootstrap-grid';
 
-$spacing-unit:     30px;
+// Variables
+@import 'variables/colors';
+@import 'variables/layers';
+@import 'variables/typography';
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+// Functions
+@import 'functions/rhythm';
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// Mixins
+@import 'mixins/all-caps';
+@import 'mixins/no-underline';
+@import 'mixins/transition';
 
-// Width of the content area
-$content-width:    800px;
+// Animations
+@import 'animations/slide-in';
 
-$on-palm:          600px;
-$on-laptop:        800px;
+// Base styles
+@import 'base/body';
+@import 'base/blockquote';
+@import 'base/code';
+@import 'base/cite';
+@import 'base/forms';
+@import 'base/images';
+@import 'base/links';
+@import 'base/lists';
+@import 'base/pre';
+@import 'base/typography';
 
+// Components
+@import 'components/bit';
+@import 'components/btn';
+@import 'components/content-header';
+@import 'components/flex-grid';
+@import 'components/global-nav';
+@import 'components/global-footer';
+@import 'components/hero';
+@import 'components/longform';
+@import 'components/pager';
+@import 'components/portrait';
+@import 'components/profile';
+@import 'components/section';
+@import 'components/share-icon';
+@import 'components/slab';
+@import 'components/tile-card';
+@import 'components/wrapper';
 
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+// Helpers
+@import 'helpers/accent';
+@import 'helpers/bubble';
+@import 'helpers/center-content';
+@import 'helpers/list-bare';
+@import 'helpers/list-inline';
+@import 'helpers/text-center';

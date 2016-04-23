@@ -6,5 +6,11 @@
     "release:minor": "npm version minor -m '%s'",
     "release:patch": "npm version patch -m '%s'",
     "postversion": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "bootstrap": "4.0.0-alpha.2",
+    "include-media": "1.4.2",
+    "modularscale-sass": "2.1.1",
+    "prismjs": "1.4.1"
   }
 }

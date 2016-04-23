@@ -1,0 +1,7 @@
+$layer: (
+  content: 0
+);
+
+@function layer($key) {
+  @return map-get($layer, $key);
+}

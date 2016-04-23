@@ -1,0 +1,38 @@
+input[type="text"],
+input[type="email"],
+textarea {
+  @include transition(border);
+  background: #fff;
+  border: 1px solid transparent;
+  color: #222;
+  display: inline-block;
+  max-width: 100%;
+  padding: 0.5em;
+  width: 20em;
+
+  @include media('<md') {
+    font-size: 1em
+  }
+
+  @include media('>=md') {
+    font-size: 0.8em;
+  }
+
+  &:hover {
+    border-color: #888;
+  }
+
+  &:focus {
+    border-color: $color-brand-primary;
+    outline: 0;
+  }
+}
+
+textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+button {
+  border: 0;
+}
