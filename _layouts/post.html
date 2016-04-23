@@ -1,15 +1,26 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+<article class="section longform">
+  <header class="content-header">
+		<h1 class="content-header__title">
+			{{ page.title }}
+		</h1>
+    <time class="content-header__subtitle" datetime={{ post.post_date }}>
+      {{ page.date | date: "%b %-d, %Y" }}
+    </time>
   </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+  <section>
+		{{ content }}
+	</section>
 
-</div>
+  <nav class="longform__footer">
+    <div class="pager">
+      <div class="page__status text-center">
+				<a href="/">View more posts</a>
+      </div>
+    </div>
+  </nav>
+</article>
