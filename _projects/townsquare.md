@@ -1,8 +1,8 @@
 ---
 title: "Townsquare"
-tags: "Node, React"
+tags: "React, Redux, Socket.IO, Node, MongoDB"
 link: "http://townsquarechat.com"
 featured: true
 description:
-  "Soluta ante? Provident vehicula vulputate facilisi nihil posuere numquam duis, modi eiusmod varius porro parturient."
+  "Location based chat. Sign in with Facebook, click a button, and be instantly placed in a chat room with other people near you."
 ---
