@@ -12,8 +12,10 @@
 }
 
 .btn__icon {
+  display: inline-block;
   font-size: 1.5em;
   margin: 0 0.25em;
+  vertical-align: middle;
 }
 
 .btn--primary {
