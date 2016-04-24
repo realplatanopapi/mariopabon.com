@@ -4,7 +4,17 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @include media('>=md') {
+  @include media('<sm') {
+    h1, .h1, h2, .h2, h3, .h3 {
+      text-align: center;
+    }
+
+    .profile__image {
+      margin-bottom: rhythm(1);
+    }
+  }
+
+  @include media('>=sm') {
     flex-wrap: nowrap;
   }
 }
@@ -18,7 +28,9 @@
 
 .profile__image {
   flex: 1 1 14em;
+  height: 14em;
   padding: rhythm(0.5);
+  width: 14em;
 }
 
 .profile__desc {
