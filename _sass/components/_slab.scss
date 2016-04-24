@@ -2,11 +2,28 @@
   @include no-underline;
   @include transition(border, color);
   border-bottom: 1px solid darken($color-bg, 20%);
-  display: block;
   overflow: hidden;
-  padding: rhythm(1.5) rhythm(1);
+  padding: rhythm(1.5) ($grid-gutter-width / 2);
   position: relative;
   width: 100%;
+
+  @include media('<md') {
+    display: block;
+
+    .slab__title {
+      margin-bottom: rhythm(0.25);
+    }
+  }
+
+  @include media('>=md') {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+
+    .slab__title {
+      margin-bottom: 0;
+    }
+  }
 
   &:after {
     @include transition(transform);
@@ -24,6 +41,7 @@
 
   .slab__title {
     color: inherit;
+    letter-spacing: 0;
     text-transform: none;
   }
 
@@ -47,6 +65,6 @@
 }
 
 .slab__subtitle {
-  font-size: 0.8em;
-  opacity: 0.6;
+  font-size: 0.9em;
+  opacity: 0.8;
 }
