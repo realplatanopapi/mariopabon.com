@@ -1,6 +1,11 @@
 ---
 title: "Townsquare"
-tags: "React, Redux, Socket.IO, Node, MongoDB"
+tags:
+  - React
+  - Redux
+  - Socket.IO
+  - Node
+  - MongoDB
 link: "http://townsquarechat.com"
 featured: true
 description:
