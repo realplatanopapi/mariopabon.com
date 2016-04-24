@@ -26,7 +26,7 @@ layout: default
   </ul>
 </header>
 
-<section class="section">
+<section id="posts" class="section">
   <h2 class="m-b-3">Writing</h2>
   <ul class="list-bare">
     {% for post in paginator.posts %}
@@ -44,7 +44,7 @@ layout: default
       <div class="col-md-6">
         {% if paginator.previous_page %}
           <a class="pager__nav-btn"
-            href="{{ paginator.previous_page_path }}">
+            href="{{ paginator.previous_page_path }}#posts">
             <span class="btn__icon">←</span> Newer Posts
           </a>
         {% endif %}
@@ -53,7 +53,7 @@ layout: default
       <div class="col-md-6 text-xs-right">
         {% if paginator.next_page  %}
           <a class="pager__nav-btn"
-            href="{{ paginator.next_page_path }}">
+            href="{{ paginator.next_page_path }}#posts">
             Older Posts <span class="btn__icon">→</span>
           </a>
         {% endif %}
@@ -64,7 +64,7 @@ layout: default
     </div>
     {% if paginator.page > 1 %}
       <div class="text-center">
-        <a href="/">Back to first page</a>
+        <a href="/#posts">Back to first page</a>
       </div>
     {% endif %}
   </nav>
