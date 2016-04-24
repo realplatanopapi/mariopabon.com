@@ -24,7 +24,7 @@ Here's an example core module:
 
 #### lib/dbInit.js (the core)
 
-<pre><code class="language-javascript">module.exports = function(services) {
+<pre><code class="language-javascript line-numbers">module.exports = function(services) {
   // Get database connection from the outside world
   const db = services.dbConnection;
 
@@ -42,7 +42,7 @@ Here's an example shell module that uses the above core module:
 
 #### app.js (the shell)
 
-<pre><code class="language-javascript">// Dependencies
+<pre><code class="language-javascript line-numbers">// Dependencies
 const app = require('express')();
 const dbConnection = require('db').connect('http://localhost');
 const dbInit = require('./lib/dbInit');
@@ -57,7 +57,7 @@ This makes passing mocks to our core module super simple:
 
 #### dbInit-test.js
 
-<pre><code class="language-javascript">import test from 'ava';
+<pre><code class="language-javascript line-numbers">import test from 'ava';
 
 test('dbInit.seed() invokes callback', t => {
   // Plan for 1 assertion
@@ -98,7 +98,7 @@ The posts route requires a <a href="http://mongoosejs.com/docs/schematypes.html"
 
 #### routes/posts.js
 
-<pre><code class="language-javascript">const route = require('express').Route();
+<pre><code class="language-javascript line-numbers">const route = require('express').Route();
 
 module.exports = function(services) {
   const PostModel = services.PostModel;
@@ -130,7 +130,7 @@ Here's the test for the posts route:
 
 #### test/routes/posts-test.js
 
-<pre><code class="language-javascript">import test from 'ava';
+<pre><code class="language-javascript line-numbers">import test from 'ava';
 
 test('Route | Posts | it responds with an array of posts', t => {
   // Plan for one assertion
@@ -177,7 +177,7 @@ In our main app file (usually app.js for an Express app), we can hook up our rou
 
 #### app.js
 
-<pre><code class="language-javascript">const app = require('express')();
+<pre><code class="language-javascript line-numbers">const app = require('express')();
 
 const mongoose = require('mongoose');
 const PostModel = require('./models/Post');

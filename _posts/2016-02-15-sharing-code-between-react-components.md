@@ -49,7 +49,7 @@ export default (InnerComponent) => {
 
 **AnotherComponent.js**
 
-<pre class="language-jsx"><code>import { HighOrderComponent } from './high-order-component';
+<pre class="language-jsx line-numbers"><code>import { HighOrderComponent } from './high-order-component';
 
 const AnotherComponent = ({ data }) => {
   return (
@@ -72,7 +72,7 @@ Here’s an example using React Router:
 
 **AuthenticatedComponent.js**
 
-<pre class="language-jsx"><code>import React from 'react';
+<pre class="language-jsx line-numbers"><code>import React from 'react';
 import { browserHistory } from 'react-router';
 
 // Example user object singleton that emits a change event
@@ -111,7 +111,7 @@ Example "Dashboard" component that requires an authenticated user:
 
 **Dashboard.js**
 
-<pre class="language-jsx"><code>import React from 'react';
+<pre class="language-jsx line-numbers"><code>import React from 'react';
 
 const SomeOtherComponent = ({ user }) => {
   return (
@@ -125,7 +125,7 @@ Tying everything together:
 
 **App.js**
 
-<pre class="language-jsx"><code>import React from 'react';
+<pre class="language-jsx line-numbers"><code>import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 

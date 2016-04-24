@@ -20,6 +20,7 @@ We will be testing a `MessageBox` component, which is part of an imaginary insta
 
 #### How to use MessageBox
 
+{:.line-numbers}
 ```jsx
 import React from 'react'
 import MessageBox from './message-box'
@@ -38,6 +39,7 @@ export default React.createClass({
 
 #### MessageBox component
 
+{:.line-numbers}
 ```jsx
 import React from 'react'
 
@@ -86,6 +88,7 @@ The job of the `MessageBox` component is to invoke a function whenever its form 
 
 So our test will focus on the user experience of filling out the form. It will also verify that the `onMessageSend` handler is being passed the message that was entered into the form.
 
+{:.line-numbers}
 ```jsx
 import test from 'ava'
 import React from 'react'
