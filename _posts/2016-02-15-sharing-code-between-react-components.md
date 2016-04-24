@@ -14,7 +14,7 @@ Here’s what it looks like:
 
 **HighOrderComponent.js**
 
-<pre class="language-jsx"><code>import React from 'react';
+<pre class="language-jsx line-numbers"><code>import React from 'react';
 import { fetchData } from './api';
 
 // Take a component
