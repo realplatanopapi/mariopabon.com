@@ -6,7 +6,7 @@ a {
   z-index: 0;
 
   &:after {
-    @include transition(color);
+    @include transition(background);
     background: darken($color-text, 50%);
     content: '';
     display: block;
