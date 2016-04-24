@@ -49,7 +49,7 @@ export default (InnerComponent) => {
 
 **AnotherComponent.js**
 
-<pre class=“language-jsx”><code>import { HighOrderComponent } from './high-order-component';
+<pre class="language-jsx"><code>import { HighOrderComponent } from './high-order-component';
 
 const AnotherComponent = ({ data }) => {
   return (
@@ -107,7 +107,7 @@ export default (InnerComponent) => {
   });
 };</code></pre>
 
-Example “Dashboard” component that requires an authenticated user:
+Example "Dashboard" component that requires an authenticated user:
 
 **Dashboard.js**
 

@@ -39,18 +39,18 @@ Preparing a repo to work with npm is as simple as creating a package.json file a
 
 ```json
 {
-  “private”: true,
-  “name”: “custompackage”
+  "private": true,
+  "name": "custompackage"
 }
 ```
 
-If you’re making a JavaScript library, you probably want to make it so that you can require or import your library with CommonJS or ES6 modules. If so, set the “main” property of package.json:
+If you’re making a JavaScript library, you probably want to make it so that you can require or import your library with CommonJS or ES6 modules. If so, set the "main" property of package.json:
 
 #### Specifying the main file for CommonJS or ES6 modules
 
 ```json
 {
-  “main”: “filename.js”
+  "main": "filename.js"
 }
 ```
 
