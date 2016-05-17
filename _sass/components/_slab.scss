@@ -47,6 +47,7 @@
   }
 
   &:hover {
+    border-bottom-color: $color-brand-primary;
     color: #fff;
 
     &:after {
