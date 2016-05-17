@@ -1,7 +1,7 @@
 # Site settings
-title: Mario Pabon | Web developer based in New York
+title: Mario Pabon | Programmer based in New York
 email: your-email@domain.com
-description: > # Web developer based in New York
+description: > # Programmer based in Brooklyn
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mariopabon.com" # the base hostname & protocol for your site
 link_twitter: https://twitter.com/restlessbit
