@@ -6,7 +6,7 @@ a {
   z-index: 0;
 
   &:after {
-    @include transition(background);
+    @include transition(background, margin, top);
     background: darken($color-text, 50%);
     content: '';
     display: block;
@@ -15,6 +15,7 @@ a {
     margin-top: -6px;
     position: absolute;
     top: 100%;
+    transition-duration: 0.1s;
     width: 100%;
     z-index: -1;
   }
@@ -27,6 +28,8 @@ a {
 
     &:after {
       background: $color-brand-primary;
+      margin-top: 0;
+      top: 50%;
     }
   }
 }
