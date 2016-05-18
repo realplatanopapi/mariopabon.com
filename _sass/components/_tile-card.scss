@@ -18,15 +18,14 @@
   }
 
   &:after {
-    @include transition(transform);
+    @include transition(top);
     background: $color-brand-primary;
     content: '';
     display: block;
     height: 100%;
     left: 0%;
     position: absolute;
-    top: 0;
-    transform: translateY(100%);
+    top: 100%;
     width: 100%;
     z-index: -1;
   }
@@ -37,7 +36,7 @@
     color: #fff;
 
     &:after {
-      transform: translateY(0);
+      top: 0;
     }
 
     .tile-card__subtitle,
