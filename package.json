@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "2.3.1",
+  "version": "2.4.0",
   "scripts": {
     "release:major": "npm version major -m '%s'",
     "release:minor": "npm version minor -m '%s'",
