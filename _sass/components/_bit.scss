@@ -1,6 +1,6 @@
 .bit {
-  @include transition(background);
-  border: 2px solid $color-brand-primary;
+  @include transition(background, border);
+  border: 1px solid desaturate($color-brand-primary, 100%);
   display: inline-block;
   overflow: hidden;
   height: 1.75rem;
@@ -22,6 +22,9 @@
 
   &:hover,
   &.active {
+    border-color: $color-brand-primary;
+    opacity: 1;
+
     &:before {
       border-radius: 0;
       transform: scale(1);
