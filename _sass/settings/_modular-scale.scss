@@ -9,8 +9,8 @@ $ms-ratio: 1.414;
 // Scale font size between about 14px at 320px wide,
 // and about 16px at 1440px wide.
 $ms-range:
-  0.875 320px,
-  1 1440px;
+  1 320px,
+  1.25 1920px;
 
 // Calculate font size based on viewport width.
 $ms-fluid: true;
