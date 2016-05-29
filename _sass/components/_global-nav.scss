@@ -27,14 +27,14 @@
 
   .global-nav__link {
     @include no-underline;
-    @include transition(opacity);
+    @include transition(color);
     color: lighten($color-text, 10%);
     font-family: font-family(sans-serif);
     font-weight: font-weight(bold);
-    opacity: 0.5;
 
     &:hover,
     &.active {
+      color: $color-brand-primary;
       opacity: 1;
     }
   }
