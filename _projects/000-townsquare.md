@@ -6,7 +6,7 @@ tags:
   - Socket.IO
   - Node
   - MongoDB
-link: "http://townsquarechat.com"
+link: "https://townsquarechat.com"
 featured: true
 description:
   "Location based chat. Sign in with Facebook, click a button, and be instantly placed in a chat room with other people near you."
