@@ -1,7 +1,7 @@
 .tile-card {
   @include no-underline;
-  background: $color-bg-dark;
-  color: #fff;
+  @include transition(border, color);
+  border: 1px solid darken($color-bg, 10%);
   display: flex;
   flex-direction: column;
   height: 16em;
@@ -33,38 +33,30 @@
   &:hover,
   &:focus,
   &:active {
+    border-color: $color-brand-primary;
     color: #fff;
 
     &:after {
       top: 0;
     }
 
-    .tile-card__subtitle,
-    .tile-card__content {
+    .tile-card__title,
+    .tile-card__subtitle {
       color: #fff;
     }
-  }
-
-  .tile-card__title {
-    color: inherit;
   }
 }
 
 .tile-card__title,
 .tile-card__subtitle {
+  @include transition(color);
   display: block;
   font-family: font-family(sans-serif);
   font-weight: font-weight(bold);
   margin-bottom: rhythm(0.5);
 }
 
-.tile-card__subtitle,
-.tile-card__content {
-  @include transition(color);
-}
-
 .tile-card__title {
-  @include transition(border);
   font-size: ms(1);
   letter-spacing: 0;
   text-transform: none;
@@ -72,12 +64,10 @@
 
 .tile-card__subtitle {
   @include all-caps;
-  color: rgba(#fff, 0.4);
   font-size: 0.6em;
 }
 
 .tile-card__content {
-  color: rgba(#fff, 0.8);
   font-size: 0.9em;
   margin: 0;
 }
