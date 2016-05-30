@@ -52,7 +52,8 @@ layout: default
           {% if paginator.previous_page %}
             <a class="pager__nav-btn"
               href="{{ paginator.previous_page_path }}#posts">
-              <span class="btn__icon">←</span> Newer Posts
+              <span class="btn__icon btn__icon--left">←</span>
+              <span class="btn__icon-label">Newer Posts</span>
             </a>
           {% endif %}
         </div>
@@ -61,7 +62,8 @@ layout: default
           {% if paginator.next_page  %}
             <a class="pager__nav-btn"
               href="{{ paginator.next_page_path }}#posts">
-              Older Posts <span class="btn__icon">→</span>
+              <span class="btn__icon-label">Older Posts</span>
+              <span class="btn__icon btn__icon--right">→</span>
             </a>
           {% endif %}
         </div>
