@@ -24,6 +24,42 @@
   }
 }
 
+.pager__nav-btn {
+  .btn__icon,
+  .btn__icon-label {
+    @include transition(transform);
+    transition-duration: 0.1s;
+  }
+}
+
+.pager__nav-btn--prev {
+  &:focus,
+  &:hover,
+  &:active {
+    .btn__icon {
+      transform: translateX(-0.5rem);
+    }
+
+    .btn__icon-label {
+      transform: translateX(0.1rem);
+    }
+  }
+}
+
+.pager__nav-btn--next {
+  &:focus,
+  &:hover,
+  &:active {
+    .btn__icon {
+      transform: translateX(0.5rem);
+    }
+
+    .btn__icon-label {
+      transform: translateX(-0.1rem);
+    }
+  }
+}
+
 .pager__status {
   text-align: center;
   width: 100%;

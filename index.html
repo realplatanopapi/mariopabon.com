@@ -50,7 +50,7 @@ layout: default
       <div class="pager__nav row">
         <div class="col-md-6">
           {% if paginator.previous_page %}
-            <a class="pager__nav-btn"
+            <a class="pager__nav-btn pager__nav-btn--prev"
               href="{{ paginator.previous_page_path }}#posts">
               <span class="btn__icon btn__icon--left">←</span>
               <span class="btn__icon-label">Newer Posts</span>
@@ -60,7 +60,7 @@ layout: default
 
         <div class="col-md-6 text-xs-right">
           {% if paginator.next_page  %}
-            <a class="pager__nav-btn"
+            <a class="pager__nav-btn pager__nav-btn--next"
               href="{{ paginator.next_page_path }}#posts">
               <span class="btn__icon-label">Older Posts</span>
               <span class="btn__icon btn__icon--right">→</span>
