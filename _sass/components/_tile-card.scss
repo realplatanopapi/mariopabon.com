@@ -11,6 +11,7 @@
   overflow: hidden;
   padding: rhythm(1.5);
   position: relative;
+  transition-duration: 0.25s;
   z-index: 0;
 
   @include media('>=lg') {
