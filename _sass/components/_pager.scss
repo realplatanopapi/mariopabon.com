@@ -28,7 +28,6 @@
   .btn__icon,
   .btn__icon-label {
     @include transition(transform);
-    transition-duration: 0.1s;
   }
 }
 
