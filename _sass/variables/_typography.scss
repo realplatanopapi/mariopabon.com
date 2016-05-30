@@ -9,7 +9,7 @@ $font-family: (
 
 $font-weight: (
   normal: 400,
-  bold: 600
+  bold: 700
 );
 @function font-weight($key) {
   @return map-get($font-weight, $key);
