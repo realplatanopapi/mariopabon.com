@@ -39,7 +39,7 @@ layout: default
       {% for post in paginator.posts %}
       <li>
         <a class="slab" href="{{ post.url | prepend: site.baseurl }}">
-          <span class="h3 slab__title">{{ post.title }}</span>
+          <span class="slab__title">{{ post.title }}</span>
           <span class="slab__subtitle">{{ post.date|| date: "%b %-d, %Y" }}</span>
         </a>
       </li>
