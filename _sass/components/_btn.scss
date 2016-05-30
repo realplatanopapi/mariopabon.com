@@ -21,12 +21,29 @@
   background: transparent;
   border: 1px solid $color-brand-primary;
   color: $color-brand-primary;
+  overflow: hidden;
+  position: relative;
+
+  &:after {
+    @include transition(top);
+    background: $color-brand-primary;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  }
 
   &:hover,
   &:active,
   &:focus {
-    background: $color-brand-primary;
     color: #fff;
+
+    &:after {
+      top: 0;
+    }
   }
 }
 
