@@ -60,20 +60,20 @@ h2,
 
 h3,
 .h3 {
-  font-size: ms(0);
+  font-size: ms(1);
   margin-bottom: rhythm(0.5);
 }
 
 h4,
 .h4 {
-  font-size: 0.9em;
+  font-size: ms(0);
   margin-bottom: rhythm(0.5);
 }
 
 h5,
 .h5 {
   @include all-caps;
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-bottom: rhythm(0.5);
 }
 
