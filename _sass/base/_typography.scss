@@ -34,8 +34,12 @@ h1,
 .h1,
 h2,
 .h2 {
-  font-size: ms(2);
   margin-bottom: rhythm(0.5);
+}
+
+h1,
+.h1 {
+  font-size: 2.618em;
 }
 
 h2,
@@ -47,6 +51,11 @@ h3,
   &:first-child {
     margin-top: 0;
   }
+}
+
+h2,
+.h2 {
+  font-size: ms(2);
 }
 
 h3,
