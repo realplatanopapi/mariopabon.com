@@ -13,6 +13,15 @@
     margin-top: rhythm(2);
   }
 
+  h2,
+  .h2 {
+    & +
+    h3,
+    & + .h3 {
+      margin-top: rhythm(1);
+    }
+  }
+
   ul,
   ol {
     margin-bottom: rhythm(1.5);
