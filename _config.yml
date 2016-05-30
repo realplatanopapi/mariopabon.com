@@ -3,7 +3,7 @@ title: Mario Pabon / A programmer based in Brooklyn
 email: your-email@domain.com
 description: > # Programmer based in Brooklyn
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://mariopabon.com" # the base hostname & protocol for your site
+url: "https://mariopabon.com" # the base hostname & protocol for your site
 link_twitter: https://twitter.com/restlessbit
 link_github: https://github.com/restlessbit
 link_medium: 'https://medium.com/@restlessbit'
