@@ -1,6 +1,6 @@
 .slab {
   @include no-underline;
-  @include transition(border, color, padding);
+  @include transition(border, color);
   border-bottom: 1px solid darken($color-bg, 20%);
   overflow: hidden;
   padding: rhythm(1.5) ($grid-gutter-width / 2);
@@ -49,8 +49,6 @@
   &:hover {
     border-bottom-color: $color-brand-primary;
     color: #fff;
-    padding-left: $grid-gutter-width;
-    padding-right: $grid-gutter-width;
 
     &:after {
       top: 0;
