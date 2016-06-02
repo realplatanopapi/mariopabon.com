@@ -45,6 +45,7 @@
     text-transform: none;
   }
 
+  &:focus,
   &:hover {
     border-bottom-color: $color-brand-primary;
     color: #fff;
