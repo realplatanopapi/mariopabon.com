@@ -60,13 +60,13 @@
 
 .tile-card__title {
   font-size: ms(1);
-  letter-spacing: 0;
   text-transform: none;
 }
 
 .tile-card__subtitle {
   @include all-caps;
   font-size: 0.7em;
+  opacity: 0.5;
 }
 
 .tile-card__content {

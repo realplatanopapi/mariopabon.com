@@ -1,6 +1,6 @@
 .bit {
   @include transition(background, border);
-  border: 1px solid desaturate($color-brand-primary, 100%);
+  border: 1px solid darken($color-bg, 25%);
   display: inline-block;
   overflow: hidden;
   height: 1.75rem;
