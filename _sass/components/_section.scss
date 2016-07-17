@@ -3,6 +3,10 @@
   padding-bottom: rhythm(2);
   padding-top: rhythm(2);
 
+  &:last-child {
+    border-bottom: 0;
+  }
+
   @include media('>=sm') {
     padding-bottom: rhythm(3);
     padding-top: rhythm(3);
