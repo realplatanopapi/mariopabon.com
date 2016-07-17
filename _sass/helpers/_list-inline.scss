@@ -10,6 +10,9 @@
 }
 
 .list-inline__spacer {
+  font-weight: font-weight(bold);
+  margin: 0 0.25em;
+
   &:after {
     content: '/'
   }
