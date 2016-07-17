@@ -12,5 +12,8 @@
     "include-media": "1.4.2",
     "modularscale-sass": "2.1.1",
     "prismjs": "1.4.1"
+  },
+  "dependencies": {
+    "smoothscroll": "0.2.2"
   }
 }
