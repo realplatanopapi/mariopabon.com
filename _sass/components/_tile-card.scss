@@ -66,6 +66,7 @@
 .tile-card__subtitle {
   @include all-caps;
   font-size: 0.7em;
+  opacity: 0.5;
 }
 
 .tile-card__content {
