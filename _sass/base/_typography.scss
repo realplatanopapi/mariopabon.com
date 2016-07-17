@@ -11,6 +11,7 @@ h5,
 p,
 .p {
   display: block;
+  margin-bottom: rhythm(1);
   margin-top: 0;
 }
 
@@ -28,13 +29,6 @@ h5,
   font-weight: font-weight(bold);
   letter-spacing: -0.025em;
   line-height: line-height(headings);
-}
-
-h1,
-.h1,
-h2,
-.h2 {
-  margin-bottom: rhythm(0.5);
 }
 
 h1,
@@ -61,24 +55,20 @@ h2,
 h3,
 .h3 {
   font-size: ms(1);
-  margin-bottom: rhythm(0.5);
 }
 
 h4,
 .h4 {
   font-size: ms(0);
-  margin-bottom: rhythm(0.5);
 }
 
 h5,
 .h5 {
   @include all-caps;
   font-size: 0.9em;
-  margin-bottom: rhythm(0.5);
 }
 
 p {
-  margin-bottom: rhythm(1);
   max-width: $measure;
 }
 
