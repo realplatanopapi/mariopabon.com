@@ -1,14 +1,9 @@
-var version = 'v2';
+var version = 'v3';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(version).then(function(cache) {
-      return cache.addAll([
-        '/',
-        '/index.html',
-        '/css/main.css',
-        '/assets/main.js'
-      ]);
+      return cache.matchAll('/');
     })
   );
 });
