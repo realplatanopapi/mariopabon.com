@@ -6,24 +6,37 @@
 }
 
 .longform {
+  p,
+  .p {
+    margin-bottom: rhythm(0.5);
+  }
+
   h2,
   .h2,
   h3,
-  .h3,
-  p,
-  .p {
-    margin-bottom: rhythm(1);
+  .h3 {
+    margin-bottom: rhythm(0.5);
+    margin-top: rhythm(1);
+  }
+
+  h4,
+  .h4 {
     margin-top: rhythm(1);
   }
 
   ul,
   ol {
-    margin-bottom: rhythm(1.5);
+    margin-bottom: rhythm(1);
     padding-left: rhythm(1.5);
   }
 
   pre {
-    margin-bottom: rhythm(2);
+    margin-bottom: rhythm(1.5);
+    margin-top: rhythm(1);
+  }
+
+  h4 + pre {
+    margin-top: 0;
   }
 }
 
