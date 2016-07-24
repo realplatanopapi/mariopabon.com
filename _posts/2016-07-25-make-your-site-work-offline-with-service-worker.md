@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "Make your site work offline with service worker"
-date:   2016-07-22
+date:   2016-07-25
 ---
 
 If you're a frequent rider of underground mass transit, you know how frustrating
 it can be when you open up your browser and try to get some reading done on your phone,
-only to be greeted with this screen:
+only to be greeted with this screen (first world problems, amiright?):
 
 <p class="text-center">
   <img alt="No internet Chrome message"
@@ -19,7 +19,7 @@ Enter service workers.
 
 According to [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), "A service worker is an event-driven worker registered against an origin and a path." Essentially, service workers allow you to run JavaScript outside of the DOM, even when your site or app is not being viewed in the browser. This allows you to do nifty things like send push notifications, pre-fetch data in the background, or cache static assets.
 
-For this blog post, we are going to focus on caching, which allows your site to be viewed without an internet connection.
+For this blog post, we are going to focus on caching, which can allow your site to be viewed without an internet connection.
 
 ## Setting up a service worker
 
@@ -55,7 +55,7 @@ We do this by creating an event listener that listens for the `install` event.
 // Update this value whenever the list of items that are being cached changes.
 var version = 'v1';
 
-// Cache assets on service worker installation.
+// Create a cache on service worker installation.
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(version).then(function(cache) {
@@ -73,7 +73,7 @@ self.addEventListener('install', function(event) {
 
 ## Retrieving assets from the cache
 
-In order for our site to actually work offline, we have to tell the browser to
+In order for our site to actually work offline, we need to tell the browser to
 fetch items from the cache whenever there is a network error (e.g., while offline).
 
 The code to implement this is surprisingly simple:
