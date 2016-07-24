@@ -8,10 +8,10 @@ If you're a frequent rider of underground mass transit, you know how frustrating
 it can be when you open up your browser and try to get some reading done on your phone,
 only to be greeted with this screen:
 
-<div class="text-center">
+<p class="text-center">
   <img alt="No internet Chrome message"
     src="/images/posts/2016-07-25-make-your-site-work-offline-with-service-worker/no-internet.png" />
-</div>
+</p>
 
 Enter service workers.
 
