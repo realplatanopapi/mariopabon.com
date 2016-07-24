@@ -6,10 +6,6 @@
 }
 
 .longform {
-  h2,
-  .h2,
-  h3,
-  .h3,
   p,
   .p {
     margin-bottom: rhythm(0.5);
@@ -19,6 +15,7 @@
   .h2,
   h3,
   .h3 {
+    margin-bottom: rhythm(0.25);
     margin-top: rhythm(1);
   }
 
