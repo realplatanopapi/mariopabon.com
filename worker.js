@@ -1,4 +1,4 @@
-var version = 'v3';
+var version = 'v4';
 
 // Invoked on initial installation of the service worker
 self.addEventListener('install', function(event) {
@@ -13,7 +13,7 @@ self.addEventListener('install', function(event) {
 // Listen for fetch() requests
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-    // Respond with a cached response if there was a network error 
+    // Respond with a cached response if there was a network error
     fetch(event.request).catch(function() {
       return caches.match(event.request);
     })
