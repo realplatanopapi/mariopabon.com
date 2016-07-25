@@ -33,9 +33,10 @@ assets:
   sources:
     - node_modules
     - _js
+    - images
   assets:
-  - 'main.js'
-  - 'worker.js'
+    - 'main.js'
+    - 'worker.js'
 
 gems:
   - jekyll-assets
