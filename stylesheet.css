@@ -103,6 +103,50 @@ ul {
   transform: scale(1.1) translate(2em, 2em);
 }
 
+@keyframes marquee {
+  0% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.marquee {
+  display: block;
+  left: 0;
+  position: relative;
+  bottom: 0;
+  overflow-x: hidden;
+  width: 100%;
+  z-index: 420;
+}
+
+.marquee__content {
+  animation: marquee linear 5s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  left: 0;
+  margin: 0;
+  max-width: none;
+  position: relative;
+  top: 0;
+}
+
+@media (min-width: 480px) {
+  .marquee__content {
+    animation-duration: 10s;
+  }
+}
+
+@media (min-width: 768px) {
+  .marquee__content {
+    animation-duration: 15s;
+  }
+}
+
 .padding {
   padding: 1em;
 }
