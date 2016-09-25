@@ -1,0 +1,16 @@
+.juicy {
+  display: block;
+  font-size: $font-scale + rem;
+  font-weight: 700;
+  margin: 0;
+  max-width: 60rem;
+}
+
+.juicy--deluxe {
+  font-size: pow($font-scale, 2) + rem;
+  line-height: $line-height-headings;
+
+  @include media ('<=small') {
+    font-size: $font-scale + rem;
+  }
+}

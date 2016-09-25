@@ -1,0 +1,48 @@
+{
+  "private": true,
+  "scripts": {
+    "browser-sync": "browser-sync start --server --serveStatic dist --files dist/**/* --no-notify --no-open --port 8080 --reload-delay 1000 --reload-debounce",
+    "build": "npm run clean && mkdir -p dist && npm run templates && npm run public && npm run styles && npm run scripts",
+    "compress": "npm run compress:scripts && npm run compress:styles",
+    "compress:scripts": "uglifyjs dist/app.js --compress --mangle --o dist/app.js",
+    "compress:styles": "cssnano dist/styles.css dist/styles.css",
+    "build:watch": "npm run templates:watch & npm run styles:watch & npm run poststyles:watch & npm run scripts:watch & npm run public:watch",
+    "styles": "node-sass styles/styles.scss dist/styles.css --include-path node_modules",
+    "poststyles": "postcss dist/styles.css --use autoprefixer --output dist/styles.css",
+    "public": "cp public/* dist/",
+    "public:watch": "nodemon --exec 'cp public/* dist/' --ext gif,ico,json,jpg,png,svg,xml",
+    "styles:watch": "npm run styles -- --watch --recursive",
+    "poststyles:watch": "nodemon --exec 'npm run poststyles' --ext css --watch dist/",
+    "templates": "cp templates/*.html dist/",
+    "templates:watch": "nodemon --exec 'npm run templates' --ext html --watch templates/",
+    "clean": "rm -rf dist/",
+    "scripts": "browserify scripts/app.js --transform babelify --outfile dist/app.js",
+    "scripts:watch": "watchify scripts/app.js --transform babelify --outfile dist/app.js --debug",
+    "start": "npm run build && npm run build:watch & npm run browser-sync",
+    "test": "./test.sh"
+  },
+  "devDependencies": {
+    "autoprefixer": "6.4.1",
+    "babel-preset-es2015": "6.14.0",
+    "babelify": "7.3.0",
+    "browser-sync": "2.16.0",
+    "browserify": "13.1.0",
+    "cssnano-cli": "1.0.5",
+    "node-sass": "3.10.0",
+    "nodemon": "1.10.2",
+    "postcss-cli": "2.6.0",
+    "uglifyjs": "2.4.10",
+    "watchify": "3.7.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "animejs": "1.1.1",
+    "include-media": "1.4.8",
+    "object-assign": "4.1.0",
+    "unique-random": "1.0.0"
+  }
+}

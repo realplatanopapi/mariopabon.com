@@ -1,0 +1,24 @@
+@keyframes hover {
+  0% {
+    color: inherit;
+  }
+
+  50% {
+    color: invert($color-brand-primary);
+  }
+
+  100% {
+    color: $color-brand-primary;
+  }
+}
+
+a {
+  color: inherit;
+  transition: color ease-in-out 0.15s;
+
+  &:focus,
+  &:hover {
+    animation: hover linear 0.25s;
+    color: $color-brand-primary;
+  }
+}

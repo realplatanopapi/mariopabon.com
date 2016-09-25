@@ -1,0 +1,8 @@
+// Thanks Paul Irish http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
