@@ -1,0 +1,30 @@
+.bits {
+  display: block;
+  height: 2.5rem;
+  position: relative;
+  transition: ease-in-out 0.25s;
+  transition-property: background, transform;
+  width: 2.5rem;
+
+  &:focus,
+  &:hover {
+    background: $color-brand-primary;
+    transform: scale(0.9);
+
+    .bits__bit {
+      opacity: 0;
+    }
+  }
+}
+
+.bits__bit {
+  background: rgba($color-brand-primary, 0.99);
+  border: 1px solid $color-brand-primary;
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  height: 2.5rem;
+  top: 0;
+  transition: opacity ease-in-out 0.25s;
+  width: 2.5rem;
+}

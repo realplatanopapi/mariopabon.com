@@ -17,10 +17,8 @@ git clone https://github.com/restlessbit/mariopabon.com
 cd mariopabon.com
 ```
 
-3. Start up a local http server that listens at `http://localhost:8080` by running:
+3. Start up a local BrowserSync server that listens at `http://localhost:8080` by running:
 
 ```bash
 npm start
 ```
-
-

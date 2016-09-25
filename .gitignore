@@ -1,13 +1,12 @@
-# Build output
-.asset-cache
-.sass-cache
-_site
-
-# Dependencies
-Gemfile.lock
+# Dependenciessss
 node_modules
 
-# Misc
-npm-debug.log
+# Compiled output
+dist
+
+# Log files (I'm looking at you npm-debug.log)
+**/*.log
+
+# OS garbage
 .DS_Store
 Thumbs.db

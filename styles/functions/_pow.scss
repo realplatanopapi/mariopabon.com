@@ -1,0 +1,9 @@
+// Power function, 💯 ^ 💯
+@function pow ($x, $y) {
+  $value: $x;
+  // Do math
+  @for $i from 1 through $y {
+    $value: $value * $x;
+  }
+  @return $value;
+}
