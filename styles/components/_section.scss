@@ -17,8 +17,9 @@
   animation-fill-mode: both;
   border-bottom: 1px solid darken($color-body-bg, 10%);
   display: flex;
-  min-height: 40rem;
+  min-height: 90vh;
   padding: 10rem;
+  transition: min-height ease-in-out 0.15s;
 
   @include media('>small', '<=medium') {
     padding: 2rem;
