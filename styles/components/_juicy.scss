@@ -12,5 +12,6 @@
 
   @include media ('<=small') {
     font-size: $font-scale + rem;
+    line-height: $line-height-base;
   }
 }
