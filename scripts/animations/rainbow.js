@@ -38,7 +38,7 @@ function animateElementColor ({
 
       return setTimeout(function () {
         requestAnimationFrame(animate)
-      }, 100)
+      }, 75)
     }
 
     // Call onComplete just in case we end up here
