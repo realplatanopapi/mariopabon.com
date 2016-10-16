@@ -47,7 +47,7 @@ function animateElementColor ({
 }
 
 // Helper function for starting the never ending color animation
-function animateSectionColor (element, color) {
+function animateBodyColor (element, color) {
   return requestAnimationFrame(
     animateElementColor({
       element,
@@ -55,31 +55,21 @@ function animateSectionColor (element, color) {
       targetColorValue: random(),
       onComplete () {
         // Run the animation again with a new color value
-        animateSectionColor(element, color)
+        animateBodyColor(element, color)
       }
     })
   )
 }
 
 export default function () {
-  // Get all the sections in the document
-  const sections = [].slice.call(document.querySelectorAll('.section'))
+  // Get body element
+  const body = [].slice.call(document.querySelectorAll('.body'))[0]
 
-  // Animate each section independently
-  sections.forEach(function animateSections (section, index) {
-    // Set a timeout for each individual color so we can avoid getting the same
-    // integer value from random(), which would result in us always getting a
-    // gray color 😬
-    setTimeout(function () {
-      animateSectionColor(section, 'blue')
-    }, 1000 * index)
-
-    setTimeout(function () {
-      animateSectionColor(section, 'green')
-    }, 2500 * index)
-
-    setTimeout(function () {
-      animateSectionColor(section, 'red')
-    }, 5000 * index)
-  })
+  // Animate body color
+  // Set a timeout for each individual color so we can avoid getting the same
+  // integer value from random(), which would result in us always getting a
+  // gray color 😬
+  animateBodyColor(body, 'blue')
+  animateBodyColor(body, 'green')
+  animateBodyColor(body, 'red')
 }
