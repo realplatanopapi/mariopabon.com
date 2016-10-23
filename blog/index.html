@@ -1,0 +1,17 @@
+---
+title: Blog
+layout: default
+---
+
+<section class="section">
+  <div>
+    <h1 class="juicy juicy--deluxe">Blog</h1>
+    <ul>
+      {% for post in paginator.posts %}
+        <li class="slab">
+          <a class="slab" href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
