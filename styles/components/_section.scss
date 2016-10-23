@@ -11,14 +11,14 @@
 }
 
 .section {
-  align-items: center;
   animation: slideUp ease-in-out 0.5s;
   animation-delay: 0.5s;
   animation-fill-mode: both;
   border-bottom: 1px solid darken($color-body-bg, 10%);
-  display: flex;
-  min-height: 90vh;
-  padding: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding: 10rem 1rem;
   transition: min-height ease-in-out 0.15s;
 
   @include media('>small', '<=medium') {
@@ -28,4 +28,12 @@
   @include media('<=small') {
     padding: 2rem;
   }
+}
+
+.section--large {
+  align-items: center;
+  display: flex;
+  max-width: none;
+  min-height: 90vh;
+  padding: 10rem;
 }

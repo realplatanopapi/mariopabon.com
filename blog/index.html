@@ -8,7 +8,7 @@ layout: default
     <h1 class="juicy juicy--deluxe">Blog</h1>
     <ul>
       {% for post in paginator.posts %}
-        <li class="slab">
+        <li>
           <a class="slab" href="{{ post.url }}">{{ post.title }}</a>
         </li>
       {% endfor %}
