@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "browser-sync": "browser-sync start --files dist/**/* --no-notify --no-open --proxy localhost:4000 --reload-delay 1000 --reload-debounce",
+    "browser-sync": "browser-sync start --files dist/**/* --no-notify --no-open --proxy http://localhost:4000 --port 8080 --reload-delay 1000 --reload-debounce",
     "build": "npm run clean && mkdir -p dist && jekyll build && npm run public && npm run styles && npm run scripts",
     "clean": "rm -rf dist/",
     "compress": "npm run compress:scripts && npm run compress:styles",
