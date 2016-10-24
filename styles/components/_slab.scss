@@ -1,12 +1,12 @@
 .slab {
   border-bottom: 1px solid darken($color-body-bg, 10%);
   display: block;
-  padding: 2rem 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   text-decoration: none;
   width: 100%;
 }
 
 .slab__title {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.25rem;
 }
