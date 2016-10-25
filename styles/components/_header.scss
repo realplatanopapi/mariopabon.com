@@ -1,3 +1,5 @@
 .header {
-  margin-bottom: 1rem;
+  border-bottom: 1px solid darken($color-body-bg, 10%);
+  margin-bottom: spacing(2);
+  padding-bottom: spacing(0.5);
 }
