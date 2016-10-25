@@ -4,16 +4,18 @@ layout: default
 ---
 
 <section class="section">
-  <header class="header">
-    <h1 class="juicy juicy--deluxe">Blog</h1>
-  </header>
-  <ul>
-    {% for post in paginator.posts %}
-      <li>
-        <a class="slab" href="{{ post.url }}">
-          <span class="slab__title">{{ post.title }}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="container">
+    <header class="header">
+      <h1 class="juicy juicy--deluxe">Blog</h1>
+    </header>
+    <ul>
+      {% for post in paginator.posts %}
+        <li>
+          <a class="slab" href="{{ post.url }}">
+            <span class="slab__title">{{ post.title }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
