@@ -10,17 +10,21 @@
   }
 }
 
-.global-nav {
+.navigation {
+  align-items: center;
   animation: slideDown ease-in-out 0.5s;
   animation-delay: 0.25s;
   animation-fill-mode: both;
-  left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 2rem;
   position: fixed;
-  top: 2rem;
+  top: 0;
+  width: 100%;
   z-index: 1;
 
-  @include media('<=small') {
-    left: 1rem;
-    top: 1rem;
+  @include media('<=large') {
+    padding: 1rem;
   }
 }
