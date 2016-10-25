@@ -1,12 +1,18 @@
 .slab {
-  border-bottom: 1px solid darken($color-body-bg, 10%);
+  border: 1px solid darken($color-body-bg, 10%);
   display: block;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding: spacing(1);
   text-decoration: none;
-  width: 100%;
+  width: 33.333%;
+
+  &:hover {
+    background: $color-brand-primary;
+    border-color: $color-brand-primary;
+    color: #fff;
+  }
 }
 
 .slab__title {
   font-size: font-size(1);
+  line-height: $line-height-headings;
 }
