@@ -19,17 +19,17 @@ p {
 }
 
 h1 {
-  font-size: pow($font-scale, 2) + rem;
+  font-size: font-size(2);
 }
 
 h2 {
-  font-size: pow($font-scale, 1) + rem;
+  font-size: font-size(1);
 }
 
 h3 {
-  font-size: $font-scale + rem;
+  font-size: font-size(0);
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: font-size(0);
 }

@@ -6,5 +6,16 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont,
 $font-size-base: 1.125em;
 $font-scale: 1.618;
 
+$font-size: (
+  -1: 0.618rem,
+  0: 1rem,
+  1: pow($font-scale, 1) + rem,
+  2: pow($font-scale, 2) + rem,
+  3: pow($font-scale, 3) + rem
+);
+@function font-size($size) {
+  @return map-get($font-size, $size);
+}
+
 $line-height-base: 1.618;
 $line-height-headings: 1.1;
