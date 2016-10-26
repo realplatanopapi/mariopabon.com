@@ -13,6 +13,14 @@
 }
 
 .slab__title {
+  display: block;
   font-size: font-size(1);
   line-height: $line-height-headings;
+  margin-bottom: spacing(0.5);
+}
+
+.slab__subtitle {
+  display: block;
+  font-weight: 400;
+  opacity: 0.75;
 }
