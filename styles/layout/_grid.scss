@@ -1,0 +1,29 @@
+.row {
+  align-items: stretch;
+  display: flex;
+  margin-left: $grid-gutter / -2;
+  margin-right: $grid-gutter / -2;
+}
+
+@mixin column($column) {
+  $column-width: percentage($column / $grid-num-columns);
+
+  flex: 0 0 $column-width;
+  padding-left: $grid-gutter / 2;
+  padding-right: $grid-gutter / 2;
+  width: $column-width;
+}
+
+@for $i from 1 through $grid-num-columns {
+  .col-#{$i} {
+    @include column($i);
+  }
+
+  @each $breakpoint,$value in $breakpoints {
+    @include media('>=#{$breakpoint}') {
+      .col#{$i}--#{$breakpoint} {
+        @include column($i);
+      }
+    }
+  }
+}
