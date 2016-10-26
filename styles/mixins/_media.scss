@@ -1,0 +1,18 @@
+$media-queries: (
+  small: '(max-width: $breakpoint-small-end)',
+  medium-and-down: '(max-width: $breakpoint-medium-end)',
+  medium: '(min-width: $breakpoint-medium-start) and (max-width: $breakpoint-medium-end)',
+  medium-and-up: '(min-width: $breakpoint-medium-start)',
+  large-and-down: '(max-width: $breakpoint-large-end)',
+  large: '(min-width: $breakpoint-large-start) and (max-width: $breakpoint-large-end)',
+  large-and-up: '(min-width: $breakpoint-large-start)',
+);
+@function media-queries($key) {
+  @return map-get($media-queries, $key);
+}
+
+@mixin media($query) {
+  @media #{unquote(media-queries($query))} {
+    @content;
+  }
+}

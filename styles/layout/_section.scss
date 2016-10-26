@@ -19,12 +19,12 @@
   padding-top: spacing(4);
   transition: min-height ease-in-out 0.15s;
 
-  @include media('>small', '<=medium') {
+  @include media('medium') {
     padding-bottom: spacing(2);
     padding-top: spacing(2);
   }
 
-  @include media('<=small') {
+  @include media('small') {
     padding-bottom: spacing(1);
     padding-top: spacing(1);
   }

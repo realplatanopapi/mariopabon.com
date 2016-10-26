@@ -19,9 +19,9 @@
     @include column($i);
   }
 
-  @each $breakpoint,$value in $breakpoints {
-    @include media('>=#{$breakpoint}') {
-      .col-#{$i}--#{$breakpoint} {
+  @each $query,$value in $media-queries {
+    @include media($query) {
+      .col-#{$i}--#{$query} {
         @include column($i);
       }
     }

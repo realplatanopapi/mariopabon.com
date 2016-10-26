@@ -24,7 +24,7 @@
   width: 100%;
   z-index: layers(navigation);
 
-  @include media('<=large') {
+@include media('large-and-down') {
     padding: 1rem;
   }
 }

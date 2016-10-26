@@ -1,16 +1,13 @@
-// Settings for external libraries
-@import 'settings/include-media';
-
-// External libraries
-@import '../node_modules/include-media/dist/include-media';
-
 @import 'functions/pow';
 
+@import 'variables/breakpoints';
 @import 'variables/colors';
 @import 'variables/grid';
 @import 'variables/layers';
 @import 'variables/spacing';
 @import 'variables/typography';
+
+@import 'mixins/media';
 
 @import 'base/html';
 @import 'base/body';
