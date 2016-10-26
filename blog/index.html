@@ -8,9 +8,9 @@ layout: default
     <header class="header">
       <h1 class="juicy juicy--deluxe">Blog</h1>
     </header>
-    <ul>
+    <ul class="row">
       {% for post in paginator.posts %}
-        <li>
+        <li class="col-12 col-2--medium col-3--medium">
           <a class="slab" href="{{ post.url }}">
             <span class="slab__title">{{ post.title }}</span>
           </a>
