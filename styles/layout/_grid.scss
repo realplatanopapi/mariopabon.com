@@ -20,7 +20,7 @@
   }
 
   @each $breakpoint,$value in $breakpoints {
-    @include media('>=#{$breakpoint}') {
+    @include media('<#{$breakpoint}') {
       .col-#{$i}--#{$breakpoint} {
         @include column($i);
       }
