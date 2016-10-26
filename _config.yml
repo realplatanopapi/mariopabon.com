@@ -37,5 +37,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
 keep_files: ["app.js", "styles.css"]
-paginate: 1
+paginate: 9
 paginate_path: "/blog/page/:num"
