@@ -17,4 +17,10 @@
   * + h2 {
     margin-top: spacing(2);
   }
+
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
