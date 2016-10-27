@@ -21,5 +21,20 @@ layout: default
         </li>
       {% endfor %}
     </ul>
+    {% if paginator.total_pages > 1 %}
+      <nav class="pager">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}">Newer Posts</a>
+        {% else %}
+          <span>Newer Posts</span>
+        {% endif %}
+        <span>Page {{ paginator.page }} / {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}">Older Posts</a>
+        {% else %}
+          <span>Older Posts</span>
+        {% endif %}
+      </nav>
+    {% endif %}
   </div>
 </section>
