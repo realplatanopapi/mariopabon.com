@@ -13,4 +13,8 @@
       margin-bottom: spacing(0.5);
     }
   }
+
+  * + h2 {
+    margin-top: spacing(2);
+  }
 }
