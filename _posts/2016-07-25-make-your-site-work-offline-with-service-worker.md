@@ -8,7 +8,7 @@ If you're a frequent rider of underground mass transit, you know how frustrating
 it can be when you open up your browser and try to get some reading done on your phone,
 only to be greeted with this screen (first world problems, amiright?):
 
-<p class="text-center">
+<p class="text-align--center">
   <img alt="No internet Chrome message"
     src="/images/posts/2016-07-25-make-your-site-work-offline-with-service-worker/no-internet.png" />
 </p>
