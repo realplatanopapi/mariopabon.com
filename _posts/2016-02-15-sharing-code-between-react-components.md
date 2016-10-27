@@ -115,7 +115,7 @@ Example "Dashboard" component that requires an authenticated user:
 
 const SomeOtherComponent = ({ user }) => {
   return (
-    &lt;h1&gt;Hello, { user.name }!&lt/h1&gt;
+    &lt;h1&gt;Hello, { user.name }!&lt;/h1&gt;
   );
 };
 
