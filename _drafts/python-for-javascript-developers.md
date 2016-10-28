@@ -191,6 +191,30 @@ print(name[1])
 name[1] = 'p'
 ```
 
+### Dictionaries
+
+Dictionaries are associative arrays, similar to objects in JavaScript. In fact,
+dictionaries can be declared with JSON-like synax:
+
+```python
+# Dictionaries in python
+person = {
+  'name': 'Mario',
+  'age': 24
+}
+
+# Mario
+print(person['name'])
+```
+
+Dictionaries have a handy method for returning a default value when trying to
+get the value of a non-existent key:
+
+```python
+# non-binary
+person.get('gender', 'non-binary')
+```
+
 ## Functions
 
 ## Collections
