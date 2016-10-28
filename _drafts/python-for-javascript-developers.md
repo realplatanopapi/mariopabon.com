@@ -27,7 +27,6 @@ to learn what declaring a variable means or what a function is.
 - [Syntax](#syntax)
 - [Types](#types)
 - [Functions](#functions)
-- [Collections](#collections)
 - [Modules](#modules)
 - [Object Oriented Programming](#object-oriented-programming)
 - [Resources](#resources)
@@ -272,8 +271,6 @@ def another_func():
 # 'hey'
 func(5, another_func)
 ```
-
-## Collections
 
 ## Modules
 
