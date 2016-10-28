@@ -226,7 +226,7 @@ print(name[1])
 name[1] = 'p'
 ```
 
-### Dictionaries
+### [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
 Dictionaries are associative arrays, similar to objects in JavaScript. In fact,
 dictionaries can be declared with JSON-like synax:
