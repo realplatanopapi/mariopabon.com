@@ -1,0 +1,38 @@
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navigation {
+  align-items: center;
+  animation: slideDown ease-in-out 0.5s;
+  animation-delay: 0.25s;
+  animation-fill-mode: both;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: layers(navigation);
+
+  @include media('large-and-down') {
+    background: $color-body-bg;
+    border-bottom: 1px solid darken($color-body-bg, 10%);
+    padding: 1rem;
+    position: relative;
+  }
+}
+
+.navigation__link {
+  text-decoration: none;
+  text-transform: lowercase;
+}

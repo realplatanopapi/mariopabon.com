@@ -1,12 +1,6 @@
-# Dependenciessss
 node_modules
-
-# Compiled output
 dist
-
-# Log files (I'm looking at you npm-debug.log)
-**/*.log
-
-# OS garbage
-.DS_Store
-Thumbs.db
+.sass-cache
+.jekyll-metadata
+**/*.log*
+**/*.swp

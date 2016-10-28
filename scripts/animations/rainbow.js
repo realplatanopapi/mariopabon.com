@@ -63,7 +63,11 @@ function animateBodyColor (element, color) {
 
 export default function () {
   // Get body element
-  const body = [].slice.call(document.querySelectorAll('.body'))[0]
+  const body = [].slice.call(document.querySelectorAll('.js-rainbow'))[0]
+
+  if (!body) {
+    return false;
+  }
 
   // Animate body color
   // Set a timeout for each individual color so we can avoid getting the same

@@ -1,0 +1,26 @@
+.slab {
+  border: 1px solid darken($color-body-bg, 10%);
+  display: block;
+  padding: spacing(1);
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    background: $color-brand-primary;
+    border-color: $color-brand-primary;
+    color: #fff;
+  }
+}
+
+.slab__title {
+  display: block;
+  font-size: font-size(1);
+  line-height: $line-height-headings;
+  margin-bottom: spacing(0.5);
+}
+
+.slab__subtitle {
+  display: block;
+  font-weight: 400;
+  opacity: 0.75;
+}

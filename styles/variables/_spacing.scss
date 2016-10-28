@@ -1,0 +1,14 @@
+@import 'typography';
+
+$spacing-unit: 1rem * $line-height-base;
+$spacing: (
+  0: 0,
+  0.5: ($spacing-unit * 0.5),
+  1: ($spacing-unit * 1),
+  2: ($spacing-unit * 2),
+  3: ($spacing-unit * 3),
+  4: ($spacing-unit * 4)
+);
+@function spacing($unit) {
+  @return map-get($spacing, $unit);
+}
