@@ -113,6 +113,71 @@ declared in.
 
 ## Types
 
+Python's type system is a lot like JavaScript's; it's there, but it's not as
+strict as other languages like Java or C#. Practically speaking, variables have
+types, but you don't have to declare the types of your variables like you would
+in a statically typed language like Java.
+
+That being said, here's a quick overview of Python's built in data types:
+
+### [Numbers](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)
+
+Unlike JavaScript, Python has more than one number type:
+
+- Integers: `1`, `2`, `3`
+- Floats: `4.20`, `4e420`
+- Complex numbers: `4 + 20j`
+- Booleans: `True`, `False`
+
+You can perform the same operations on numbers in Python as you can in
+JavaScript, but with the addition of the exponentiation operator (\*\*).
+
+### [Lists](https://docs.python.org/3/library/stdtypes.html#lists)
+
+Lists in Python are similar to arrays in JavaScript. Lists can contain a mixture
+of types:
+
+```python
+[4, "2", [0, "zero"]]
+```
+
+There's also a special syntax for slicing elements from lists:
+
+```python
+a_list = [1, 2, 3, 4, 5]
+
+# 1, 2, 3
+a_list[0:2]
+
+# 4, 5
+a_list[3:]
+
+# 3, 4
+a_list[2, -2]
+```
+
+And some handy built-in methods for operating on lists:
+
+```python
+# 3
+len([1, 2, 3])
+
+# 3, 2, 1
+[1, 2, 3].reverse()
+
+# a = 1, 2, 3
+[1, 2].append(3)
+```
+
+You can even concatenate two lists with the `+` operator:
+
+```python
+# 1, 2, 3, 4
+[1, 2] + [3, 4]
+```
+
+### [Strings](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+
 ## Functions
 
 ## Collections
