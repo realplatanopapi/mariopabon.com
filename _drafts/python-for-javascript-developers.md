@@ -21,3 +21,27 @@ and paradigms of this one specific programming language, Python.
 That's where this blog post comes in. To serve as a quick guide for JavaScript
 developers who want to get up to speed quickly with Python, but without having
 to learn what declaring a variable means.
+
+## Table of contents
+
+- [Syntax](#syntax)
+- [Types](#types)
+- [Functions](#functions)
+- [Collections](#collections)
+- [Modules](#modules)
+- [Object Oriented Programming](#object-oriented-programming)
+- [Resources](#resources)
+
+## Syntax
+
+## Types
+
+## Functions
+
+## Collections
+
+## Modules
+
+## Object Oriented Programming
+
+## Resources
