@@ -111,6 +111,41 @@ NameError: name 'x' is not defined
 Because `print(x)` is not in the same block as the one that `x` is
 declared in.
 
+
+### Control flow
+
+`if...else`, `while`, and `for` blocks in Python are very similar to JavaScript:
+
+#### if...else
+
+```python
+if x > 2:
+  print('hai!')
+elif x > 3:
+  print('bye!')
+else:
+  print('hey now')
+
+if not x:
+  print('x is falsy!')
+```
+
+#### while loop
+
+```python
+while (x > 0):
+  print('hey now')
+```
+
+#### for loop
+
+```python
+ex_list = [1, 2, 3]
+
+for x in ex_list:
+  print(x)
+```
+
 ## Types
 
 Python's type system is a lot like JavaScript's; it's there, but it's not as
