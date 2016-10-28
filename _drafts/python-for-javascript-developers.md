@@ -20,7 +20,7 @@ and paradigms of this one specific programming language, Python.
 
 That's where this blog post comes in. To serve as a quick guide for JavaScript
 developers who want to get up to speed quickly with Python, but without having
-to learn what declaring a variable means.
+to learn what declaring a variable means or what a function is.
 
 ## Table of contents
 
