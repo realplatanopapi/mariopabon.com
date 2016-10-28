@@ -178,6 +178,19 @@ You can even concatenate two lists with the `+` operator:
 
 ### [Strings](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
 
+Strings in Python are a lot like strings in JavaScript. They are immutable, and
+individual characters can be accessed like elements in an array:
+
+```python
+name = 'Mario'
+
+# a
+print(name[1])
+
+# Nope, name is still 'Mario'
+name[1] = 'p'
+```
+
 ## Functions
 
 ## Collections
