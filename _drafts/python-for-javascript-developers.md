@@ -252,6 +252,27 @@ person.get('gender', 'non-binary')
 
 ## Functions
 
+Just like JavaScript, functions are objects in Python. That means you can pass
+functions as arguments, or even assign properties to functions:
+
+```python
+def func(a, fn):
+  print(a)
+  fn()
+
+func.x = 'meep'
+
+# 'meep'
+print(func.x)
+
+def another_func():
+  print('hey')
+
+# 5
+# 'hey'
+func(5, another_func)
+```
+
 ## Collections
 
 ## Modules
