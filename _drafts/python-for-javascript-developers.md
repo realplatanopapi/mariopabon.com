@@ -333,4 +333,53 @@ pip install simplejson
 
 ## Object Oriented Programming
 
+Python has support for object oriented programming with classes and classical
+inheritance, unlike JavaScript which has prototypes with prototypal inheritance.
+
+### [Classes](https://docs.python.org/3/tutorial/classes.html#classes)
+
+```python
+# Defining a class
+class Animal:
+  # Variable that is shared by all instances of the Animal class
+  default_age = 1
+
+  # Constructor
+  def __init__(self, name):
+    # Defining publicly available variable
+    self.name = name
+
+    # You can define private variables and methods by prepending the variable
+    # name with 2 underscores
+    self.__age = default_age
+
+  # Public method
+  def get_age(self):
+    return self.name
+
+  # Private method
+  def __meow():
+    print('meowwww')
+
+  # Defining a static method with the `staticmethod` decorator
+  @staticmethod
+  def moo():
+    print('moooo')
+
+# Creating an Animal object
+animal = Animal()
+
+# Accessing public variables and methods
+print(animal.name)
+print(animal.default_age)
+print(animal.get_age())
+
+# ERR!!!! __.age is private, so this won't work:
+print(animal.__age)
+```
+
+### Inheritance
+
+
+
 ## Resources
