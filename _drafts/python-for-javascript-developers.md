@@ -324,7 +324,7 @@ say_hey()
 print(hey)
 ```
 
-You can also install modules other people have written from
+You can also install modules other people have written with
 [pip](https://pypi.python.org/pypi/pip), a package manager for Python.
 
 ```bash
