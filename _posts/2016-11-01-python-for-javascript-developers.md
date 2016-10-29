@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python for JavaScript Developers"
-date:   2016-11-01
+date: 2016-11-01
 ---
 
 So recently I began working at a little startup in New York City by the name of
@@ -15,7 +15,7 @@ the codebase in order to ship a feature. So I had to get well
 acquainted with Python, very fast.
 
 Unfortunately, I had a hard time finding good resources for learning Python that
-wasn't targeted to people who haven't programmed before. I already knew how to
+weren't targeted to people who haven't programmed before. I already knew how to
 program and am familiar with other languages, I just needed to learn the syntax
 and paradigms of this one specific programming language, Python.
 
@@ -59,7 +59,7 @@ Unlike JavaScript, variables in Python are always block scoped.
 Python is a bit more strict than JavaScript when it comes to syntax. In Python,
 getting indentation off by a single space can prevent your programming from
 even running (!). This is because Python uses indentation to create blocks
-rather than braces. For example, this is how you would define a block in
+instead of braces. For example, this is how you would define a block in
 JavaScript vs. Python:
 
 ### Creating a block in JavaScript
@@ -173,7 +173,7 @@ Unlike JavaScript, Python has more than one number type:
 - Booleans: `True`, `False`
 
 You can perform the same operations on numbers in Python as you can in
-JavaScript. There's also an exponentiation operator (\*\*).
+JavaScript. There's also an exponentiation operator (\*\*):
 
 ```python
 # a = 4
@@ -304,7 +304,7 @@ Modules in Python aren't that far off from modules in ES6.
 
 ### Defining a module
 
-A mmodule in Python is simply a file that contains some Python code.
+A module in Python is simply a file that contains some Python code.
 
 ```python
 # my_module.py
@@ -319,7 +319,8 @@ def say_hey():
 You can import an entire module in Python:
 
 ```python
-# another_module.py
+# importing my_module.py from another_module.py; both files are in the same
+# directory
 import my_module
 
 # Do things
