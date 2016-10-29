@@ -3,14 +3,14 @@ layout: post
 title: "Python for JavaScript Developers"
 ---
 
-So recently I began working at a little startup in New York City called
+So recently I began working at a little startup in New York City by the name of
 [Underdog.io](https://underdog.io), where I discovered that they had a back-end
 written primarily in Python, a language that I had very little previous exposure
 to.
 
 While I was hired primarily for my experience with JavaScript and React, the
 small size of our team means that I frequently have to delve into all parts of
-the codebase in order to ship a feature. This meant that I had to get well
+the codebase in order to ship a feature. So I had to get well
 acquainted with Python, very fast.
 
 Unfortunately, I had a hard time finding good resources for learning Python that
@@ -43,20 +43,20 @@ the scope of the variable either (`let` vs `var`):
 x = 5
 ```
 
-You can change the type of a variable by assigning a value of a different type:
+You can change the type of a variable by assigning a value of a different type
+to it:
 
 ```python
 x = 5 # x has a type of Integer
 x = 'Hewwo' # x is now a String!
 ```
 
-Unlike JavaScript, variables in Python are block scoped rather than function
-scoped.
+Unlike JavaScript, variables in Python are always block scoped.
 
 ### Blocks
 
 Python is a bit more strict than JavaScript when it comes to syntax. In Python,
-getting indentation off by a single space will prevent your programming from
+getting indentation off by a single space can prevent your programming from
 even running (!). This is because Python uses indentation to create blocks
 rather than braces. For example, this is how you would define a block in
 JavaScript vs. Python:
@@ -73,8 +73,6 @@ function exampleFunction () {
 {
   // This is also a block
 }
-
-console.log(a);
 ```
 
 ### Creating a block in Python
@@ -92,6 +90,14 @@ def example_function():
 If the line containing `print(x)` had one or more extra spaces, the Python
 interpreter would throw an `IndentationError`, because those extra spaces would
 have created an invalid block.
+
+```python
+def example_function():
+  x = 5
+
+  # IndentationError!
+    print(x)
+```
 
 If that same line had one or more less spaces in it, like this:
 
@@ -148,11 +154,13 @@ for x in ex_list:
 ## Types
 
 Python's type system is a lot like JavaScript's; it's there, but it's not as
-strict as in other languages like Java or C#. Practically speaking, variables
+strict as in other languages like Java or C#.
+
+Practically speaking, variables
 have types, but you don't have to declare the types of your variables like you
 would in a statically typed language such as Java.
 
-That being said, here's a quick overview of Python's built in data types:
+Here's a quick overview of Python's built in data types:
 
 ### [Numbers](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)
 
@@ -164,7 +172,12 @@ Unlike JavaScript, Python has more than one number type:
 - Booleans: `True`, `False`
 
 You can perform the same operations on numbers in Python as you can in
-JavaScript, but with the addition of the exponentiation operator (\*\*).
+JavaScript. There's also an exponentiation operator (\*\*).
+
+```python
+# a = 4
+a = 2 ** 2
+```
 
 ### [Lists](https://docs.python.org/3/library/stdtypes.html#lists)
 
@@ -228,7 +241,7 @@ name[1] = 'p'
 ### [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
 Dictionaries are associative arrays, similar to objects in JavaScript. In fact,
-dictionaries can be declared with JSON-like synax:
+dictionaries can be declared with JSON syntax:
 
 ```python
 # Dictionaries in python
@@ -245,7 +258,7 @@ Dictionaries have a handy method for returning a default value when trying to
 get the value of a non-existent key:
 
 ```python
-# non-binary
+# Because `gender` is not defined, non-binary will be returned
 person.get('gender', 'non-binary')
 ```
 
@@ -263,7 +276,7 @@ if not x:
 
 ## [Functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
 
-Just like JavaScript, functions are objects in Python. That means you can pass
+Like JavaScript, functions are objects in Python. That means you can pass
 functions as arguments, or even assign properties to functions:
 
 ```python
@@ -290,7 +303,7 @@ Modules in Python aren't that far off from modules in ES6.
 
 ### Defining a module
 
-Like in JavaScript, a module in Python is a file that contains some Python code.
+A mmodule in Python is simply a file that contains some Python code.
 
 ```python
 # my_module.py
@@ -346,11 +359,11 @@ class Animal:
 
   # Constructor
   def __init__(self, name):
-    # Defining publicly available variable
+    # Defining a publicly available variable
     self.name = name
 
     # You can define private variables and methods by prepending the variable
-    # name with 2 underscores
+    # name with 2 underscores (__):
     self.__age = default_age
 
   # Public method
@@ -374,6 +387,9 @@ print(animal.name)
 print(animal.default_age)
 print(animal.get_age())
 
+# Accessing a static method
+Animal.moo()
+
 # ERR!!!! __.age is private, so this won't work:
 print(animal.__age)
 ```
@@ -396,7 +412,7 @@ class Human(Animal):
 # Using the Human class
 human = Human('Mario', 123456789)
 
-# Object objects have access to methods defined in the Animal base class
+# Human objects have access to methods defined in the Animal base class
 human.get_age()
 human.get_ssn()
 ```
