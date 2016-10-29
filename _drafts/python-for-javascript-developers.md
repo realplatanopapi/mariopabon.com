@@ -276,7 +276,41 @@ func(5, another_func)
 
 Modules in Python aren't that far off from modules in ES6.
 
-### Defining a module in Python
+### Defining a module
+
+Like in JavaScript, a module in Python is a file that contains some Python code.
+
+```python
+# my_module.py
+hey = 'heyyy'
+
+def say_hey():
+  print(hey)
+```
+
+### Importing a module
+
+You can import an entire module in Python:
+
+```python
+# another_module.py
+import my_module
+
+# Do things
+my_module.say_hey()
+print(my_module.hey)
+```
+
+Or import individual items from a module:
+
+```python
+# another_module.py
+from my_module import hey, say_hey
+
+# Do things
+say_hey()
+print(hey)
+```
 
 ## Object Oriented Programming
 
