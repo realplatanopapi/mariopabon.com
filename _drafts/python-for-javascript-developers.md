@@ -402,3 +402,13 @@ human.get_ssn()
 ```
 
 ## Resources
+
+There is a lot more to Python than what's in this guide. I highly
+recommend you check out the [Python docs](https://docs.python.org/3/)
+for tutorials and details about other language features.
+
+And remember, the best way to learn a language is to write it, a lot. So get
+to coding!
+
+*P.S.: If you need an idea for a project, maybe try creating a simple API with
+[Flask](http://flask.pocoo.org/)?*
