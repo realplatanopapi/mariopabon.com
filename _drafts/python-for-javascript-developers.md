@@ -251,8 +251,8 @@ person.get('gender', 'non-binary')
 
 ### [None](https://docs.python.org/3/library/constants.html#None)
 
-`None` is equivalent to `null` in JavaScript. It means that a variable has no
-value, and it is considered "falsy".
+`None` is equivalent to `null` in JavaScript. It signifies the absence of a
+value, and is considered "falsy".
 
 ```python
 x = None
