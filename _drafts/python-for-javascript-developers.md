@@ -199,7 +199,7 @@ len([1, 2, 3])
 # 3, 2, 1
 [1, 2, 3].reverse()
 
-# a = 1, 2, 3
+# 1, 2, 3
 [1, 2].append(3)
 ```
 
@@ -398,7 +398,7 @@ human = Human('Mario', 123456789)
 
 # Object objects have access to methods defined in the Animal base class
 human.get_age()
-human.get__ssn()
+human.get_ssn()
 ```
 
 ## Resources
