@@ -47,10 +47,10 @@ You can change the type of a variable by assigning a value of a different type:
 
 ```python
 x = 5 # x has a type of Integer
-x = 'Hewwo' # Now x is a String!
+x = 'Hewwo' # x is now a String!
 ```
 
-Unlike JavScript, variables in Python are block scoped rather than function
+Unlike JavaScript, variables in Python are block scoped rather than function
 scoped.
 
 ### Blocks
@@ -148,9 +148,9 @@ for x in ex_list:
 ## Types
 
 Python's type system is a lot like JavaScript's; it's there, but it's not as
-strict as other languages like Java or C#. Practically speaking, variables have
-types, but you don't have to declare the types of your variables like you would
-in a statically typed language like Java.
+strict as in other languages like Java or C#. Practically speaking, variables
+have types, but you don't have to declare the types of your variables like you
+would in a statically typed language such as Java.
 
 That being said, here's a quick overview of Python's built in data types:
 
@@ -273,6 +273,10 @@ func(5, another_func)
 ```
 
 ## Modules
+
+Modules in Python aren't that far off from modules in ES6.
+
+### Defining a module in Python
 
 ## Object Oriented Programming
 
