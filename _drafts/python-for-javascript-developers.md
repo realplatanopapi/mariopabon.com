@@ -249,6 +249,18 @@ get the value of a non-existent key:
 person.get('gender', 'non-binary')
 ```
 
+### [None](https://docs.python.org/3/library/constants.html#None)
+
+`None` is equivalent to `null` in JavaScript. It means that a variable has no
+value, and it is considered "falsy".
+
+```python
+x = None
+
+if not x:
+  print('x is falsy!')
+```
+
 ## Functions
 
 Just like JavaScript, functions are objects in Python. That means you can pass
