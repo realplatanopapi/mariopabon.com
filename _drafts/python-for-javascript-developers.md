@@ -355,7 +355,7 @@ class Animal:
 
   # Public method
   def get_age(self):
-    return self.name
+    return self.__age
 
   # Private method
   def __meow():
@@ -378,8 +378,27 @@ print(animal.get_age())
 print(animal.__age)
 ```
 
-### Inheritance
+### [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
 
+Classes can inherit from other classes:
 
+```python
+# Inheriting from the Animal class
+class Human(Animal):
+  def __init__(self, name, ssn):
+    # Must call the __init__ method of the base class
+    super().__init__(name)
+    self.__ssn = ssn
+
+  def get_ssn(self):
+    return self.__ssn
+
+# Using the Human class
+human = Human('Mario', 123456789)
+
+# Object objects have access to methods defined in the Animal base class
+human.get_age()
+human.get__ssn()
+```
 
 ## Resources
