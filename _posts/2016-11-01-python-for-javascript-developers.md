@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Python for JavaScript Developers"
+date:   2016-11-01
 ---
 
 So recently I began working at a little startup in New York City by the name of
