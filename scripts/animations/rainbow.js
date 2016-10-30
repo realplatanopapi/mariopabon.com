@@ -62,18 +62,13 @@ function animateBodyColor (element, color) {
 }
 
 export default function () {
-  // Get body element
-  const body = [].slice.call(document.querySelectorAll('.js-rainbow'))[0]
-
-  if (!body) {
-    return false;
-  }
-
-  // Animate body color
-  // Set a timeout for each individual color so we can avoid getting the same
-  // integer value from random(), which would result in us always getting a
-  // gray color 😬
-  animateBodyColor(body, 'blue')
-  animateBodyColor(body, 'green')
-  animateBodyColor(body, 'red')
+  [].forEach.call(document.querySelectorAll('.js-rainbow'), (element) => {
+    // Animate element color
+    // Set a timeout for each individual color so we can avoid getting the same
+    // integer value from random(), which would result in us always getting a
+    // gray color 😬
+    animateBodyColor(element, 'blue')
+    animateBodyColor(element, 'green')
+    animateBodyColor(element, 'red')
+  });
 }
