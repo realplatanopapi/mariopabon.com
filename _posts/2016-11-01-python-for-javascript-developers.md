@@ -114,7 +114,7 @@ The Python interpreter would throw this error:
 NameError: name 'x' is not defined
 ```
 
-Because `print(x)` is not in the same block as the one that `x` is
+Because `print(x)` is in a block that is out of scope of the one that `x` is
 declared in.
 
 
@@ -392,7 +392,7 @@ print(animal.get_age())
 # Accessing a static method
 Animal.moo()
 
-# ERR!!!! __.age is private, so this won't work:
+# ERR!!!! .__age is private, so this won't work:
 print(animal.__age)
 ```
 
