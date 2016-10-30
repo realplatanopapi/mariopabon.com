@@ -7,7 +7,7 @@
     "compress": "npm run compress:scripts && npm run compress:styles",
     "compress:scripts": "uglifyjs dist/app.js --compress --mangle --o dist/app.js",
     "compress:styles": "cssnano dist/styles.css dist/styles.css",
-    "build:watch": "jekyll serve & npm run styles:watch & npm run scripts:watch & npm run public:watch",
+    "build:watch": "jekyll serve --drafts & npm run styles:watch & npm run scripts:watch & npm run public:watch",
     "styles": "node-sass styles/styles.scss dist/styles.css --include-path node_modules",
     "poststyles": "postcss dist/styles.css --use autoprefixer --output dist/styles.css",
     "public": "cp public/* dist/",
