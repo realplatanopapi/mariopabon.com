@@ -150,6 +150,8 @@ while x > 0:
 
 #### for loop
 
+For loops are like JavaScript `foreach` loops:
+
 ```python
 ex_list = [1, 2, 3]
 
