@@ -321,6 +321,9 @@ def say_hey():
   print(hey)
 ```
 
+Unlike JavaScript, you don't have to declare what is being exported; everything
+is exported by default.
+
 ### Importing a module
 
 You can import an entire module in Python:
