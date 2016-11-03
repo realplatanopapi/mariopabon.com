@@ -282,7 +282,7 @@ if not x:
   print('x is falsy!')
 ```
 
-## [Functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+## Functions
 
 Like JavaScript, functions are objects in Python. That means you can pass
 functions as arguments, or even assign properties to functions:
@@ -305,7 +305,7 @@ def another_func():
 func(5, another_func)
 ```
 
-## [Modules](https://docs.python.org/3/tutorial/modules.html)
+## Modules
 
 Modules in Python aren't that far off from modules in ES6.
 
