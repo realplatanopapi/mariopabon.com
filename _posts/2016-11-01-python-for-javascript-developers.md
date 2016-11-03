@@ -25,6 +25,9 @@ That's where this blog post comes in. To serve as a quick guide for JavaScript
 developers who want to get up to speed quickly with Python, but without having
 to learn what declaring a variable means or what a function is.
 
+This post is assuming you are using **[Python 3.0.1](https://www.python.org/download/releases/3.0.1/)**, so some of the
+examples might not work with older versions of Python.
+
 ## Table of contents
 
 - [Syntax](#syntax)
