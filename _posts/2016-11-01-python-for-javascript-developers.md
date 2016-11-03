@@ -237,11 +237,11 @@ individual characters can be accessed like elements in an array:
 ```python
 name = 'Mario'
 
-# a
-print(name[1])
+# M
+print(name[0])
 
 # Nope, name is still 'Mario'
-name[1] = 'p'
+name[0] = 'W'
 ```
 
 ### [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
