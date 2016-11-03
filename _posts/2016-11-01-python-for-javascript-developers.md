@@ -249,7 +249,7 @@ name[0] = 'W'
 ### [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
 Dictionaries are associative arrays, similar to objects in JavaScript. In fact,
-dictionaries can be declared with JSON syntax:
+dictionaries can be declared with a JSON-like syntax:
 
 ```python
 # Dictionaries in python
