@@ -4,6 +4,8 @@ title: "Python for JavaScript Developers"
 date: 2016-11-01
 ---
 
+*Special thanks to [Brett Langdon](https://twitter.com/brett_langdon) for peer reviewing* 😁
+
 So recently I began working at a little startup in New York City by the name of
 [Underdog.io](https://underdog.io), where I discovered that they had a back-end
 written primarily in Python, a language that I had very little previous exposure
