@@ -64,12 +64,15 @@ function animateColor (element, color, property) {
 
 export default function () {
   [].forEach.call(document.querySelectorAll('.js-rainbow'), (element) => {
-    // Animate element color
+    // Get the property to animate
+    const property = element.dataset.rainbowProperty || 'color';
+
+    // Animate element color for specified property
     // Set a timeout for each individual color so we can avoid getting the same
     // integer value from random(), which would result in us always getting a
     // gray color 😬
-    animateColor(element, 'blue', 'color')
-    animateColor(element, 'green', 'color')
-    animateColor(element, 'red', 'color')
+    animateColor(element, 'blue', property)
+    animateColor(element, 'green', property)
+    animateColor(element, 'red', property)
   });
 }
