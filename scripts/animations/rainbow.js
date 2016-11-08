@@ -47,32 +47,33 @@ function animateElementColor ({
 }
 
 // Helper function for starting the never ending color animation
-function animateColor (element, color, property) {
-  return requestAnimationFrame(
-    animateElementColor({
-      element,
-      property,
-      targetColorName: color,
-      targetColorValue: random(),
-      onComplete () {
-        // Run the animation again with a new color value
-        animateColor(element, color, property)
-      }
-    })
-  )
+function animateColor (elements, color) {
+  // Animate all elements to the same color
+  const targetColorValue = random();
+
+  elements.forEach(element => {
+    const propertyToAnimate = element.dataset.rainbowProperty || 'color'
+
+    return requestAnimationFrame(
+      animateElementColor({
+        element,
+        property: propertyToAnimate,
+        targetColorName: color,
+        targetColorValue,
+        onComplete () {
+          // Run the animation again with a new color value
+          animateColor(elements, color)
+        }
+      })
+    )
+  })
 }
 
 export default function () {
-  [].forEach.call(document.querySelectorAll('.js-rainbow'), (element) => {
-    // Get the property to animate
-    const property = element.dataset.rainbowProperty || 'color';
+  const elements = [].slice.call(document.querySelectorAll('.js-rainbow'))
 
-    // Animate element color for specified property
-    // Set a timeout for each individual color so we can avoid getting the same
-    // integer value from random(), which would result in us always getting a
-    // gray color 😬
-    animateColor(element, 'blue', property)
-    animateColor(element, 'green', property)
-    animateColor(element, 'red', property)
-  });
+  // Animate each color individually to avoid getting a gray color 😬
+  animateColor(elements, 'blue')
+  animateColor(elements, 'green')
+  animateColor(elements, 'red')
 }
