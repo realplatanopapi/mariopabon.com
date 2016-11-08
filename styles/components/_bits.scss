@@ -1,4 +1,5 @@
 .bits {
+  border-color: rgba($color-brand-primary, 0.99);
   display: block;
   height: 2.5rem;
   position: relative;
@@ -19,7 +20,8 @@
 
 .bits__bit {
   background: rgba($color-brand-primary, 0.99);
-  border: 1px solid $color-brand-primary;
+  border: 1px solid;
+  border-color: inherit;
   display: inline-block;
   left: 0;
   position: absolute;
