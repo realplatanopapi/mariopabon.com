@@ -7,7 +7,7 @@ const random = uniqueRandom(0, 255);
 
 // Animates a single color (red, green, or blue) for an element
 function animateElementColor ({
-  element, targetColorName, targetColorValue, onComplete
+  element, property, targetColorName, targetColorValue, onComplete
 }) {
   return function animate () {
     // Get the current value of the color that is being animated for the element
@@ -34,7 +34,7 @@ function animateElementColor ({
       const newColor = extend({}, currentColorObj)
       newColor[targetColorName] = newColorValue
 
-      element.style.color = 'rgb(' + newColor.red + ', ' + newColor.green + ', ' + newColor.blue + ')'
+      element.style[property] = 'rgb(' + newColor.red + ', ' + newColor.green + ', ' + newColor.blue + ')'
 
       return setTimeout(function () {
         requestAnimationFrame(animate)
@@ -47,15 +47,16 @@ function animateElementColor ({
 }
 
 // Helper function for starting the never ending color animation
-function animateBodyColor (element, color) {
+function animateColor (element, color, property) {
   return requestAnimationFrame(
     animateElementColor({
       element,
+      property,
       targetColorName: color,
       targetColorValue: random(),
       onComplete () {
         // Run the animation again with a new color value
-        animateBodyColor(element, color)
+        animateColor(element, color)
       }
     })
   )
@@ -67,8 +68,8 @@ export default function () {
     // Set a timeout for each individual color so we can avoid getting the same
     // integer value from random(), which would result in us always getting a
     // gray color 😬
-    animateBodyColor(element, 'blue')
-    animateBodyColor(element, 'green')
-    animateBodyColor(element, 'red')
+    animateColor(element, 'blue', 'color')
+    animateColor(element, 'green', 'color')
+    animateColor(element, 'red', 'color')
   });
 }
