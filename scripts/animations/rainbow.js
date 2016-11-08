@@ -11,7 +11,7 @@ function animateElementColor ({
 }) {
   return function animate () {
     // Get the current value of the color that is being animated for the element
-    const currentColorObj = getElementColor(element)
+    const currentColorObj = getElementColor(element, true, property)
     const currentColorValue = currentColorObj[targetColorName]
 
     let newColorValue
@@ -56,7 +56,7 @@ function animateColor (element, color, property) {
       targetColorValue: random(),
       onComplete () {
         // Run the animation again with a new color value
-        animateColor(element, color)
+        animateColor(element, color, property)
       }
     })
   )
