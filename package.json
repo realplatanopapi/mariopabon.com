@@ -39,7 +39,6 @@
   "dependencies": {
     "animejs": "1.1.1",
     "object-assign": "4.1.0",
-    "prismjs": "^1.5.1",
-    "unique-random": "1.0.0"
+    "prismjs": "^1.5.1"
   }
 }

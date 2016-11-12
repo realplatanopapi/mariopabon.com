@@ -1,9 +1,6 @@
 import extend from 'object-assign'
-import uniqueRandom from 'unique-random'
 import getElementColor from '../util/get-element-color'
-
-// Configure random number generator
-const random = uniqueRandom(0, 255);
+import getRandomInt from '../util/get-random-int';
 
 // Animates a single color (red, green, or blue) for an element
 function animateElementColor ({
@@ -49,7 +46,7 @@ function animateElementColor ({
 // Helper function for starting the never ending color animation
 function animateColor (elements, color) {
   // Animate all elements to the same color
-  const targetColorValue = random();
+  const targetColorValue = getRandomInt(0, 256);
 
   elements.forEach(element => {
     const propertyToAnimate = element.dataset.rainbowProperty || 'color'
