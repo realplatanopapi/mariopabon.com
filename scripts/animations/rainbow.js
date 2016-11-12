@@ -31,7 +31,7 @@ function animateElementColor ({
       const newColor = extend({}, currentColorObj)
       newColor[targetColorName] = newColorValue
 
-      element.style[property] = 'rgb(' + newColor.red + ', ' + newColor.green + ', ' + newColor.blue + ')'
+      element.style[property] = 'rgba(' + newColor.red + ', ' + newColor.green + ', ' + newColor.blue + ', 0.99)'
 
       return setTimeout(function () {
         requestAnimationFrame(animate)
