@@ -3,7 +3,7 @@
   display: block;
   height: 2.5rem;
   position: relative;
-  transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.15s;
   transition-property: background, transform;
   width: 2.5rem;
 
@@ -27,6 +27,6 @@
   position: absolute;
   height: 2.5rem;
   top: 0;
-  transition: opacity ease-in-out 0.25s;
+  transition: opacity ease-in-out 0.15s;
   width: 2.5rem;
 }

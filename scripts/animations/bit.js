@@ -1,5 +1,5 @@
 import anime from 'animejs'
-import extend from 'extend'
+import extend from 'object-assign'
 import getElementColor from '../util/get-element-color'
 
 function fadeBackground (element) {
