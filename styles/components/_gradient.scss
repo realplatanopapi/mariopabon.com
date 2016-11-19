@@ -6,7 +6,7 @@ $gradient-width: 100vw;
 }
 
 .gradient {
-  animation: gradient linear both infinite 30s;
+  animation: gradient linear both infinite 10s;
   animation-delay: 3s;
   background: linear-gradient(45deg, $color-brand-primary, $color-brand-secondary, $color-brand-primary);
   background-size: $gradient-width;
