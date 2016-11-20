@@ -2,7 +2,7 @@ $gradient-width: 100vw;
 
 @keyframes gradient {
   0% { background-position: 0 0; }
-  100% { background-position: -$gradient-width 0; }
+  100% { background-position: $gradient-width 0; }
 }
 
 .gradient {
