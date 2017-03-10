@@ -1,7 +1,8 @@
 .header {
   border-bottom: 1px solid darken($color-body-bg, 10%);
   margin-bottom: spacing(2);
-  padding-bottom: spacing(0.5);
+  padding-bottom: spacing(2);
+  text-align: center;
 }
 
 .header__title {
@@ -9,6 +10,7 @@
 }
 
 .header__subtitle {
+  font-weight: 700;
   margin-bottom: 0;
   opacity: 0.75;
 }

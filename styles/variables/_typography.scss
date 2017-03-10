@@ -1,7 +1,7 @@
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-family-sans-serif: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
-$font-size-base: 1.125em;
-$font-scale: 1.618;
+$font-size-base: 100%;
+$font-scale: 1.5;
 
 $font-size: (
   -2: 0.75rem,
@@ -15,7 +15,7 @@ $font-size: (
   @return map-get($font-size, $size);
 }
 
-$line-height-base: 1.618;
+$line-height-base: 1.5;
 $line-height-headings: 1.1;
 
-$measure: 60rem;
+$measure: 35rem;
