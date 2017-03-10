@@ -1,17 +1,21 @@
 .juicy {
   display: block;
-  font-size: font-size(1);
+  font-size: font-size(2);
   font-weight: 700;
   margin: 0;
   max-width: 60rem;
-}
-
-.juicy--deluxe {
-  font-size: font-size(2);
-  line-height: $line-height-headings;
 
   @include media ('small') {
     font-size: font-size(1);
+  }
+}
+
+.juicy--deluxe {
+  font-size: font-size(3);
+  line-height: $line-height-headings;
+
+  @include media ('small') {
+    font-size: font-size(2);
     line-height: $line-height-base;
   }
 }
