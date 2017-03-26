@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "styles": "node-sass styles --output dist"
+  },
+  "devDependencies": {
+    "node-sass": "4.5.1"
+  }
+}
