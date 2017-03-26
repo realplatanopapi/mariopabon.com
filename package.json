@@ -9,7 +9,7 @@
     "scripts": "globify 'javascripts/*.js' -o dist",
     "scripts/watch": "npm run scripts -- --watch",
     "styles": "node-sass styles --output dist --include-path node_modules",
-    "styles/watch": "node-sass styles --output dist --watch --recursive",
+    "styles/watch": "npm run styles -- --watch --recursive",
     "poststyles": "postcss dist/styles.css --use autoprefixer --output dist/styles.css"
   },
   "devDependencies": {
