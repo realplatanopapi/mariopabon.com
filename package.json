@@ -1,9 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "build": "npm run jekyll && npm run styles",
-    "develop": "concurrently 'jekyll serve' 'npm run styles -- --watch'",
+    "build": "npm run clean && npm run jekyll && npm run styles && npm run public",
+    "clean": "rm -rf dist",
+    "develop": "npm run build && concurrently 'jekyll serve' 'npm run styles -- --watch'",
     "jekyll": "jekyll build",
+    "public": "cp public/* dist/",
     "styles": "node-sass styles --output dist",
     "poststyles": "postcss dist/styles.css --use autoprefixer --output dist/styles.css"
   },
