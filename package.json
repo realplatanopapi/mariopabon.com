@@ -4,7 +4,8 @@
     "build": "npm run jekyll && npm run styles",
     "develop": "concurrently 'jekyll serve' 'npm run styles -- --watch'",
     "jekyll": "jekyll build",
-    "styles": "node-sass styles --output dist"
+    "styles": "node-sass styles --output dist",
+    "poststyles": "postcss dist/styles.css --use autoprefixer --output dist/styles.css"
   },
   "devDependencies": {
     "concurrently": "3.4.0",
