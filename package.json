@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "concurrently": "3.4.0",
-    "node-sass": "4.5.1"
+    "node-sass": "4.5.1",
+    "watchify": "3.9.0"
   }
 }
