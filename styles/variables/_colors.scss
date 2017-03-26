@@ -1,6 +1,10 @@
+// Brand colors
 $color-brand-primary: #420FFF;
 $color-brand-secondary: adjust-hue($color-brand-primary, 90%);
 
-// Colorssss
-$color-body-bg: #fafafa;
-$color-body: #3a3a3a;
+// UI colors
+$color-bg: #fff;
+
+$color-text: #333;
+$color-text-dark: #111;
+$color-text-light: #888;

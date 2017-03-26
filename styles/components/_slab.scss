@@ -1,27 +1,19 @@
 .slab {
-  border: 1px solid darken($color-body-bg, 10%);
-  display: block;
-  padding: spacing(1);
-  text-decoration: none;
-  width: 100%;
-
-  &:hover {
-    animation: none;
-    background: $color-brand-primary;
-    border-color: $color-brand-primary;
-    color: #fff;
-  }
+  align-items: baseline;
+  color: inherit;
+  display: flex;
 }
 
 .slab__title {
-  display: block;
-  font-size: font-size(1);
-  line-height: $line-height-headings;
-  margin-bottom: spacing(0.5);
+  flex: 0 1 auto;
 }
 
 .slab__subtitle {
-  display: block;
-  font-weight: 400;
-  opacity: 0.75;
+  flex: 0 0 auto;
+}
+
+.slab__subtitle {
+  color: $color-text-light;
+  font-size: 0.75rem;
+  padding-left: spacing(0.5);
 }

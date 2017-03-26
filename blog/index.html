@@ -3,38 +3,37 @@ title: blog
 layout: default
 ---
 
-<section class="section">
-  <div class="container">
-    <header class="header">
-      <h1 class="header__title gradient">Writings</h1>
-      <p class="header__subtitle gradient">
-        Musings on design and code.
-      </p>
-    </header>
-    <ul class="row">
+<article class="container">
+  <header class="section section--first">
+    <h1 class="gradient">Writings</h1>
+    <p>
+      Musings on code and design.
+    </p>
+  </header>
+  <section class="section">
+    <ul>
       {% for post in paginator.posts %}
-        <li class="col-12--small col-6--medium col-4--large-and-up stretch-content margin-1--bottom">
+        <li>
           <a class="slab" href="{{ post.url }}">
             <span class="slab__title">{{ post.title }}</span>
-            <time class="slab__subtitle">{{ post.date | date: '%d %B %Y' }}</time>
+            <time class="slab__subtitle">{{ post.date | date: '%d %b %Y' }}</time>
           </a>
         </li>
       {% endfor %}
     </ul>
     {% if paginator.total_pages > 1 %}
-      <nav class="pager">
+      <nav>
         {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}">Newer Posts</a>
-        {% else %}
-          <span>Newer Posts</span>
+          <p>
+            <a href="{{ paginator.previous_page_path }}">← Newer Posts</a>
+          </p>
         {% endif %}
-        <span class="pager__page-indicator">Page {{ paginator.page }} / {{ paginator.total_pages }}</span>
         {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}">Older Posts</a>
-        {% else %}
-          <span>Older Posts</span>
+          <p>
+            <a href="{{ paginator.next_page_path }}">Older Posts →</a>
+          </p>
         {% endif %}
       </nav>
     {% endif %}
-  </div>
-</section>
+  </section>
+</article>

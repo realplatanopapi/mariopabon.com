@@ -11,27 +11,26 @@
 }
 
 .navigation {
-  align-items: center;
+  align-items: baseline;
   animation: slideDown ease-in-out 0.5s;
   animation-delay: 0.25s;
   animation-fill-mode: both;
   display: flex;
   justify-content: space-between;
-  left: 0;
-  padding: 2rem;
+  left: spacing(1);
   position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: layers(navigation);
-
-  @include media('large-and-down') {
-    background: $color-body-bg;
-    padding: 1rem;
-    position: relative;
-  }
+  top: spacing(1);
+  width: calc(100% - 3rem);
 }
 
 .navigation__link {
-  text-decoration: none;
-  text-transform: lowercase;
+  color: #111;
+}
+
+.navigation__link--active {
+  color: #420fff;
+}
+
+.navigation__logo {
+  font-weight: 700;
 }

@@ -18,35 +18,26 @@
   </head>
   <body>
     <nav class="navigation">
-      <a class="bits" data-rainbow-property="borderColor" aria-label="Home" href="/">
-        <span class="bits__bit"></span>
-        <span class="bits__bit"></span>
-      </a>
-      <a class="navigation__link" href="/blog">Writings</a>
+      <a class="navigation__link navigation__logo{% if page.url == '/'%} navigation__link--active{% endif %}" href="/">mario pabon</a>
+      <a class="navigation__link{% if page.url == '/blog/'%} navigation__link--active{% endif %}" href="/blog">writings</a>
     </nav>
     <main id="main">
       {{ content }}
     </main>
-    <footer class="global-footer">
-      <p class="global-footer__text">
-        Coming at ya live from Brooklyn
-      </p>
-      <a class="global-footer__text" href="https://github.com/restlessbit/mariopabon.com">
-        View page source
-      </a>
-      <p class="global-footer__text">
-        &copy; 2016 – ∞
-      </p>
+    <footer class="footer">
+      <div class="container">
+        &copy; Mario Pabon
+      </div>
     </footer>
 
     <script type="text/javascript">
-        var _mfq = _mfq || [];
-        (function() {
-            var mf = document.createElement("script");
-            mf.type = "text/javascript"; mf.async = true;
-            mf.src = "//cdn.mouseflow.com/projects/4d229ebf-8a70-48da-8dcb-4ce74674c2dd.js";
-            document.getElementsByTagName("head")[0].appendChild(mf);
-        })();
+      var _mfq = _mfq || [];
+      (function() {
+          var mf = document.createElement("script");
+          mf.type = "text/javascript"; mf.async = true;
+          mf.src = "//cdn.mouseflow.com/projects/4d229ebf-8a70-48da-8dcb-4ce74674c2dd.js";
+          document.getElementsByTagName("head")[0].appendChild(mf);
+      })();
     </script>
 
     <script src="/app.js"></script>

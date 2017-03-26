@@ -1,5 +1,0 @@
-@each $alignment in ('left', 'center', 'right') {
-  .text-align--#{$alignment} {
-    text-align: #{$alignment};
-  }
-}

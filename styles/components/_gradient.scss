@@ -14,12 +14,4 @@ $gradient-width: 100vw;
   position: relative;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-
-  a {
-    -webkit-text-fill-color: $color-brand-primary;
-
-    &:hover {
-      -webkit-text-fill-color: adjust-hue($color-brand-primary, 60%);
-    }
-  }
 }

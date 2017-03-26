@@ -1,15 +1,10 @@
-// Thanks Paul Irish http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 html {
-  background: $color-body-bg;
+  background: $color-bg;
   box-sizing: border-box;
-  color: $color-body;
-  font-family: $font-family-sans-serif;
+  font-family: $font-family;
   font-size: $font-size-base;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  line-height: $line-height-base;
+  color: $color-text;
+  line-height: $line-height;
 }
