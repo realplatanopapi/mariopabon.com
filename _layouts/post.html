@@ -7,8 +7,8 @@ layout: default
     <h1 class="header__title gradient">
       {{ page.title }}
     </h1>
-    <time class="header__subtitle gradient" datetime={{ post.post_date }}>
-      {{ page.date | date: "%B %-d, %Y" }}
+    <time class="header__subtitle gradient" datetime="{{ page.date }}">
+      {{ page.date | date: '%d %b %Y' }}
     </time>
   </header>
   <div class="longform section">
