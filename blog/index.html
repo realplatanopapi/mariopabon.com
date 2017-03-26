@@ -1,40 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>blog / mario pabon</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <nav class="navigation">
-      <a class="navigation__link navigation__logo" href="/">mario pabon</a>
-      <a class="navigation__link navigation__link--active" href="/blog">writings</a>
-    </nav>
-    <main class="container">
-      <article>
-        <header class="section section--first">
-          <h1>Writings</h1>
-          <p>
-            Musings on code and design.
-          </p>
-        </header>
-        <section class="section">
-          <ul>
-            <li>
-              <a class="slab" href="/post/">
-                <span class="slab__title">Using Docker for Node Development</span>
-                <time class="slab__subtitle">27 Mar 2017</time>
-              </a>
-            </li>
-            <li>
-              <a class="slab" href="#">
-                <span class="slab__title">Creating a build system for your React app in 5 minutes or less</span>
-                <time class="slab__subtitle">20 Feb 2017</time>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-    </main>
-  </body>
-</html>
+---
+title: blog
+layout: default
+---
+
+<article class="container">
+  <header class="section section--first">
+    <h1>Writings</h1>
+    <p>
+      Musings on code and design.
+    </p>
+  </header>
+  <section class="section">
+    <ul>
+      {% for post in paginator.posts %}
+        <li>
+          <a class="slab" href="{{ post.url }}">
+            <span class="slab__title">{{ post.title }}</span>
+            <time class="slab__subtitle">{{ post.date | date: '%d %B %Y' }}</time>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</article>
