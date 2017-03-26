@@ -1,4 +1,18 @@
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .section {
+  animation: slideUp ease-in-out 0.5s;
+  animation-fill-mode: both;
   margin-bottom: spacing(3);
 }
 
