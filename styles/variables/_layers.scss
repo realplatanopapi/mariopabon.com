@@ -1,8 +1,0 @@
-// Keep track of z-index values to prevent a z-index of 999999 😜
-$layers: (
-  content: 0,
-  navigation: 1
-);
-@function layers($layer) {
-  @return map-get($layers, $layer);
-}
