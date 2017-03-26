@@ -1,0 +1,11 @@
+.longform {
+  max-width: $measure;
+
+  h2, h3, p {
+    margin-bottom: spacing(1);
+  }
+
+  h2, h3 {
+    padding-top: spacing(0.5);
+  }
+}

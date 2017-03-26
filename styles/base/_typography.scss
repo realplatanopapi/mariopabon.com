@@ -1,0 +1,22 @@
+h1, h2, h3, h4, p {
+  margin-bottom: spacing(0.5);
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1, h2, h3, h4 {
+  color: #222;
+  line-height: 1;
+}
+
+h1 {
+  color: $color-brand-primary;
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}

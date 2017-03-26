@@ -1,0 +1,21 @@
+.navigation {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  left: spacing(1);
+  position: fixed;
+  top: spacing(1);
+  width: calc(100% - 3rem);
+}
+
+.navigation__link {
+  color: #111;
+}
+
+.navigation__link--active {
+  color: #420fff;
+}
+
+.navigation__logo {
+  font-weight: 700;
+}

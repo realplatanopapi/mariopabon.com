@@ -1,0 +1,19 @@
+.slab {
+  align-items: baseline;
+  color: inherit;
+  display: flex;
+}
+
+.slab__title {
+  flex: 0 1 auto;
+}
+
+.slab__subtitle {
+  flex: 0 0 auto;
+}
+
+.slab__subtitle {
+  color: $color-text-light;
+  font-size: 0.75rem;
+  padding-left: spacing(0.5);
+}
