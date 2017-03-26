@@ -14,6 +14,12 @@
   animation: slideUp ease-in-out 0.5s;
   animation-fill-mode: both;
   margin-bottom: spacing(3);
+
+  @for $i from 2 through 5 {
+    &:nth-child(#{$i}) {
+      animation-delay: 0.125s * $i;
+    }
+  }
 }
 
 .section--first {
