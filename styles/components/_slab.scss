@@ -1,19 +1,14 @@
 .slab {
-  align-items: baseline;
   color: inherit;
-  display: flex;
 }
 
-.slab__title {
-  flex: 0 1 auto;
-}
-
+.slab__title,
 .slab__subtitle {
-  flex: 0 0 auto;
+  display: block;
 }
 
 .slab__subtitle {
   color: $color-text-light;
-  font-size: 0.75rem;
-  padding-left: spacing(0.5);
+  flex: 0 0 auto;
+  font-size: 0.875rem;
 }
