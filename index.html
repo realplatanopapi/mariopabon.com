@@ -44,7 +44,11 @@ layout: default
       {% for post in site.posts limit:5 %}
         <li>
           <a class="slab" href="{{ post.url }}">
-            <span class="slab__title">{{ post.title }}</span>
+            <span class="slab__title">{{ post.title }}
+              {% if forloop.index0 == 0 %}
+                - <small class="alert">New!</small>
+              {% endif %}
+            </span>
             <time class="slab__subtitle">{{ post.date | date: '%d %b %Y' }}</time>
           </a>
         </li>
