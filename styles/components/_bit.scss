@@ -5,9 +5,4 @@ $bit-size: 2em;
   display: block;
   height: $bit-size;
   width: $bit-size;
-
-  &:hover {
-    background: none;
-    border: 1px solid $color-brand-primary;
-  }
 }
