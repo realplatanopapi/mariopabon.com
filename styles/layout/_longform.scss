@@ -9,4 +9,11 @@
   p {
     padding-bottom: spacing(1);
   }
+
+  ol,
+  ul {
+    list-style-type: initial;
+    padding-bottom: spacing(1);
+    padding-left: spacing(1);
+  }
 }
