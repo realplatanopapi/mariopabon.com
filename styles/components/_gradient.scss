@@ -1,15 +1,5 @@
-$gradient-width: 100vw;
-
-@keyframes gradient {
-  0% { background-position: 0 0; }
-  100% { background-position: $gradient-width 0; }
-}
-
 .gradient {
-  animation: gradient linear both infinite 7s;
-  animation-delay: 3s;
-  background: linear-gradient(90deg, $color-brand-primary, $color-brand-secondary, $color-brand-primary);
-  background-size: $gradient-width;
+  @include animation-gradient(7s, 3s);
   padding-bottom: 0.1rem;
   position: relative;
   -webkit-text-fill-color: transparent;

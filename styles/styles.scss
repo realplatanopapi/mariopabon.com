@@ -7,6 +7,8 @@
 
 @import 'mixins/all-caps';
 
+@import 'animations/gradient';
+
 @import 'base/reset';
 @import 'base/box-sizing';
 @import 'base/html';
@@ -19,6 +21,7 @@
 @import 'base/typography';
 
 @import 'components/alert';
+@import 'components/bit';
 @import 'components/footer';
 @import 'components/gradient';
 @import 'components/navigation';
