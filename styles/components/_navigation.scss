@@ -21,6 +21,7 @@
   position: fixed;
   top: spacing(1);
   width: calc(100% - 3rem);
+  z-index: 1000;
 }
 
 .navigation__link {
