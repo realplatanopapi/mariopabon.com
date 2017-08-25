@@ -2,12 +2,12 @@
   max-width: $measure;
 
   h2, h3 {
-    padding-bottom: spacing(0.5);
+    margin-bottom: spacing(0.5);
     padding-top: spacing(1);
   }
 
   p {
-    padding-bottom: spacing(1);
+    margin-bottom: spacing(0.5);
   }
 
   ol,
@@ -15,5 +15,9 @@
     list-style-type: initial;
     padding-bottom: spacing(1);
     padding-left: spacing(1);
+
+    > ol, ul {
+      padding-bottom: 0;
+    }
   }
 }
