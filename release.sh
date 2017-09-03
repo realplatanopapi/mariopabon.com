@@ -7,7 +7,6 @@ git tag "$TAG"
 git push origin $TAG
 
 npm run build
-npm run compress
 
 cd ./dist
 git init

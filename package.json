@@ -1,6 +1,21 @@
 {
   "private": true,
-  "dependencies": {
-    "node-sass": "^4.5.3"
+  "scripts": {
+    "build/clean": "rm -rf dist",
+    "build/html": "cp index.html dist/",
+    "build/public": "cp public/* dist/",
+    "build/styles": "node-sass styles.scss dist/styles.css --output-style compressed",
+    "build": "npm run build/clean && mkdir -p dist && npm run build/public && npm run build/html && npm run build/styles",
+    "build/html/watch": "nodemon --exec 'npm run build/html' --ignore dist --ext html",
+    "build/styles/watch": "npm run build/styles -- --watch",
+    "build/watch": "concurrently 'npm run build/html/watch' 'npm run build/styles/watch'",
+    "develop": "npm run build && concurrently 'npm run serve' 'npm run build/watch'",
+    "serve": "http-server dist"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "http-server": "^0.10.0",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
   }
 }
