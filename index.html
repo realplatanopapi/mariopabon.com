@@ -1,0 +1,104 @@
+<html lang="en">
+  <head>
+    <title>Mario Pabon, software engineer in NYC.</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msapplication-TileColor" content="#420aaa" />
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+    <meta name="theme-color" content="#420aaa" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#420fff" />
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Mario Pabon is a software engineer living and working in New York City.</h1>
+      </header>
+      <section>
+        <p>
+          Working at <a href="https://underdog.io">Underdog.io</a> to make hiring better.
+        </p>
+      </section>
+      <section>
+        <h2>Featured projects</h2>
+        <ul>
+          <li>
+            <a class="slab slab--link" href="https://getthebrief.email">
+              <span class="slab__title">The Brief</span>
+              <span class="slab__subtitle">Get a daily email with all the new content from sites you want to stay up to date with.</span>
+            </a>
+          </li>
+        </ul>
+        <p>
+          View more projects <a href="https://github.com/restlessbit">on GitHub</a>.
+        </p>
+      </section>
+      <section>
+        <h2>Writings</h2>
+        <ul>
+          <li>
+            {% include '_slab.html' with {
+              link: 'https://dev.to/underdogio/python-for-javascript-developers',
+              title: 'Python for JavaScript Developers',
+              subtitle: 'May 1, 2017'
+            } %}
+          </li>
+          <li>
+            {% include '_slab.html' with {
+              link: 'https://dev.to/underdogio/adding-animations-to-your-react-app-with-react-transition-group',
+              title: 'Adding animations to your React app with React Transition Group',
+              subtitle: 'Jul 11, 2017'
+            } %}
+          </li>
+          <li>
+            {% include '_slab.html' with {
+              link: 'https://medium.com/@restlessbit/s3-is-down-a-haiku-803ad2b4edad',
+              title: 'S3 is down — a Haiku',
+              subtitle: 'Feb 28, 2017'
+            } %}
+          </li>
+          <li>
+            {% include '_slab.html' with {
+              link: 'https://medium.com/@restlessbit/how-to-get-a-job-in-front-end-web-development-b3e7f95a2ba9',
+              title: 'How to get a job in front-end web development',
+              subtitle: 'Aug 16, 2015'
+            } %}
+          </li>
+          <li>
+            {% include '_slab.html' with {
+              link: 'https://medium.com/@restlessbit/i-am-dev-c00d0a3a53b0',
+              title: 'I am Dev',
+              subtitle: 'Jul 24, 2015'
+            } %}
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Connect with me</h2>
+        <ul>
+          <li>
+            {% include '_slab.html' with {
+              link: 'https://twitter.com/restlessbit',
+              title: 'Twitter',
+              subtitle: '@restlessbit'
+            } %}
+          </li>
+          <li>
+            {% include '_slab.html' with {
+              link: 'https://github.com/restlessbit',
+              title: 'GitHub',
+              subtitle: '@restlessbit'
+            } %}
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
