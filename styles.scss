@@ -50,6 +50,10 @@ body {
   padding: $spacing-unit;
   // Add back scrolling momentum
   -webkit-overflow-scrolling: touch;
+
+  @media (max-width: $breakpoint) {
+    height: 100vh;
+  }
 }
 
 main {
