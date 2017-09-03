@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+$breakpoint: 800px;
+$color-brand-primary: #420fff;
+$color-brand-secondary: lighten($color-brand-primary, 15%);
+$color-text: #4a4a4a;
+$color-text-dark: #1a1a1a;
+$color-text-light: #8a8a8a;
+$spacing-unit: 1.5rem;
+
+$section-spacing: $spacing-unit * 3;
+
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: linear-gradient(90deg, $color-brand-primary, $color-brand-secondary);
+  background-size: cover;
+  box-sizing: border-box;
+  color: $color-text;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: $spacing-unit;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  @media (max-width: $breakpoint) {
+    background: none;
+    padding: 0;
+  }
+}
+
+body {
+  background: #fafafa;
+  height: calc(100vh - #{$spacing-unit * 2});
+  overflow-y: auto;
+  padding: $spacing-unit;
+  // Add back scrolling momentum
+  -webkit-overflow-scrolling: touch;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+}
+
+h1, h2, p, ul, li {
+  margin-bottom: $spacing-unit;
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: 0 0; }
+  100% { background-position: 100vw 0; }
+}
+
+h1 {
+  animation: gradient linear 5s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(90deg,$color-brand-primary, $color-brand-secondary, $color-brand-primary);
+  background-size: 100vw;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  max-width: 30rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+h2 {
+  color: $color-text-dark;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+header,
+section {
+  margin-bottom: $section-spacing;
+
+  @media (max-width: $breakpoint) {
+    margin-bottom: $spacing-unit * 2;
+  }
+}
+
+header {
+  margin-top: $section-spacing;
+
+  @media (max-width: $breakpoint) {
+    margin-top: 0;
+  }
+}
+
+a {
+  border-bottom: 1px solid $color-text-dark;
+  color: $color-text-dark;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    border-color: $color-brand-primary;
+    color: $color-brand-primary;
+  }
+}
+
+.slab--link {
+  border: none;
+
+  &:focus,
+  &:hover {
+    .slab__title {
+      color: $color-brand-primary;
+    }
+
+    .slab__subtitle {
+      color: $color-brand-secondary;
+    }
+  }
+}
+
+.slab__title {
+  color: $color-text-dark;
+  display: block;
+}
+
+.slab__subtitle {
+  color: $color-text-light;
+  display: block;
+}
