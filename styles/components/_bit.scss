@@ -1,8 +1,0 @@
-$bit-size: 2em;
-
-.bit {
-  @include animation-gradient(7s); 
-  display: block;
-  height: $bit-size;
-  width: $bit-size;
-}

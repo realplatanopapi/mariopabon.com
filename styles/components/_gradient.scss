@@ -1,7 +1,0 @@
-.gradient {
-  @include animation-gradient(7s, 3s);
-  padding-bottom: 0.1rem;
-  position: relative;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
