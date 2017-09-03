@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build/clean": "rm -rf dist",
-    "build/html": "cp index.html dist/",
+    "build/html": "swig render ./index.html --output dist",
     "build/public": "cp public/* dist/",
     "build/styles": "node-sass styles.scss dist/styles.css --output-style compressed",
     "build": "npm run build/clean && mkdir -p dist && npm run build/public && npm run build/html && npm run build/styles",
@@ -16,6 +16,7 @@
     "concurrently": "^3.5.0",
     "http-server": "^0.10.0",
     "node-sass": "^4.5.3",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "swig-templates": "^2.0.2"
   }
 }
