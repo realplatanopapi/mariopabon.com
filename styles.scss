@@ -102,9 +102,29 @@ ul {
   padding: 0;
 }
 
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 header,
 section {
+  animation: slideUp ease-in-out 0.5s;
+  animation-fill-mode: both;
   margin-bottom: $section-spacing;
+
+  @for $i from 2 through 5 {
+    &:nth-child(#{$i}) {
+      animation-delay: 0.125s * $i;
+    }
+  }
 
   @media (max-width: $breakpoint) {
     margin-bottom: $spacing-unit * 2;
