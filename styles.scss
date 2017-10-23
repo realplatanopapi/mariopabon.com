@@ -8,6 +8,7 @@ $color-text-dark: #1a1a1a;
 $color-text-light: #8a8a8a;
 $spacing-unit: 1.5rem;
 
+$body-padding: $spacing-unit / 2;
 $section-spacing: $spacing-unit * 3;
 
 * {
@@ -33,7 +34,7 @@ html {
   font-size: 100%;
   line-height: 1.5;
   overflow: hidden;
-  padding: $spacing-unit;
+  padding: $body-padding;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 
@@ -45,7 +46,7 @@ html {
 
 body {
   background: #fafafa;
-  height: calc(100vh - #{$spacing-unit * 2});
+  height: calc(100vh - #{$body-padding * 2});
   overflow-y: auto;
   padding: $spacing-unit;
   // Add back scrolling momentum
