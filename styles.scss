@@ -8,7 +8,7 @@ $color-text-dark: #1a1a1a;
 $color-text-light: #8a8a8a;
 $spacing-unit: 1.5rem;
 
-$body-padding: $spacing-unit / 2;
+$body-padding: $spacing-unit / 4;
 $section-spacing: $spacing-unit * 3;
 
 * {
@@ -37,15 +37,11 @@ html {
   padding: $body-padding;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-
-  @media (max-width: $breakpoint) {
-    background: none;
-    padding: 0;
-  }
 }
 
 body {
   background: #fafafa;
+  border-radius: 2px;
   height: calc(100vh - #{$body-padding * 2});
   overflow-y: auto;
   padding: $spacing-unit;
