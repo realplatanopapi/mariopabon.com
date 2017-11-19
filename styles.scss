@@ -2,7 +2,7 @@
 
 $breakpoint: 800px;
 $color-brand-primary: #420fff;
-$color-brand-secondary: lighten($color-brand-primary, 15%);
+$color-brand-secondary: lighten($color-brand-primary, 20%);
 $color-text: #4a4a4a;
 $color-text-dark: #1a1a1a;
 $color-text-light: #8a8a8a;
@@ -60,13 +60,14 @@ h1, h2, p, ul, li {
 
 @keyframes gradient {
   0% { background-position: 0 0; }
-  100% { background-position: 100vw 0; }
+  100% { background-position: 100% 0; }
 }
 
 h1 {
-  animation: gradient linear 5s;
+  animation: gradient linear 10s;
   animation-iteration-count: infinite;
-  background: linear-gradient(90deg,$color-brand-primary, $color-brand-secondary, $color-brand-primary);
+  animation-delay: 1s;
+  background: linear-gradient(90deg, $color-brand-primary, $color-brand-secondary, $color-brand-primary);
   background-size: 100vw;
   font-size: 1.5rem;
   font-weight: 400;
