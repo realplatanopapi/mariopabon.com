@@ -63,7 +63,8 @@ li {
 }
 
 main {
-  margin-left: 10%;
+  margin-left: 8rem;
+  margin-top: 3rem;
   max-width: 50rem;
   padding: 2rem;
   transition: margin ease-in-out 0.15s;
@@ -72,6 +73,7 @@ main {
 @media (max-width: 1000px) {
   main {
     margin-left: 0;
+    margin-top: 0;
   }
 }
 
