@@ -67,7 +67,6 @@ article {
   margin-top: 3rem;
   max-width: 50rem;
   padding: 2rem;
-  transition: margin ease-in-out 0.15s;
 }
 
 @media (max-width: 1000px) {
