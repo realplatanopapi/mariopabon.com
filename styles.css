@@ -80,3 +80,34 @@ article {
 section {
   margin-bottom: 3rem;
 }
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header,
+main,
+footer {
+  animation: slideIn ease-in-out 0.3s;
+  animation-fill-mode: both;
+}
+
+header {
+  animation-delay: 0.15s;
+}
+
+main {
+  animation-delay: 0.3s;
+}
+
+footer {
+  animation-delay: 0.45s;
+}
