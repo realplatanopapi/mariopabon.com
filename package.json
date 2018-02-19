@@ -1,9 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "npm run clean && mkdir dist/ && cp index.html styles.css ./dist/",
+    "build": "yarn run clean && mkdir dist/ && cp index.html styles.css ./dist/ && yarn run public",
     "clean": "rm -rf dist",
-    "start": "http-serve -c-1 ."
+    "public": "cp public/* dist/",
+    "start": "npm run build && http-serve -c-1 ."
   },
   "devDependencies": {
     "http-serve": "^1.0.1"
