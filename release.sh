@@ -6,7 +6,7 @@ TAG=`date +%Y-%m-%d.%H-%M-%S`
 git tag "$TAG"
 git push origin $TAG
 
-npm run build
+yarn run build
 
 cd ./dist
 git init

@@ -4,7 +4,7 @@
     "build": "yarn run clean && mkdir dist/ && cp index.html styles.css ./dist/ && yarn run public",
     "clean": "rm -rf dist",
     "public": "cp public/* dist/",
-    "start": "npm run build && http-serve -c-1 ."
+    "start": "yarn run build && http-serve -c-1 ."
   },
   "devDependencies": {
     "http-serve": "^1.0.1"
