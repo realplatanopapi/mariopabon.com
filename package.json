@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "mkdir dist/ && cp index.html styles.css ./dist/",
+    "start": "http-serve -c-1 ."
+  },
+  "devDependencies": {
+    "http-serve": "^1.0.1"
+  }
+}
