@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "npm run clean && mkdir dist/ && cp index.html styles.css ./dist/",
+    "clean": "rm -rf dist",
+    "start": "http-serve -c-1 ."
+  },
+  "devDependencies": {
+    "http-serve": "^1.0.1"
+  }
+}

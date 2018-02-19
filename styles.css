@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #fafafa;
+  box-sizing: border-box;
+  color: #3a3a3a;
+  font-family: 'Space Mono', monospace;
+  font-size: 87.5%;
+  line-height: 1.5;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, p {
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+h1, h2 {
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+a {
+  border-bottom: 1px solid #2a2a2a;
+  color: #1a1a1a;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover {
+  border-color: #420eee;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+main {
+  margin-left: 10%;
+  max-width: 50rem;
+  padding: 2rem;
+  transition: margin ease-in-out 0.15s;
+}
+
+@media (max-width: 1000px) {
+  main {
+    margin-left: 0;
+  }
+}
+
+section {
+  margin-bottom: 3rem;
+}
