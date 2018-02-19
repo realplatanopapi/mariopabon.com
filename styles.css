@@ -110,3 +110,8 @@ main {
 footer {
   animation-delay: 0.45s;
 }
+
+footer a {
+  border: none;
+  color: inherit;
+}
