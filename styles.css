@@ -6,6 +6,11 @@
   box-sizing: inherit;
 }
 
+::selection {
+  background: #3a3a3a;
+  color: #fff;
+}
+
 html,
 body {
   margin: 0;
