@@ -45,11 +45,15 @@ a {
   border-bottom: 1px solid #2a2a2a;
   color: #1a1a1a;
   font-weight: 400;
+  padding: 1px;
   text-decoration: none;
 }
 
 a:hover {
-  border-color: #420eee;
+  border-color: #420fff;
+  border-width: 2px;
+  padding-bottom: 0;
+  position: relative;
 }
 
 ul {
