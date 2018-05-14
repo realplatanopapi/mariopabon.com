@@ -61,6 +61,10 @@ a:hover {
   position: relative;
 }
 
+img {
+  max-width: 100%;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -123,4 +127,20 @@ footer {
 footer a {
   border: none;
   color: inherit;
+}
+
+.gdpr-banner {
+  border: 0;
+  height: 100px;
+  left: -1px;
+  position: fixed;
+  text-decoration: none;
+  top: -1px;
+  width: 100px;
+  z-index: 10;
+}
+
+.gdpr-banner:hover {
+  border: 0;
+  position: fixed;
 }
