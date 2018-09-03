@@ -120,7 +120,7 @@ a {
 }
 
 a:hover {
-  color: var(--lit-blue);
+  border-bottom-color: var(--lit-blue);
   border-bottom-width: 2px;
   padding-bottom: 0;
 }
