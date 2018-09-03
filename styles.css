@@ -35,9 +35,44 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 header,
 section {
-  margin-bottom: 4rem;
+  animation: ease-out 0.5s;
+  animation-fill-mode: both;
+}
+
+header {
+  animation-name: slideInDown;
+  animation-delay: 0.25s;
+}
+
+section {
+  animation-name: slideInUp;
+  animation-delay: 0.125s;
 }
 
 main {
@@ -158,7 +193,20 @@ a:hover {
   position: fixed;
 }
 
+@keyframes bannerSlide {
+  0% {
+    transform: translate(-100%, -100%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 .gdpr {
+  animation: bannerSlide ease-in-out 0.25s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
   left: 0;
   position: fixed;
   top: 0;
