@@ -22,6 +22,12 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+::selection {
+  background-color: #420fff;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+
 h1,
 h2,
 p,
