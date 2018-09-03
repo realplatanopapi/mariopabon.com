@@ -30,9 +30,36 @@ li {
   padding-top: 0;
 }
 
+@keyframes mangoDreams {
+  0% {
+    background-position: 0vw 50%;
+  }
+
+  100% {
+    background-position: 200vw 50%;
+  }
+}
+
 h1,
 h2 {
+  animation: mangoDreams ease infinite 30s;
+  background-image: linear-gradient(
+    to right,
+    rgb(253, 65, 59),
+    rgb(195, 230, 3) 10%,
+    rgb(253, 65, 59),
+    rgb(195, 230, 3),
+    rgb(253, 65, 59)
+  );
+  background-size: 200vw 100%;
   font-style: italic;
+  line-height: 1.25;
+  padding-bottom: 0.1em;
+
+  /* Enable see-through text so we can see the tasty gradient background */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p:last-child,
