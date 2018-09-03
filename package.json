@@ -1,8 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "parcel build index.html",
-    "dev": "parcel index.html"
+    "build": "yarn clean && yarn static && parcel build index.html",
+    "clean": "rm -rf dist/",
+    "dev": "yarn clean && yarn static && parcel index.html",
+    "static": "mkdir -p dist/ && cp -R static/* dist/"
   },
   "devDependencies": {
     "parcel": "^1.9.7"
