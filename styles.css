@@ -1,13 +1,13 @@
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 ::selection {
   background-color: #420fff;
   color: #fff;
   -webkit-text-fill-color: #fff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 html,
