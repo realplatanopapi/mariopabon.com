@@ -29,6 +29,7 @@ html {
   font-family: '-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 90%;
   line-height: 1.5;
+  overflow-x: hidden;
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
