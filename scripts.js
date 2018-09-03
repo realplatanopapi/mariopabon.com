@@ -79,6 +79,7 @@ document.body.addEventListener('mousedown', event => {
 
   const tagName = event.target.tagName.toLowerCase()
   if (canPaintInTag(tagName)) {
+    event.preventDefault()
     startPainting()
   }
 })
@@ -115,10 +116,5 @@ document.body.addEventListener('touchmove', event => {
   paintEmoji(touch.clientX, touch.clientY)
 })
 
-document.body.addEventListener('mouseup', () => {
-  stopPainting()
-})
-
-document.body.addEventListener('touchend', () => {
-  stopPainting()
-})
+document.body.addEventListener('mouseup', stopPainting)
+document.body.addEventListener('touchend', stopPainting)
