@@ -75,13 +75,12 @@ function stopPainting () {
 }
 
 document.body.addEventListener('mousedown', event => {
-  const tagName = event.target.tagName.toLowerCase()
-  if (!canPaintInTag(tagName)) {
-    return
-  }
-
   paintEmoji(event.clientX, event.clientY)
-  startPainting()
+
+  const tagName = event.target.tagName.toLowerCase()
+  if (canPaintInTag(tagName)) {
+    startPainting()
+  }
 })
 
 document.body.addEventListener('mousemove', event => {
