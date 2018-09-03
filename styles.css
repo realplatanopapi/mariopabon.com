@@ -1,10 +1,11 @@
 :root {
+  --lit-blue: #420fff;
   --mango-red: rgb(255, 50, 50);
   --mango-green: rgba(195, 230, 0);
 }
 
 ::selection {
-  background-color: #420fff;
+  background-color: var(--lit-blue);
   color: #fff;
   -webkit-text-fill-color: #fff;
 }
@@ -119,7 +120,7 @@ a {
 }
 
 a:hover {
-  color: #420fff;
+  color: var(--lit-blue);
   border-bottom-width: 2px;
   padding-bottom: 0;
 }
