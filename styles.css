@@ -164,6 +164,11 @@ a:hover {
     margin-bottom: 4rem;
   }
 
+  h1,
+  h2 {
+    animation-duration: 20s;
+  }
+
   main {
     margin-left: 0;
     margin-top: 0;
