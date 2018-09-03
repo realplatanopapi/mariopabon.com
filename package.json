@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
+  },
+  "devDependencies": {
+    "parcel": "^1.9.7"
+  }
+}
