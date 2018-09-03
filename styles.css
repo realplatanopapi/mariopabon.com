@@ -40,18 +40,6 @@ main {
   padding: 2rem;
 }
 
-@media screen and (max-width: 600px) {
-  header,
-  section {
-    margin-bottom: 4rem;
-  }
-
-  main {
-    margin-left: 0;
-    margin-top: 0;
-  }
-}
-
 h1,
 h2,
 p,
@@ -168,4 +156,20 @@ a:hover {
   position: fixed;
   top: 0;
   width: 75px;
+}
+
+@media screen and (max-width: 600px) {
+  header,
+  section {
+    margin-bottom: 4rem;
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .emoji {
+    font-size: 2rem;
+  }
 }
