@@ -83,6 +83,17 @@ document.body.addEventListener('mousedown', event => {
   }
 })
 
+document.body.addEventListener('touchstart', event => {
+  const touch = event.targetTouches[event.targetTouches.length - 1]
+  paintEmoji(touch.clientX, touch.clientY)
+
+  const tagName = event.target.tagName.toLowerCase()
+  if (canPaintInTag(tagName)) {
+    event.preventDefault()
+    startPainting()
+  }
+})
+
 document.body.addEventListener('mousemove', event => {
   if (!isPainting) {
     return
@@ -93,6 +104,21 @@ document.body.addEventListener('mousemove', event => {
   paintEmoji(event.clientX, event.clientY)
 })
 
+document.body.addEventListener('touchmove', event => {
+  if (!isPainting) {
+    return
+  }
+
+// Prevent text from being selected while the user is painting
+  event.preventDefault()
+  const touch = event.targetTouches[event.targetTouches.length - 1]
+  paintEmoji(touch.clientX, touch.clientY)
+})
+
 document.body.addEventListener('mouseup', () => {
+  stopPainting()
+})
+
+document.body.addEventListener('touchend', () => {
   stopPainting()
 })
