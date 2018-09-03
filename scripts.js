@@ -51,7 +51,7 @@ const paintEmoji = throttle(function paintEmoji (x, y) {
     setTimeout(() => {
       document.body.removeChild(node)
     }, 250)
-  }, 500)
+  }, 750)
 }, 100)
 
 function canPaintInTag (tagName) {
