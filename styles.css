@@ -103,6 +103,7 @@ a {
 }
 
 a:hover {
+  color: #420fff;
   border-bottom-width: 2px;
   padding-bottom: 0;
 }
