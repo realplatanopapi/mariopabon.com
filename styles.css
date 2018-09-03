@@ -1,7 +1,7 @@
 :root {
   --lit-blue: #420fff;
   --mango-red: rgb(255, 50, 50);
-  --mango-green: rgba(195, 230, 0);
+  --mango-green: rgb(195, 230, 0);
 }
 
 ::selection {
