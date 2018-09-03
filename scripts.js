@@ -13,6 +13,8 @@ const emoji = [
   '🇵🇷'
 ]
 
+let isPainting = false
+
 function getRandomEmoji () {
   const index = Math.floor(
     Math.random() * emoji.length
@@ -64,7 +66,13 @@ function canPaintInTag (tagName) {
   return tagNameBlackList.indexOf(tagName) < 0
 }
 
-let isPainting = false
+function startPainting () {
+  isPainting = true
+}
+
+function stopPainting () {
+  isPainting = false
+}
 
 document.body.addEventListener('mousedown', event => {
   const tagName = event.target.tagName.toLowerCase()
@@ -73,7 +81,7 @@ document.body.addEventListener('mousedown', event => {
   }
 
   paintEmoji(event.clientX, event.clientY)
-  isPainting = true
+  startPainting()
 })
 
 document.body.addEventListener('mousemove', event => {
@@ -87,5 +95,5 @@ document.body.addEventListener('mousemove', event => {
 })
 
 document.body.addEventListener('mouseup', () => {
-  isPainting = false
+  stopPainting()
 })
