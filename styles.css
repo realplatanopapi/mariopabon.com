@@ -204,8 +204,8 @@ a:hover {
 }
 
 .gdpr {
-  animation: bannerSlide ease-in-out 0.25s;
-  animation-delay: 1s;
+  animation: bannerSlide ease-in 0.5s;
+  animation-delay: 0.5s;
   animation-fill-mode: both;
   left: 0;
   position: fixed;
