@@ -162,3 +162,10 @@ a:hover {
   pointer-events: none;
   position: fixed;
 }
+
+.gdpr {
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 75px;
+}
