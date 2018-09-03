@@ -4,6 +4,12 @@
   box-sizing: inherit;
 }
 
+::selection {
+  background-color: #420fff;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+
 html,
 body {
   margin: 0;
@@ -22,10 +28,28 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-::selection {
-  background-color: #420fff;
-  color: #fff;
-  -webkit-text-fill-color: #fff;
+header,
+section {
+  margin-bottom: 4rem;
+}
+
+main {
+  margin-left: 10vw;
+  margin-top: 2rem;
+  max-width: 35rem;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  header,
+  section {
+    margin-bottom: 4rem;
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
 
 h1,
@@ -93,10 +117,6 @@ h2 {
   font-size: 1.5rem;
 }
 
-section {
-  border-top: 1px solid #eee;
-}
-
 a {
   border-bottom: 1px solid currentColor;
   color: inherit;
@@ -109,23 +129,6 @@ a:hover {
   color: #420fff;
   border-bottom-width: 2px;
   padding-bottom: 0;
-}
-
-.container {
-  margin-left: 10vw;
-  max-width: 35rem;
-  padding: 4rem 2rem;
-}
-
-@media screen and (max-width: 600px) {
-  section {
-    border: 0;
-  }
-
-  .container {
-    margin-left: 0;
-    padding: 2rem;
-  }
 }
 
 @keyframes popIn {
