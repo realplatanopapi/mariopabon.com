@@ -210,15 +210,10 @@ a:hover {
   left: 0;
   position: fixed;
   top: 0;
-  width: 75px;
+  width: 85px;
 }
 
 @media screen and (max-width: 600px) {
-  header,
-  section {
-    margin-bottom: 4rem;
-  }
-
   h1,
   h2 {
     animation-duration: 20s;
@@ -231,5 +226,9 @@ a:hover {
 
   .emoji {
     font-size: 2rem;
+  }
+
+  .gdpr {
+    width: 75px;
   }
 }
