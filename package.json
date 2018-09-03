@@ -1,12 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "build": "yarn run clean && mkdir dist/ && cp index.html styles.css ./dist/ && yarn run public",
-    "clean": "rm -rf dist",
-    "public": "cp public/* dist/",
-    "start": "yarn run build && http-serve -c-1 ."
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
   },
   "devDependencies": {
-    "http-serve": "^1.0.1"
+    "parcel": "^1.9.7"
   }
 }
