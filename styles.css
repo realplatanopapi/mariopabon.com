@@ -186,6 +186,7 @@ a:hover {
 
 .emoji {
   animation: popIn ease-in-out 0.25s;
+  font-family: sans-serif;
   font-size: 1.5rem;
   line-height: 1;
   pointer-events: none;
