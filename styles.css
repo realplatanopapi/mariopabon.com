@@ -19,6 +19,7 @@
 html,
 body {
   margin: 0;
+  min-height: 100vh;
   padding: 0;
 }
 
@@ -76,10 +77,8 @@ section {
 }
 
 main {
-  margin-left: 10vw;
-  margin-top: 2rem;
+  padding: 4rem 2rem 2rem 12vw;
   max-width: 35rem;
-  padding: 2rem;
 }
 
 h1,
@@ -220,8 +219,7 @@ a:hover {
   }
 
   main {
-    margin-left: 0;
-    margin-top: 0;
+    padding: 2rem;
   }
 
   .emoji {
