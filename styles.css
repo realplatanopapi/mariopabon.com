@@ -1,11 +1,11 @@
 :root {
-  --lit-blue: #420fff;
-  --mango-red: rgb(255, 50, 50);
-  --mango-green: rgb(195, 230, 0);
+  --mango-red: rgb(255, 75, 50);
+  --mango-orange: rgb(255, 200, 0);
+  --mango-green: rgb(150, 225, 25);
 }
 
 ::selection {
-  background-color: var(--lit-blue);
+  background-color: var(--mango-green);
   color: #fff;
   -webkit-text-fill-color: #fff;
 }
@@ -106,9 +106,12 @@ h2 {
   background-image: linear-gradient(
     to right,
     var(--mango-red),
+    var(--mango-orange) 5%,
     var(--mango-green) 15%,
     var(--mango-red),
+    var(--mango-orange),
     var(--mango-green),
+    var(--mango-orange),
     var(--mango-red)
   );
   background-size: 200vw 100%;
@@ -155,7 +158,7 @@ a {
 }
 
 a:hover {
-  border-bottom-color: var(--lit-blue);
+  border-bottom-color: var(--mango-green);
   border-bottom-width: 2px;
   padding-bottom: 0;
 }
