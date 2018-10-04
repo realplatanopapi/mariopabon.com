@@ -91,6 +91,7 @@ document.body.addEventListener('touchstart', event => {
   const tagName = event.target.tagName.toLowerCase()
   if (canPaintInTag(tagName)) {
     event.preventDefault()
+    event.stopPropagation()
     startPainting()
   }
 })
@@ -112,6 +113,7 @@ document.body.addEventListener('touchmove', event => {
 
 // Prevent text from being selected while the user is painting
   event.preventDefault()
+  event.stopPropagation()
   const touch = event.targetTouches[event.targetTouches.length - 1]
   paintEmoji(touch.clientX, touch.clientY)
 })
