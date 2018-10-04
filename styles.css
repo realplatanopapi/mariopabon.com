@@ -102,12 +102,13 @@ li {
 
 h1,
 h2 {
-  animation: mangoDreams ease infinite 30s;
+  animation: mangoDreams ease-in infinite 20s;
   background-image: linear-gradient(
     to right,
     var(--mango-red),
     var(--mango-orange) 5%,
     var(--mango-green) 15%,
+    var(--mango-orange),
     var(--mango-red),
     var(--mango-orange),
     var(--mango-green),
