@@ -196,26 +196,6 @@ a:hover {
   position: fixed;
 }
 
-@keyframes bannerSlide {
-  0% {
-    transform: translate(-100%, -100%);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-.gdpr {
-  animation: bannerSlide ease-in 0.5s;
-  animation-delay: 0.5s;
-  animation-fill-mode: both;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 85px;
-}
-
 @media screen and (max-width: 600px) {
   h1,
   h2 {
