@@ -2,10 +2,11 @@
   --mango-red: rgb(255, 75, 50);
   --mango-orange: rgb(255, 200, 0);
   --mango-green: rgb(150, 225, 25);
+  --mint-green: rgb(25, 207, 125);
 }
 
 ::selection {
-  background-color: var(--mango-green);
+  background-color: var(--mint-green);
   color: #fff;
   -webkit-text-fill-color: #fff;
 }
@@ -159,7 +160,7 @@ a {
 }
 
 a:hover {
-  border-bottom-color: var(--mango-green);
+  border-bottom-color: var(--mint-green);
   border-bottom-width: 2px;
   padding-bottom: 0;
 }
