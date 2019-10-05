@@ -25,8 +25,8 @@ body {
 }
 
 html {
-  background: #fff;
-  color: #111;
+  background: #0a0a0a;
+  color: #fafafa;
   cursor: crosshair;
   font-family: '-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: 90%;
