@@ -29,7 +29,6 @@ html {
   color: #111;
   cursor: crosshair;
   font-family: '-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  font-size: 90%;
   line-height: 1.5;
   overflow-x: hidden;
 
@@ -152,7 +151,7 @@ h2 {
 }
 
 small {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   opacity: 0.5;
 }
 
