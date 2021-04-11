@@ -1,8 +1,7 @@
 :root {
-  --mango-red: rgb(255, 75, 50);
-  --mango-orange: rgb(255, 200, 0);
-  --mango-green: rgb(150, 225, 25);
-  --mint-green: rgb(25, 207, 125);
+  --coconut-green-0: #93AF00;
+  --coconut-green-1: #65C70A;
+  --coconut-green-2: #22BD09;
 }
 
 ::selection {
@@ -105,17 +104,12 @@ h2 {
   animation: mangoDreams ease-in infinite 20s;
   background-image: linear-gradient(
     to right,
-    var(--mango-red),
-    var(--mango-orange) 5%,
-    var(--mango-green) 30%,
-    var(--mango-orange),
-    var(--mango-red),
-    var(--mango-orange),
-    var(--mango-green),
-    var(--mango-orange),
-    var(--mango-red)
+    var(--coconut-green-0),
+    var(--coconut-green-1) 5%,
+    var(--coconut-green-2) 30%,
+    var(--coconut-green-0)
   );
-  background-size: 200vw 100%;
+  background-size: 150vw 100%;
   font-style: italic;
   line-height: 1.25;
   padding-bottom: 0.1em;
@@ -164,7 +158,7 @@ a {
 }
 
 a:hover {
-  border-bottom-color: var(--mint-green);
+  border-bottom-color: var(--coconut-green-2);
   border-bottom-width: 2px;
   padding-bottom: 0;
 }
