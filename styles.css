@@ -4,7 +4,7 @@
 }
 
 ::selection {
-  background-color: var(--mint-green);
+  background-color: var(--coconut-green);
   color: #fff;
   -webkit-text-fill-color: #fff;
 }
@@ -101,13 +101,14 @@ li {
 h1,
 h2 {
   animation: mangoDreams ease-in infinite 20s;
+  animation-direction: alternate;
   background-image: linear-gradient(
     to right,
     var(--coconut-green),
     var(--sky-blue),
     var(--coconut-green)
   );
-  background-size: 150%;
+  background-size: 100%;
   line-height: 1.25;
   padding-bottom: 0.1em;
 
