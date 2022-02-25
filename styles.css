@@ -110,7 +110,6 @@ h2 {
     var(--coconut-green-0)
   );
   background-size: 150vw 100%;
-  font-style: italic;
   line-height: 1.25;
   padding-bottom: 0.1em;
 
@@ -136,12 +135,13 @@ li {
 }
 
 h1 {
-  font-size: 2rem;
-  line-height: 1.25;
+  font-size: 3rem;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 small {
