@@ -1,7 +1,6 @@
 :root {
-  --coconut-green-0: #93AF00;
-  --coconut-green-1: #65C70A;
-  --coconut-green-2: #22BD09;
+  --coconut-green: #00C95C;
+  --sky-blue: #00F8FF;
 }
 
 ::selection {
@@ -24,8 +23,8 @@ body {
 }
 
 html {
-  background: #fff;
-  color: #111;
+  background: #000;
+  color: #fff;
   cursor: crosshair;
   font-family: '-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   line-height: 1.5;
@@ -104,12 +103,11 @@ h2 {
   animation: mangoDreams ease-in infinite 20s;
   background-image: linear-gradient(
     to right,
-    var(--coconut-green-0),
-    var(--coconut-green-1) 5%,
-    var(--coconut-green-2) 30%,
-    var(--coconut-green-0)
+    var(--coconut-green),
+    var(--sky-blue),
+    var(--coconut-green)
   );
-  background-size: 150vw 100%;
+  background-size: 150%;
   line-height: 1.25;
   padding-bottom: 0.1em;
 
@@ -158,7 +156,7 @@ a {
 }
 
 a:hover {
-  border-bottom-color: var(--coconut-green-2);
+  border-bottom-color: var(--sky-blue);
   border-bottom-width: 2px;
   padding-bottom: 0;
 }
