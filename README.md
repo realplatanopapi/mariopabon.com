@@ -20,7 +20,7 @@ And that's all there is to it!
 
 ## Deploying
 
-Hosting and deployment is handled by [Netlify](https://netlify.com), so simply push to `master` to trigger a new deployment. Lit!
+Hosting and deployment is handled by [Netlify](https://netlify.com), so simply push to `main` to trigger a new deployment. Lit!
 
 ---
 
