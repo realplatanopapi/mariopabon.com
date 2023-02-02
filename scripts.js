@@ -16,7 +16,7 @@ const emoji = [
   "🇲🇽",
 ];
 
-let isPainting = false;
+let isPainting = true;
 
 function getRandomEmoji() {
   const index = Math.floor(Math.random() * emoji.length);
@@ -69,16 +69,6 @@ function stopPainting() {
   isPainting = false;
 }
 
-document.body.addEventListener("mousedown", (event) => {
-  paintEmoji(event.clientX, event.clientY);
-
-  const tagName = event.target.tagName.toLowerCase();
-  if (canPaintInTag(tagName)) {
-    event.preventDefault();
-    startPainting();
-  }
-});
-
 document.body.addEventListener("touchstart", (event) => {
   const touch = event.targetTouches[event.targetTouches.length - 1];
   paintEmoji(touch.clientX, touch.clientY);
@@ -113,5 +103,4 @@ document.body.addEventListener("touchmove", (event) => {
   paintEmoji(touch.clientX, touch.clientY);
 });
 
-document.body.addEventListener("mouseup", stopPainting);
 document.body.addEventListener("touchend", stopPainting);
