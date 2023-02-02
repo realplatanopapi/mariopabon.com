@@ -53,7 +53,7 @@ const paintEmoji = throttle(function paintEmoji(x, y) {
       document.body.removeChild(node);
     }, 250);
   }, 750);
-}, 100);
+}, 75);
 
 function canPaintInTag(tagName) {
   const tagNameBlackList = ["h1", "h2", "h3", "p", "li", "a"];
