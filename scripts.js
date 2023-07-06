@@ -82,13 +82,17 @@ document.body.addEventListener("touchstart", (event) => {
 });
 
 document.body.addEventListener("mousemove", (event) => {
-  if (!isPainting) {
-    return;
+  const tagName = event.target.tagName.toLowerCase();
+  console.log({
+    tagName,
+  });
+  if (canPaintInTag(tagName)) {
+    // Prevent text from being selected while the user is painting
+    event.preventDefault();
+    paintEmoji(event.clientX, event.clientY);
+  } else {
+    stopPainting();
   }
-
-  // Prevent text from being selected while the user is painting
-  event.preventDefault();
-  paintEmoji(event.clientX, event.clientY);
 });
 
 document.body.addEventListener("touchmove", (event) => {
