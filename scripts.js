@@ -79,9 +79,6 @@ document.body.addEventListener("touchstart", (event) => {
 
 document.body.addEventListener("mousemove", (event) => {
   const tagName = event.target.tagName.toLowerCase();
-  console.log({
-    tagName,
-  });
   if (canPaintInTag(tagName)) {
     // Prevent text from being selected while the user is painting
     event.preventDefault();
