@@ -52,7 +52,7 @@ const paintEmoji = throttle(function paintEmoji(x, y) {
 }, 75);
 
 function canPaintInTag(tagName) {
-  const tagNameBlackList = ["h1", "h2", "h3", "p", "li", "a"];
+  const tagNameBlackList = ["h1", "h2", "h3", "p", "a"];
 
   return tagNameBlackList.indexOf(tagName) < 0;
 }
